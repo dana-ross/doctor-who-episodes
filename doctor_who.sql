@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: mysql:3306
--- Generation Time: Dec 31, 2016 at 07:20 PM
--- Server version: 10.1.20-MariaDB-1~jessie
--- PHP Version: 5.6.28
-
 --
 -- Database: `doctor_who`
 --
@@ -1740,7 +1731,3 @@ ALTER TABLE `serials`
 --
 ALTER TABLE `writers`
   ADD CONSTRAINT `writers_ibfk_1` FOREIGN KEY (`id`) REFERENCES `serials_writers` (`writer_id`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
