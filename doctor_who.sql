@@ -7,15 +7,6 @@
 -- Server version: 10.1.20-MariaDB-1~jessie
 -- PHP Version: 5.6.28
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `doctor_who`
 --
@@ -29,7 +20,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `directors` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `directors`
@@ -150,7 +141,7 @@ CREATE TABLE `doctors` (
   `id` int(11) NOT NULL,
   `incarnation` text NOT NULL,
   `actor` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `doctors`
@@ -181,7 +172,7 @@ INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES
 CREATE TABLE `seasons` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `seasons`
@@ -242,7 +233,7 @@ CREATE TABLE `serials` (
   `serial` int(11) DEFAULT NULL,
   `title` text NOT NULL,
   `production_code` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `serials`
@@ -552,7 +543,7 @@ INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `productio
 CREATE TABLE `serials_directors` (
   `serial_id` int(11) NOT NULL,
   `director_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `serials_directors`
@@ -872,7 +863,7 @@ INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES
 CREATE TABLE `serials_doctors` (
   `serial_id` int(11) NOT NULL,
   `doctor_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `serials_doctors`
@@ -1191,7 +1182,7 @@ INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES
 CREATE TABLE `serials_writers` (
   `serial_id` int(11) NOT NULL,
   `writer_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `serials_writers`
@@ -1557,7 +1548,7 @@ INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES
 CREATE TABLE `writers` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `writers`
