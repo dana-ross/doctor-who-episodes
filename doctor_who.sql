@@ -9,7 +9,7 @@
 --
 
 CREATE TABLE `directors` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
 );
 
@@ -17,110 +17,109 @@ CREATE TABLE `directors` (
 -- Dumping data for table `directors`
 --
 
-INSERT INTO `directors` (`id`, `name`) VALUES
-(1, 'Adam Smith'),
-(2, 'Alan Bromly'),
-(3, 'Alan Wareing'),
-(4, 'Alice Troughton'),
-(5, 'Andrew Gunn'),
-(6, 'Andrew Morgan'),
-(7, 'Andy Goddard'),
-(8, 'Ashley Way'),
-(9, 'Barry Letts'),
-(10, 'Ben Wheatley'),
-(11, 'Bill Sellars'),
-(12, 'Brian Grant'),
-(13, 'Catherine Morshead'),
-(14, 'Charles Palmer'),
-(15, 'Chris Clough'),
-(16, 'Christopher Barry'),
-(17, 'Colin Teague'),
-(18, 'Colm McCarthy'),
-(19, 'Dan Zeff'),
-(20, 'Daniel Nettheim'),
-(21, 'Daniel O\'Hara'),
-(22, 'Darrol Blake'),
-(23, 'David Maloney'),
-(24, 'Derek Martinus'),
-(25, 'Derrick Goodwin'),
-(26, 'Douglas Camfield'),
-(27, 'Douglas Mackinnon'),
-(28, 'Ed Bazalgette'),
-(29, 'Euros Lyn'),
-(30, 'Farren Blackburn'),
-(31, 'Fiona Cumming'),
-(32, 'Frank Cox'),
-(33, 'Geoffrey Sax'),
-(34, 'George Spenton-Foster'),
-(35, 'Gerald Blake'),
-(36, 'Gerry Mill'),
-(37, 'Gordon Flemyng'),
-(38, 'Graeme Harper'),
-(39, 'Henric Hirsch'),
-(40, 'Hettie MacDonald'),
-(41, 'Hugh David'),
-(42, 'James Hawes'),
-(43, 'James Strong'),
-(44, 'Jamie Payne'),
-(45, 'Jeremy Webb'),
-(46, 'Joe Ahearne'),
-(47, 'John Black'),
-(48, 'John Crockett'),
-(49, 'John Davies'),
-(50, 'John Gorrie'),
-(51, 'Jonny Campbell'),
-(52, 'Julia Smith'),
-(53, 'Julian Simpson'),
-(54, 'Justin Molotnikov'),
-(55, 'Keith Boak'),
-(56, 'Ken Grieve'),
-(57, 'Kenny McBain'),
-(58, 'Lennie Mayne'),
-(59, 'Lovett Bickford'),
-(60, 'Marvyn Pinfield'),
-(61, 'Mary Ridge'),
-(62, 'Mat King'),
-(63, 'Matthew Robinson'),
-(64, 'Mervyn Pinfield'),
-(65, 'Michael E. Briant'),
-(66, 'Michael Ferguson'),
-(67, 'Michael Hart'),
-(68, 'Michael Hayes'),
-(69, 'Michael Imison'),
-(70, 'Michael Kerrigan'),
-(71, 'Michael Leeston-Smith'),
-(72, 'Michael Owen Morris'),
-(73, 'Morris Barry'),
-(74, 'Nicholas Mallett'),
-(75, 'Nick Hurran'),
-(76, 'Norman Stewart'),
-(77, 'Paddy Russell'),
-(78, 'Paul Bernard'),
-(79, 'Paul Joyce'),
-(80, 'Paul Murphy'),
-(81, 'Paul Wilmshurst'),
-(82, 'Pennant Roberts'),
-(83, 'Peter Grimwade'),
-(84, 'Peter Hoar'),
-(85, 'Peter Moffatt'),
-(86, 'Rachel Talalay'),
-(87, 'Rex Tucker'),
-(88, 'Richard Clark'),
-(89, 'Richard Martin'),
-(90, 'Richard Senior'),
-(91, 'Rodney Bennett'),
-(92, 'Ron Jones'),
-(93, 'Sarah Hellings'),
-(94, 'Saul Metzstein'),
-(95, 'Sheree Folkson'),
-(96, 'Stephen Woolfenden'),
-(97, 'Steve Hughes'),
-(98, 'Terency Dudley'),
-(99, 'Timothy Combe'),
-(100, 'Toby Haynes'),
-(101, 'Tony Virgo'),
-(102, 'Tristan DeVere Cole'),
-(103, 'Warris Hussein');
+INSERT INTO `directors` (`id`, `name`) VALUES (1, 'Adam Smith');
+INSERT INTO `directors` (`id`, `name`) VALUES (2, 'Alan Bromly');
+INSERT INTO `directors` (`id`, `name`) VALUES (3, 'Alan Wareing');
+INSERT INTO `directors` (`id`, `name`) VALUES (4, 'Alice Troughton');
+INSERT INTO `directors` (`id`, `name`) VALUES (5, 'Andrew Gunn');
+INSERT INTO `directors` (`id`, `name`) VALUES (6, 'Andrew Morgan');
+INSERT INTO `directors` (`id`, `name`) VALUES (7, 'Andy Goddard');
+INSERT INTO `directors` (`id`, `name`) VALUES (8, 'Ashley Way');
+INSERT INTO `directors` (`id`, `name`) VALUES (9, 'Barry Letts');
+INSERT INTO `directors` (`id`, `name`) VALUES (10, 'Ben Wheatley');
+INSERT INTO `directors` (`id`, `name`) VALUES (11, 'Bill Sellars');
+INSERT INTO `directors` (`id`, `name`) VALUES (12, 'Brian Grant');
+INSERT INTO `directors` (`id`, `name`) VALUES (13, 'Catherine Morshead');
+INSERT INTO `directors` (`id`, `name`) VALUES (14, 'Charles Palmer');
+INSERT INTO `directors` (`id`, `name`) VALUES (15, 'Chris Clough');
+INSERT INTO `directors` (`id`, `name`) VALUES (16, 'Christopher Barry');
+INSERT INTO `directors` (`id`, `name`) VALUES (17, 'Colin Teague');
+INSERT INTO `directors` (`id`, `name`) VALUES (18, 'Colm McCarthy');
+INSERT INTO `directors` (`id`, `name`) VALUES (19, 'Dan Zeff');
+INSERT INTO `directors` (`id`, `name`) VALUES (20, 'Daniel Nettheim');
+INSERT INTO `directors` (`id`, `name`) VALUES (21, "Daniel O'Hara");
+INSERT INTO `directors` (`id`, `name`) VALUES (22, 'Darrol Blake');
+INSERT INTO `directors` (`id`, `name`) VALUES (23, 'David Maloney');
+INSERT INTO `directors` (`id`, `name`) VALUES (24, 'Derek Martinus');
+INSERT INTO `directors` (`id`, `name`) VALUES (25, 'Derrick Goodwin');
+INSERT INTO `directors` (`id`, `name`) VALUES (26, 'Douglas Camfield');
+INSERT INTO `directors` (`id`, `name`) VALUES (27, 'Douglas Mackinnon');
+INSERT INTO `directors` (`id`, `name`) VALUES (28, 'Ed Bazalgette');
+INSERT INTO `directors` (`id`, `name`) VALUES (29, 'Euros Lyn');
+INSERT INTO `directors` (`id`, `name`) VALUES (30, 'Farren Blackburn');
+INSERT INTO `directors` (`id`, `name`) VALUES (31, 'Fiona Cumming');
+INSERT INTO `directors` (`id`, `name`) VALUES (32, 'Frank Cox');
+INSERT INTO `directors` (`id`, `name`) VALUES (33, 'Geoffrey Sax');
+INSERT INTO `directors` (`id`, `name`) VALUES (34, 'George Spenton-Foster');
+INSERT INTO `directors` (`id`, `name`) VALUES (35, 'Gerald Blake');
+INSERT INTO `directors` (`id`, `name`) VALUES (36, 'Gerry Mill');
+INSERT INTO `directors` (`id`, `name`) VALUES (37, 'Gordon Flemyng');
+INSERT INTO `directors` (`id`, `name`) VALUES (38, 'Graeme Harper');
+INSERT INTO `directors` (`id`, `name`) VALUES (39, 'Henric Hirsch');
+INSERT INTO `directors` (`id`, `name`) VALUES (40, 'Hettie MacDonald');
+INSERT INTO `directors` (`id`, `name`) VALUES (41, 'Hugh David');
+INSERT INTO `directors` (`id`, `name`) VALUES (42, 'James Hawes');
+INSERT INTO `directors` (`id`, `name`) VALUES (43, 'James Strong');
+INSERT INTO `directors` (`id`, `name`) VALUES (44, 'Jamie Payne');
+INSERT INTO `directors` (`id`, `name`) VALUES (45, 'Jeremy Webb');
+INSERT INTO `directors` (`id`, `name`) VALUES (46, 'Joe Ahearne');
+INSERT INTO `directors` (`id`, `name`) VALUES (47, 'John Black');
+INSERT INTO `directors` (`id`, `name`) VALUES (48, 'John Crockett');
+INSERT INTO `directors` (`id`, `name`) VALUES (49, 'John Davies');
+INSERT INTO `directors` (`id`, `name`) VALUES (50, 'John Gorrie');
+INSERT INTO `directors` (`id`, `name`) VALUES (51, 'Jonny Campbell');
+INSERT INTO `directors` (`id`, `name`) VALUES (52, 'Julia Smith');
+INSERT INTO `directors` (`id`, `name`) VALUES (53, 'Julian Simpson');
+INSERT INTO `directors` (`id`, `name`) VALUES (54, 'Justin Molotnikov');
+INSERT INTO `directors` (`id`, `name`) VALUES (55, 'Keith Boak');
+INSERT INTO `directors` (`id`, `name`) VALUES (56, 'Ken Grieve');
+INSERT INTO `directors` (`id`, `name`) VALUES (57, 'Kenny McBain');
+INSERT INTO `directors` (`id`, `name`) VALUES (58, 'Lennie Mayne');
+INSERT INTO `directors` (`id`, `name`) VALUES (59, 'Lovett Bickford');
+INSERT INTO `directors` (`id`, `name`) VALUES (60, 'Marvyn Pinfield');
+INSERT INTO `directors` (`id`, `name`) VALUES (61, 'Mary Ridge');
+INSERT INTO `directors` (`id`, `name`) VALUES (62, 'Mat King');
+INSERT INTO `directors` (`id`, `name`) VALUES (63, 'Matthew Robinson');
+INSERT INTO `directors` (`id`, `name`) VALUES (64, 'Mervyn Pinfield');
+INSERT INTO `directors` (`id`, `name`) VALUES (65, 'Michael E. Briant');
+INSERT INTO `directors` (`id`, `name`) VALUES (66, 'Michael Ferguson');
+INSERT INTO `directors` (`id`, `name`) VALUES (67, 'Michael Hart');
+INSERT INTO `directors` (`id`, `name`) VALUES (68, 'Michael Hayes');
+INSERT INTO `directors` (`id`, `name`) VALUES (69, 'Michael Imison');
+INSERT INTO `directors` (`id`, `name`) VALUES (70, 'Michael Kerrigan');
+INSERT INTO `directors` (`id`, `name`) VALUES (71, 'Michael Leeston-Smith');
+INSERT INTO `directors` (`id`, `name`) VALUES (72, 'Michael Owen Morris');
+INSERT INTO `directors` (`id`, `name`) VALUES (73, 'Morris Barry');
+INSERT INTO `directors` (`id`, `name`) VALUES (74, 'Nicholas Mallett');
+INSERT INTO `directors` (`id`, `name`) VALUES (75, 'Nick Hurran');
+INSERT INTO `directors` (`id`, `name`) VALUES (76, 'Norman Stewart');
+INSERT INTO `directors` (`id`, `name`) VALUES (77, 'Paddy Russell');
+INSERT INTO `directors` (`id`, `name`) VALUES (78, 'Paul Bernard');
+INSERT INTO `directors` (`id`, `name`) VALUES (79, 'Paul Joyce');
+INSERT INTO `directors` (`id`, `name`) VALUES (80, 'Paul Murphy');
+INSERT INTO `directors` (`id`, `name`) VALUES (81, 'Paul Wilmshurst');
+INSERT INTO `directors` (`id`, `name`) VALUES (82, 'Pennant Roberts');
+INSERT INTO `directors` (`id`, `name`) VALUES (83, 'Peter Grimwade');
+INSERT INTO `directors` (`id`, `name`) VALUES (84, 'Peter Hoar');
+INSERT INTO `directors` (`id`, `name`) VALUES (85, 'Peter Moffatt');
+INSERT INTO `directors` (`id`, `name`) VALUES (86, 'Rachel Talalay');
+INSERT INTO `directors` (`id`, `name`) VALUES (87, 'Rex Tucker');
+INSERT INTO `directors` (`id`, `name`) VALUES (88, 'Richard Clark');
+INSERT INTO `directors` (`id`, `name`) VALUES (89, 'Richard Martin');
+INSERT INTO `directors` (`id`, `name`) VALUES (90, 'Richard Senior');
+INSERT INTO `directors` (`id`, `name`) VALUES (91, 'Rodney Bennett');
+INSERT INTO `directors` (`id`, `name`) VALUES (92, 'Ron Jones');
+INSERT INTO `directors` (`id`, `name`) VALUES (93, 'Sarah Hellings');
+INSERT INTO `directors` (`id`, `name`) VALUES (94, 'Saul Metzstein');
+INSERT INTO `directors` (`id`, `name`) VALUES (95, 'Sheree Folkson');
+INSERT INTO `directors` (`id`, `name`) VALUES (96, 'Stephen Woolfenden');
+INSERT INTO `directors` (`id`, `name`) VALUES (97, 'Steve Hughes');
+INSERT INTO `directors` (`id`, `name`) VALUES (98, 'Terency Dudley');
+INSERT INTO `directors` (`id`, `name`) VALUES (99, 'Timothy Combe');
+INSERT INTO `directors` (`id`, `name`) VALUES (100, 'Toby Haynes');
+INSERT INTO `directors` (`id`, `name`) VALUES (101, 'Tony Virgo');
+INSERT INTO `directors` (`id`, `name`) VALUES (102, 'Tristan DeVere Cole');
+INSERT INTO `directors` (`id`, `name`) VALUES (103, 'Warris Hussein');
 
 -- --------------------------------------------------------
 
@@ -129,7 +128,7 @@ INSERT INTO `directors` (`id`, `name`) VALUES
 --
 
 CREATE TABLE `doctors` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY NOT NULL,
   `incarnation` text NOT NULL,
   `actor` text NOT NULL
 );
@@ -138,21 +137,20 @@ CREATE TABLE `doctors` (
 -- Dumping data for table `doctors`
 --
 
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES
-(1, 'First Doctor', 'William Hartnell'),
-(2, 'Second Doctor', 'Patrick Troughton'),
-(3, 'Third Doctor', 'Jon Pertwee'),
-(4, 'Fourth Doctor', 'Tom Baker'),
-(5, 'Fifth Doctor', 'Peter Davison'),
-(6, 'Sixth Doctor', 'Colin Baker'),
-(7, 'Seventh Doctor', 'Sylvester McCoy'),
-(8, 'Eighth Doctor', 'Paul McGann'),
-(9, 'War Doctor', 'John Hurt'),
-(10, 'Ninth Doctor', 'Chris Eccleston'),
-(11, 'Tenth Doctor', 'David Tennant'),
-(12, 'Eleventh Doctor', 'Matt Smith'),
-(13, 'Twelfth Doctor', 'Peter Capaldi'),
-(14, 'Dr. Who', 'Peter Cushing');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (1, 'First Doctor', 'William Hartnell');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (2, 'Second Doctor', 'Patrick Troughton');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (3, 'Third Doctor', 'Jon Pertwee');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (4, 'Fourth Doctor', 'Tom Baker');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (5, 'Fifth Doctor', 'Peter Davison');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (6, 'Sixth Doctor', 'Colin Baker');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (7, 'Seventh Doctor', 'Sylvester McCoy');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (8, 'Eighth Doctor', 'Paul McGann');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (9, 'War Doctor', 'John Hurt');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (10, 'Ninth Doctor', 'Chris Eccleston');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (11, 'Tenth Doctor', 'David Tennant');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (12, 'Eleventh Doctor', 'Matt Smith');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (13, 'Twelfth Doctor', 'Peter Capaldi');
+INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (14, 'Dr. Who', 'Peter Cushing');
 
 -- --------------------------------------------------------
 
@@ -161,7 +159,7 @@ INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES
 --
 
 CREATE TABLE `seasons` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
 );
 
@@ -169,47 +167,46 @@ CREATE TABLE `seasons` (
 -- Dumping data for table `seasons`
 --
 
-INSERT INTO `seasons` (`id`, `name`) VALUES
-(1, 'Season 1'),
-(2, 'Season 2'),
-(3, 'Season 3'),
-(4, 'Season 4'),
-(5, 'Season 5'),
-(6, 'Season 6'),
-(7, 'Season 7'),
-(8, 'Season 8'),
-(9, 'Season 9'),
-(10, 'Season 10'),
-(11, 'Season 11'),
-(12, 'Season 12'),
-(13, 'Season 13'),
-(14, 'Season 14'),
-(15, 'Season 15'),
-(16, 'Season 16'),
-(17, 'Season 17'),
-(18, 'Season 18'),
-(19, 'Season 19'),
-(20, 'Season 20'),
-(21, 'Season 21'),
-(22, 'Season 22'),
-(23, 'Season 23'),
-(24, 'Season 24'),
-(25, 'Season 25'),
-(26, 'Season 26'),
-(27, 'TV movie'),
-(28, 'Series 1'),
-(29, 'Series 2'),
-(30, 'Series 3'),
-(31, 'Series 4'),
-(32, 'Specials (2008–2010)'),
-(33, 'Series 5'),
-(34, 'Series 6'),
-(35, 'Series 7'),
-(36, 'Specials (2013)'),
-(37, 'Series 8'),
-(38, 'Series 9'),
-(39, 'Series 10'),
-(40, 'Films');
+INSERT INTO `seasons` (`id`, `name`) VALUES (1, 'Season 1');
+INSERT INTO `seasons` (`id`, `name`) VALUES (2, 'Season 2');
+INSERT INTO `seasons` (`id`, `name`) VALUES (3, 'Season 3');
+INSERT INTO `seasons` (`id`, `name`) VALUES (4, 'Season 4');
+INSERT INTO `seasons` (`id`, `name`) VALUES (5, 'Season 5');
+INSERT INTO `seasons` (`id`, `name`) VALUES (6, 'Season 6');
+INSERT INTO `seasons` (`id`, `name`) VALUES (7, 'Season 7');
+INSERT INTO `seasons` (`id`, `name`) VALUES (8, 'Season 8');
+INSERT INTO `seasons` (`id`, `name`) VALUES (9, 'Season 9');
+INSERT INTO `seasons` (`id`, `name`) VALUES (10, 'Season 10');
+INSERT INTO `seasons` (`id`, `name`) VALUES (11, 'Season 11');
+INSERT INTO `seasons` (`id`, `name`) VALUES (12, 'Season 12');
+INSERT INTO `seasons` (`id`, `name`) VALUES (13, 'Season 13');
+INSERT INTO `seasons` (`id`, `name`) VALUES (14, 'Season 14');
+INSERT INTO `seasons` (`id`, `name`) VALUES (15, 'Season 15');
+INSERT INTO `seasons` (`id`, `name`) VALUES (16, 'Season 16');
+INSERT INTO `seasons` (`id`, `name`) VALUES (17, 'Season 17');
+INSERT INTO `seasons` (`id`, `name`) VALUES (18, 'Season 18');
+INSERT INTO `seasons` (`id`, `name`) VALUES (19, 'Season 19');
+INSERT INTO `seasons` (`id`, `name`) VALUES (20, 'Season 20');
+INSERT INTO `seasons` (`id`, `name`) VALUES (21, 'Season 21');
+INSERT INTO `seasons` (`id`, `name`) VALUES (22, 'Season 22');
+INSERT INTO `seasons` (`id`, `name`) VALUES (23, 'Season 23');
+INSERT INTO `seasons` (`id`, `name`) VALUES (24, 'Season 24');
+INSERT INTO `seasons` (`id`, `name`) VALUES (25, 'Season 25');
+INSERT INTO `seasons` (`id`, `name`) VALUES (26, 'Season 26');
+INSERT INTO `seasons` (`id`, `name`) VALUES (27, 'TV movie');
+INSERT INTO `seasons` (`id`, `name`) VALUES (28, 'Series 1');
+INSERT INTO `seasons` (`id`, `name`) VALUES (29, 'Series 2');
+INSERT INTO `seasons` (`id`, `name`) VALUES (30, 'Series 3');
+INSERT INTO `seasons` (`id`, `name`) VALUES (31, 'Series 4');
+INSERT INTO `seasons` (`id`, `name`) VALUES (32, 'Specials (2008–2010)');
+INSERT INTO `seasons` (`id`, `name`) VALUES (33, 'Series 5');
+INSERT INTO `seasons` (`id`, `name`) VALUES (34, 'Series 6');
+INSERT INTO `seasons` (`id`, `name`) VALUES (35, 'Series 7');
+INSERT INTO `seasons` (`id`, `name`) VALUES (36, 'Specials (2013)');
+INSERT INTO `seasons` (`id`, `name`) VALUES (37, 'Series 8');
+INSERT INTO `seasons` (`id`, `name`) VALUES (38, 'Series 9');
+INSERT INTO `seasons` (`id`, `name`) VALUES (39, 'Series 10');
+INSERT INTO `seasons` (`id`, `name`) VALUES (40, 'Films');
 
 -- --------------------------------------------------------
 
@@ -218,7 +215,7 @@ INSERT INTO `seasons` (`id`, `name`) VALUES
 --
 
 CREATE TABLE `serials` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY NOT NULL,
   `season_id` int(11) NOT NULL,
   `story` text,
   `serial` int(11) DEFAULT NULL,
@@ -230,300 +227,299 @@ CREATE TABLE `serials` (
 -- Dumping data for table `serials`
 --
 
-INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES
-(1, 1, '1', 1, 'An Unearthly Child', 'A'),
-(2, 1, '2', 2, 'The Daleks', 'B'),
-(3, 1, '3', 3, 'The Edge of Destruction', 'C'),
-(4, 1, '4', 4, 'Marco Polo', 'D'),
-(5, 1, '5', 5, 'The Keys of Marinus', 'E'),
-(6, 1, '6', 6, 'The Aztecs', 'F'),
-(7, 1, '7', 7, 'The Sensorites', 'G'),
-(8, 1, '8', 8, 'The Reign of Terror', 'H'),
-(9, 2, '9', 1, 'Planet of Giants', 'J'),
-(10, 2, '10', 2, 'The Dalek Invasion of Earth', 'K'),
-(11, 2, '11', 3, 'The Rescue', 'L'),
-(12, 2, '12', 4, 'The Romans', 'M'),
-(13, 2, '13', 5, 'The Web Planet', 'N'),
-(14, 2, '14', 6, 'The Crusade', 'P'),
-(15, 2, '15', 7, 'The Space Museum', 'Q'),
-(16, 2, '16', 8, 'The Chase', 'R'),
-(17, 2, '17', 9, 'The Time Meddler', 'S'),
-(18, 3, '18', 1, 'Galaxy 4', 'T'),
-(19, 3, '19', 2, 'Mission to the Unknown', 'T/A'),
-(20, 3, '20', 3, 'The Myth Makers', 'U'),
-(21, 3, '21', 4, 'The Daleks\' Master Plan', 'V'),
-(22, 3, '22', 5, 'The Massacre of St. Bartholomew\'s Eve', 'W'),
-(23, 3, '23', 6, 'The Ark', 'X'),
-(24, 3, '24', 7, 'The Celestial Toymaker', 'Y'),
-(25, 3, '25', 8, 'The Gunfighters', 'Z'),
-(26, 3, '26', 9, 'The Savages', 'AA'),
-(27, 3, '27', 10, 'The War Machines', 'BB'),
-(28, 4, '28', 1, 'The Smugglers', 'CC'),
-(29, 4, '29', 2, 'The Tenth Planet', 'DD'),
-(30, 4, '30', 3, 'The Power of the Daleks', 'EE'),
-(31, 4, '31', 4, 'The Highlanders', 'FF'),
-(32, 4, '32', 5, 'The Underwater Menace', 'GG'),
-(33, 4, '33', 6, 'The Moonbase', 'HH'),
-(34, 4, '34', 7, 'The Macra Terror', 'JJ'),
-(35, 4, '35', 8, 'The Faceless Ones', 'KK'),
-(36, 4, '36', 9, 'The Evil of the Daleks', 'LL'),
-(37, 5, '37', 1, 'The Tomb of the Cybermen', 'MM'),
-(38, 5, '38', 2, 'The Abominable Snowmen', 'NN'),
-(39, 5, '39', 3, 'The Ice Warriors', 'OO'),
-(40, 5, '40', 4, 'The Enemy of the World', 'PP'),
-(41, 5, '41', 5, 'The Web of Fear', 'QQ'),
-(42, 5, '42', 6, 'Fury from the Deep', 'RR'),
-(43, 5, '43', 7, 'The Wheel in Space', 'SS'),
-(44, 6, '44', 1, 'The Dominators', 'TT'),
-(45, 6, '45', 2, 'The Mind Robber', 'UU'),
-(46, 6, '46', 3, 'The Invasion', 'VV'),
-(47, 6, '47', 4, 'The Krotons', 'WW'),
-(48, 6, '48', 5, 'The Seeds of Death', 'XX'),
-(49, 6, '49', 6, 'The Space Pirates', 'YY'),
-(50, 6, '50', 7, 'The War Games', 'ZZ'),
-(51, 7, '51', 1, 'Spearhead from Space', 'AAA'),
-(52, 7, '52', 2, 'Doctor Who and the Silurians', 'BBB'),
-(53, 7, '53', 3, 'The Ambassadors of Death', 'CCC'),
-(54, 7, '54', 4, 'Inferno', 'DDD'),
-(55, 8, '55', 1, 'Terror of the Autons', 'EEE'),
-(56, 8, '56', 2, 'The Mind of Evil', 'FFF'),
-(57, 8, '57', 3, 'The Claws of Axos', 'GGG'),
-(58, 8, '58', 4, 'Colony in Space', 'HHH'),
-(59, 8, '59', 5, 'The Daemons', 'JJJ'),
-(60, 9, '60', 1, 'Day of the Daleks', 'KKK'),
-(61, 9, '61', 2, 'The Curse of Peladon', 'MMM'),
-(62, 9, '62', 3, 'The Sea Devils', 'LLL'),
-(63, 9, '63', 4, 'The Mutants', 'NNN'),
-(64, 9, '64', 5, 'The Time Monster', 'OOO'),
-(65, 10, '65', 1, 'The Three Doctors', 'RRR'),
-(66, 10, '66', 2, 'Carnival of Monsters', 'PPP'),
-(67, 10, '67', 3, 'Frontier in Space', 'QQQ'),
-(68, 10, '68', 4, 'Planet of the Daleks', 'SSS'),
-(69, 10, '69', 5, 'The Green Death', 'TTT'),
-(70, 11, '70', 1, 'The Time Warrior', 'UUU'),
-(71, 11, '71', 2, 'Invasion of the Dinosaurs', 'WWW'),
-(72, 11, '72', 3, 'Death to the Daleks', 'XXX'),
-(73, 11, '73', 4, 'The Monster of Peladon', 'YYY'),
-(74, 11, '74', 5, 'Planet of the Spiders', 'ZZZ'),
-(75, 12, '75', 1, 'Robot', '4A'),
-(76, 12, '76', 2, 'The Ark in Space', '4C'),
-(77, 12, '77', 3, 'The Sontaran Experiment', '4B'),
-(78, 12, '78', 4, 'Genesis of the Daleks', '4E'),
-(79, 12, '79', 5, 'Revenge of the Cybermen', '4D'),
-(80, 13, '80', 1, 'Terror of the Zygons', '4F'),
-(81, 13, '81', 2, 'Planet of Evil', '4H'),
-(82, 13, '82', 3, 'Pyramids of Mars', '4G'),
-(83, 13, '83', 4, 'The Android Invation', '4J'),
-(84, 13, '84', 5, 'The Brain of Morbius', '4K'),
-(85, 13, '85', 6, 'The Seeds of Doom', '4L'),
-(86, 14, '86', 1, 'The Masque of Mandragora', '4M'),
-(87, 14, '87', 2, 'The Hand of Fear', '4N'),
-(88, 14, '88', 3, 'The Deadly Assassin', '4P'),
-(89, 14, '89', 4, 'The Face of Evil', '4Q'),
-(90, 14, '90', 5, 'The Robots of Death', '4R'),
-(91, 14, '91', 6, 'The Talons of Weng-Chiang', '4S'),
-(92, 15, '92', 1, 'Horror of Fang Rock', '4V'),
-(93, 15, '93', 2, 'The Invisible Enemy', '4T'),
-(94, 15, '94', 3, 'Image of the Fendahl', '4X'),
-(95, 15, '95', 4, 'The Sun Makers', '4W'),
-(96, 15, '96', 5, 'Underworld', '4Y'),
-(97, 15, '97', 6, 'The Invasion of Time', '4Z'),
-(98, 16, '98', 1, 'The Ribos Operation', '5A'),
-(99, 16, '99', 2, 'The Pirate Planet', '5B'),
-(100, 16, '100', 3, 'The Stones of Blood', '5C'),
-(101, 16, '101', 4, 'The Androids of Tara', '5D'),
-(102, 16, '102', 5, 'The Power of Kroll', '5E'),
-(103, 16, '103', 6, 'The Armageddon Factor', '5F'),
-(104, 17, '104', 1, 'Destiny of the Daleks', '5J'),
-(105, 17, '105', 2, 'City of Death', '5H'),
-(106, 17, '106', 3, 'The Creature from the Pit', '5G'),
-(107, 17, '107', 4, 'Nightmare of Eden', '5K'),
-(108, 17, '108', 5, 'The Horns of Nimon', '5L'),
-(109, 17, '', 6, 'Shada', '5M'),
-(110, 18, '109', 1, 'The Leisure Hive', '5N'),
-(111, 18, '110', 2, 'Meglos', '5Q'),
-(112, 18, '111', 3, 'Full Circle', '5R'),
-(113, 18, '112', 4, 'State of Decay', '5P'),
-(114, 18, '113', 5, 'Warriors\' Gate', '5S'),
-(115, 18, '114', 6, 'The Keeper of Traken', '5T'),
-(116, 18, '115', 7, 'Logopolis', '5V'),
-(117, 19, '116', 1, 'Castrovalva', '5Z'),
-(118, 19, '117', 2, 'Four to Doomsday', '5W'),
-(119, 19, '118', 3, 'Kinda', '5Y'),
-(120, 19, '119', 4, 'The Visitation', '5X'),
-(121, 19, '120', 5, 'Black Orchid', '6A'),
-(122, 19, '121', 6, 'Earthshock', '6B'),
-(123, 19, '122', 7, 'Time-Flight', '6C'),
-(124, 20, '123', 1, 'Arc of Infinity', '6E'),
-(125, 20, '124', 2, 'Snakedance', '6D'),
-(126, 20, '125', 3, 'Mawdryn Undead', '6F'),
-(127, 20, '126', 4, 'Terminus', '6G'),
-(128, 20, '127', 5, 'Enlightenment', '6H'),
-(129, 20, '128', 6, 'The King\'s Demons', '6J'),
-(130, 20, '129', 0, 'The Five Doctors', '6K'),
-(131, 21, '130', 1, 'Warriors of the Deep', '6L'),
-(132, 21, '131', 2, 'The Awakening', '6M'),
-(133, 21, '132', 3, 'Frontios', '6N'),
-(134, 21, '133', 4, 'Resurrection of the Daleks', '6P'),
-(135, 21, '134', 5, 'Planet of Fire', '6Q'),
-(136, 21, '135', 6, 'The Caves of Androzani', '6R'),
-(137, 21, '136', 7, 'The Twin Dilemma', '6S'),
-(138, 22, '137', 1, 'Attack of the Cybermen', '6T'),
-(139, 22, '138', 2, 'Vengeance on Varos', '6V'),
-(140, 22, '139', 3, 'The Mark of the Rani', '6X'),
-(141, 22, '140', 4, 'The Two Doctors', '6W'),
-(142, 22, '141', 5, 'Timelash', '6Y'),
-(143, 22, '142', 6, 'Revelation of the Daleks', '6Z'),
-(144, 23, '143a', 1, 'The Mysterious Planet', '7A'),
-(145, 23, '143b', 2, 'Mindwarp', '7B'),
-(146, 23, '143c', 3, 'Terror of the Vervoids', '7C'),
-(147, 23, '143d', 4, 'The Ultimate Foe', '7C'),
-(148, 24, '144', 1, 'Time and the Rani', '7D'),
-(149, 24, '145', 2, 'Paradise Towers', '7E'),
-(150, 24, '146', 3, 'Delta and the Bannermen', '7F'),
-(151, 24, '147', 4, 'Dragonfire', '7G'),
-(152, 25, '148', 1, 'Remembrance of the Daleks', '7H'),
-(153, 25, '149', 2, 'The Happiness Patrol', '7L'),
-(154, 25, '150', 3, 'Silver Nemesis', '7K'),
-(155, 25, '151', 4, 'The Greatest Show in the Galaxy', '7J'),
-(156, 26, '152', 1, 'Battlefield', '7N'),
-(157, 26, '153', 2, 'Ghost Light', '7Q'),
-(158, 26, '154', 3, 'The Curse of Fenric', '7M'),
-(159, 26, '155', 4, 'Survival', '7P'),
-(160, 27, '156', 0, 'Doctor Who', 'TVM'),
-(161, 28, '157', 1, 'Rose', '1.1'),
-(162, 28, '158', 2, 'The End of the World', '1.2'),
-(163, 28, '159', 3, 'The Unquiet Dead', '1.3'),
-(164, 28, '160 (I)', 4, 'Aliens of London', '1.4'),
-(165, 28, '160 (II)', 5, 'World War Three', '1.5'),
-(166, 28, '161', 6, 'Dalek', '1.6'),
-(167, 28, '162', 7, 'The Long Game', '1.7'),
-(168, 28, '163', 8, 'Father\'s Day', '1.8'),
-(169, 28, '164 (I)', 9, 'The Empty Child', '1.9'),
-(170, 28, '164 (II)', 10, 'The Doctor Dances', '1.10'),
-(171, 28, '165', 11, 'Boom Town', '1.11'),
-(172, 28, '166 (I)', 12, 'Bad Wolf', '1.12'),
-(173, 28, '166 (II)', 13, 'The Parting of the Ways', '1.13'),
-(174, 29, '167', 0, 'The Christmas Invasion', '2X'),
-(175, 29, '168', 1, 'New Earth', '2.1'),
-(176, 29, '169', 2, 'Tooth and Claw', '2.2'),
-(177, 29, '170', 3, 'School Reunion', '2.3'),
-(178, 29, '171', 4, 'The Girl in the Fireplace', '2.4'),
-(179, 29, '172a', 5, 'Rise of the Cybermen', '2.5'),
-(180, 29, '172b', 6, 'The Age of Steel', '2.6'),
-(181, 29, '173', 7, 'The Idiot\'s Lantern', '2.7'),
-(182, 29, '174a', 8, 'The Impossible Planet', '2.8'),
-(183, 29, '174b', 9, 'The Satan Pit', '2.9'),
-(184, 29, '175', 10, 'Love & Monsters', '2.10'),
-(185, 29, '176', 11, 'Fear Her', '2.11'),
-(186, 29, '177a', 12, 'Army of Ghosts', '2.12'),
-(187, 29, '177b', 13, 'Doomsday', '2.13'),
-(188, 30, '178', 0, 'The Runaway Bride', '3X'),
-(189, 30, '179', 1, 'Smith and Jones', '3.1'),
-(190, 30, '180', 2, 'The Shakespeare Code', '3.2'),
-(191, 30, '181', 3, 'Gridlock', '3.3'),
-(192, 30, '182a', 4, 'Daleks in Manhattan', '3.4'),
-(193, 30, '182b', 5, 'Evolution of the Daleks', '3.5'),
-(194, 30, '183', 6, 'The Lazarus Experiment', '3.6'),
-(195, 30, '184', 7, '42', '3.7'),
-(196, 30, '185a', 8, 'Human Nature', '3.8'),
-(197, 30, '185b', 9, 'The Family of Blood', '3.9'),
-(198, 30, '186', 10, 'Blink', '3.10'),
-(199, 30, '187a', 11, 'Utopia', '3.11'),
-(200, 30, '187b', 12, 'The Sound of Drums', '3.12'),
-(201, 30, '187c', 13, 'Last of the Time Lords', '3.13'),
-(202, 31, '188', 0, 'Voyage of the Damned', '4X'),
-(203, 31, '189', 1, 'Partners in Crime', '4.1'),
-(204, 31, '190', 2, 'The Fires of Pompeii', '4.3'),
-(205, 31, '191', 3, 'Planet of the Ood', '4.2'),
-(206, 31, '192a', 4, 'The Sontaran Stratagem', '4.4'),
-(207, 31, '192b', 5, 'The Poison Sky', '4.5'),
-(208, 31, '193', 6, 'The Doctor\'s Daughter', '4.6'),
-(209, 31, '194', 7, 'The Unicorn and the Wasp', '4.7'),
-(210, 31, '195a', 8, 'Silence in the Library', '4.9'),
-(211, 31, '195b', 9, 'Forest of the Dead', '4.10'),
-(212, 31, '196', 10, 'Midnight', '4.8'),
-(213, 31, '197', 11, 'Turn Left', '4.11'),
-(214, 31, '198a', 12, 'The Stolen Earth', '4.12'),
-(215, 31, '198b', 13, 'Journey\'s End', '4.13'),
-(216, 32, '199', 1, 'The Next Doctor', '4.14'),
-(217, 32, '200', 2, 'Planet of the Dead', '4.15'),
-(218, 32, '201', 3, 'The Waters of Mars', '4.16'),
-(219, 32, '202', 4, 'The End of Time part 1', '4.17'),
-(220, 32, '202', 5, 'The End of Time part 2', '4.18'),
-(221, 33, '203', 1, 'The Eleventh Hour', '1.1'),
-(222, 33, '204', 2, 'The Beast Below', '1.2'),
-(223, 33, '205', 3, 'Victory of the Daleks', '1.3'),
-(224, 33, '206a', 4, 'The Time of Angels', '1.4'),
-(225, 33, '206b', 5, 'Flesh and Stone', '1.5'),
-(226, 33, '207', 6, 'The Vampires of Venice', '1.6'),
-(227, 33, '208', 7, 'Amy\'s Choice', '1.7'),
-(228, 33, '209a', 8, 'The Hungry Earth', '1.8'),
-(229, 33, '209b', 9, 'Cold Blood', '1.9'),
-(230, 33, '210', 10, 'Vincent and the Doctor', '1.10'),
-(231, 33, '211', 11, 'The Lodger', '1.11'),
-(232, 33, '212a', 12, 'The Pandoria Opens', '1.12'),
-(233, 33, '212b', 13, 'The Big Bang', '1.13'),
-(234, 34, '213', 0, 'A Christmas Carol', '2.X'),
-(235, 34, '214a', 1, 'The Impossible Astronaut', '2.1'),
-(236, 34, '214b', 2, 'Day of the Moon', '2.2'),
-(237, 34, '215', 3, 'The Curse of the Black Spot', '2.9'),
-(238, 34, '216', 4, 'The Doctor\'s Wife', '2.3'),
-(239, 34, '217a', 5, 'The Rebel Flesh', '2.5'),
-(240, 34, '217b', 6, 'The Almost People', '2.6'),
-(241, 34, '218', 7, 'A Good Man Goes to War', '2.7'),
-(242, 34, '219', 8, 'Let\'s Kill Hitler', '2.8'),
-(243, 34, '220', 9, 'Night Terrors', '2.4'),
-(244, 34, '221', 10, 'The Girl Who Waited', '2.10'),
-(245, 34, '222', 11, 'The God Complex', '2.11'),
-(246, 34, '223', 12, 'Closing Time', '2.12'),
-(247, 34, '224', 13, 'The Wedding of River Song', '2.13'),
-(248, 35, '225', 0, 'The Doctor, the Widow and the Wardrobe', ''),
-(249, 35, '226', 1, 'Asylum of the Daleks', ''),
-(250, 35, '227', 2, 'Dinosaurs on a Spaceship', ''),
-(251, 35, '228', 3, 'A Town Called Mercy', ''),
-(252, 35, '229', 4, 'The Power of Three', ''),
-(253, 35, '230', 5, 'The Angels Take Manhattan', ''),
-(254, 35, '231', 0, 'The Snowmen', ''),
-(255, 35, '232', 6, 'The Bells of Saint John', ''),
-(256, 35, '233', 7, 'The Rings of Akhaten', ''),
-(257, 35, '234', 8, 'Cold War', ''),
-(258, 35, '235', 9, 'Hide', ''),
-(259, 35, '236', 10, 'Journey to the Centre of the TARDIS', ''),
-(260, 35, '237', 11, 'The Crimson Horror', ''),
-(261, 35, '238', 12, 'Nightmare in Silver', ''),
-(262, 35, '239', 13, 'The Name of the Doctor', ''),
-(263, 36, '240', 1, 'The Day of the Doctor', ''),
-(264, 36, '241', 2, 'The Time of the Doctor', ''),
-(265, 37, '242', 1, 'Deep Breath', ''),
-(266, 37, '243', 2, 'Into the Dalek', ''),
-(267, 37, '244', 3, 'Robot of Sherwood', ''),
-(268, 37, '245', 4, 'Listen', ''),
-(269, 37, '246', 5, 'Time Heist', ''),
-(270, 37, '247', 6, 'The Caretaker', ''),
-(271, 37, '248', 7, 'Kill the Moon', ''),
-(272, 37, '249', 8, 'Mummy on the Orient Express', ''),
-(273, 37, '250', 9, 'Flatline', ''),
-(274, 37, '251', 10, 'In the Forest of the Night', ''),
-(275, 37, '252a', 11, 'Dark Water', ''),
-(276, 37, '252b', 12, 'Death in Heaven', ''),
-(277, 38, '253', 0, 'Last Christmas', ''),
-(278, 38, '254a', 1, 'The Magician\'s Apprentice', ''),
-(279, 38, '254b', 2, 'The Witch\'s Familiar', ''),
-(280, 38, '255a', 3, 'Under the Lake', ''),
-(281, 38, '255b', 4, 'Before the Flood', ''),
-(282, 38, '256', 5, 'The Girl Who Died', ''),
-(283, 38, '257', 6, 'The Woman Who Lived', ''),
-(284, 38, '258a', 7, 'The Zygon Invasion', ''),
-(285, 38, '258b', 8, 'The Zygon Inversion', ''),
-(286, 38, '259', 9, 'Sleep No More', ''),
-(287, 38, '260', 10, 'Face the Raven', ''),
-(288, 38, '261', 11, 'Heaven Sent', ''),
-(289, 38, '262', 12, 'Hell Bent', ''),
-(290, 38, '263', 0, 'The Husbands of River Song', ''),
-(291, 39, '264', 0, 'The Return of Doctor Mysterio', ''),
-(292, 40, '', 0, 'Dr. Who and the Daleks', ''),
-(293, 40, '', 0, 'Daleks -- Invasion Earth: 2150 A.D.', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (1, 1, '1', 1, 'An Unearthly Child', 'A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (2, 1, '2', 2, 'The Daleks', 'B');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (3, 1, '3', 3, 'The Edge of Destruction', 'C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (4, 1, '4', 4, 'Marco Polo', 'D');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (5, 1, '5', 5, 'The Keys of Marinus', 'E');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (6, 1, '6', 6, 'The Aztecs', 'F');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (7, 1, '7', 7, 'The Sensorites', 'G');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (8, 1, '8', 8, 'The Reign of Terror', 'H');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (9, 2, '9', 1, 'Planet of Giants', 'J');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (10, 2, '10', 2, 'The Dalek Invasion of Earth', 'K');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (11, 2, '11', 3, 'The Rescue', 'L');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (12, 2, '12', 4, 'The Romans', 'M');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (13, 2, '13', 5, 'The Web Planet', 'N');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (14, 2, '14', 6, 'The Crusade', 'P');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (15, 2, '15', 7, 'The Space Museum', 'Q');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (16, 2, '16', 8, 'The Chase', 'R');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (17, 2, '17', 9, 'The Time Meddler', 'S');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (18, 3, '18', 1, 'Galaxy 4', 'T');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (19, 3, '19', 2, 'Mission to the Unknown', 'T/A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (20, 3, '20', 3, 'The Myth Makers', 'U');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (21, 3, '21', 4, 'The Daleks'' Master Plan', 'V');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (22, 3, '22', 5, 'The Massacre of St. Bartholomew''s Eve', 'W');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (23, 3, '23', 6, 'The Ark', 'X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (24, 3, '24', 7, 'The Celestial Toymaker', 'Y');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (25, 3, '25', 8, 'The Gunfighters', 'Z');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (26, 3, '26', 9, 'The Savages', 'AA');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (27, 3, '27', 10, 'The War Machines', 'BB');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (28, 4, '28', 1, 'The Smugglers', 'CC');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (29, 4, '29', 2, 'The Tenth Planet', 'DD');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (30, 4, '30', 3, 'The Power of the Daleks', 'EE');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (31, 4, '31', 4, 'The Highlanders', 'FF');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (32, 4, '32', 5, 'The Underwater Menace', 'GG');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (33, 4, '33', 6, 'The Moonbase', 'HH');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (34, 4, '34', 7, 'The Macra Terror', 'JJ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (35, 4, '35', 8, 'The Faceless Ones', 'KK');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (36, 4, '36', 9, 'The Evil of the Daleks', 'LL');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (37, 5, '37', 1, 'The Tomb of the Cybermen', 'MM');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (38, 5, '38', 2, 'The Abominable Snowmen', 'NN');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (39, 5, '39', 3, 'The Ice Warriors', 'OO');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (40, 5, '40', 4, 'The Enemy of the World', 'PP');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (41, 5, '41', 5, 'The Web of Fear', 'QQ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (42, 5, '42', 6, 'Fury from the Deep', 'RR');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (43, 5, '43', 7, 'The Wheel in Space', 'SS');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (44, 6, '44', 1, 'The Dominators', 'TT');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (45, 6, '45', 2, 'The Mind Robber', 'UU');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (46, 6, '46', 3, 'The Invasion', 'VV');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (47, 6, '47', 4, 'The Krotons', 'WW');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (48, 6, '48', 5, 'The Seeds of Death', 'XX');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (49, 6, '49', 6, 'The Space Pirates', 'YY');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (50, 6, '50', 7, 'The War Games', 'ZZ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (51, 7, '51', 1, 'Spearhead from Space', 'AAA');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (52, 7, '52', 2, 'Doctor Who and the Silurians', 'BBB');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (53, 7, '53', 3, 'The Ambassadors of Death', 'CCC');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (54, 7, '54', 4, 'Inferno', 'DDD');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (55, 8, '55', 1, 'Terror of the Autons', 'EEE');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (56, 8, '56', 2, 'The Mind of Evil', 'FFF');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (57, 8, '57', 3, 'The Claws of Axos', 'GGG');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (58, 8, '58', 4, 'Colony in Space', 'HHH');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (59, 8, '59', 5, 'The Daemons', 'JJJ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (60, 9, '60', 1, 'Day of the Daleks', 'KKK');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (61, 9, '61', 2, 'The Curse of Peladon', 'MMM');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (62, 9, '62', 3, 'The Sea Devils', 'LLL');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (63, 9, '63', 4, 'The Mutants', 'NNN');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (64, 9, '64', 5, 'The Time Monster', 'OOO');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (65, 10, '65', 1, 'The Three Doctors', 'RRR');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (66, 10, '66', 2, 'Carnival of Monsters', 'PPP');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (67, 10, '67', 3, 'Frontier in Space', 'QQQ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (68, 10, '68', 4, 'Planet of the Daleks', 'SSS');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (69, 10, '69', 5, 'The Green Death', 'TTT');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (70, 11, '70', 1, 'The Time Warrior', 'UUU');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (71, 11, '71', 2, 'Invasion of the Dinosaurs', 'WWW');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (72, 11, '72', 3, 'Death to the Daleks', 'XXX');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (73, 11, '73', 4, 'The Monster of Peladon', 'YYY');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (74, 11, '74', 5, 'Planet of the Spiders', 'ZZZ');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (75, 12, '75', 1, 'Robot', '4A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (76, 12, '76', 2, 'The Ark in Space', '4C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (77, 12, '77', 3, 'The Sontaran Experiment', '4B');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (78, 12, '78', 4, 'Genesis of the Daleks', '4E');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (79, 12, '79', 5, 'Revenge of the Cybermen', '4D');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (80, 13, '80', 1, 'Terror of the Zygons', '4F');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (81, 13, '81', 2, 'Planet of Evil', '4H');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (82, 13, '82', 3, 'Pyramids of Mars', '4G');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (83, 13, '83', 4, 'The Android Invation', '4J');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (84, 13, '84', 5, 'The Brain of Morbius', '4K');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (85, 13, '85', 6, 'The Seeds of Doom', '4L');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (86, 14, '86', 1, 'The Masque of Mandragora', '4M');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (87, 14, '87', 2, 'The Hand of Fear', '4N');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (88, 14, '88', 3, 'The Deadly Assassin', '4P');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (89, 14, '89', 4, 'The Face of Evil', '4Q');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (90, 14, '90', 5, 'The Robots of Death', '4R');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (91, 14, '91', 6, 'The Talons of Weng-Chiang', '4S');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (92, 15, '92', 1, 'Horror of Fang Rock', '4V');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (93, 15, '93', 2, 'The Invisible Enemy', '4T');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (94, 15, '94', 3, 'Image of the Fendahl', '4X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (95, 15, '95', 4, 'The Sun Makers', '4W');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (96, 15, '96', 5, 'Underworld', '4Y');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (97, 15, '97', 6, 'The Invasion of Time', '4Z');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (98, 16, '98', 1, 'The Ribos Operation', '5A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (99, 16, '99', 2, 'The Pirate Planet', '5B');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (100, 16, '100', 3, 'The Stones of Blood', '5C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (101, 16, '101', 4, 'The Androids of Tara', '5D');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (102, 16, '102', 5, 'The Power of Kroll', '5E');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (103, 16, '103', 6, 'The Armageddon Factor', '5F');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (104, 17, '104', 1, 'Destiny of the Daleks', '5J');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (105, 17, '105', 2, 'City of Death', '5H');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (106, 17, '106', 3, 'The Creature from the Pit', '5G');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (107, 17, '107', 4, 'Nightmare of Eden', '5K');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (108, 17, '108', 5, 'The Horns of Nimon', '5L');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (109, 17, '', 6, 'Shada', '5M');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (110, 18, '109', 1, 'The Leisure Hive', '5N');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (111, 18, '110', 2, 'Meglos', '5Q');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (112, 18, '111', 3, 'Full Circle', '5R');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (113, 18, '112', 4, 'State of Decay', '5P');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (114, 18, '113', 5, 'Warriors'' Gate', '5S');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (115, 18, '114', 6, 'The Keeper of Traken', '5T');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (116, 18, '115', 7, 'Logopolis', '5V');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (117, 19, '116', 1, 'Castrovalva', '5Z');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (118, 19, '117', 2, 'Four to Doomsday', '5W');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (119, 19, '118', 3, 'Kinda', '5Y');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (120, 19, '119', 4, 'The Visitation', '5X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (121, 19, '120', 5, 'Black Orchid', '6A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (122, 19, '121', 6, 'Earthshock', '6B');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (123, 19, '122', 7, 'Time-Flight', '6C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (124, 20, '123', 1, 'Arc of Infinity', '6E');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (125, 20, '124', 2, 'Snakedance', '6D');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (126, 20, '125', 3, 'Mawdryn Undead', '6F');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (127, 20, '126', 4, 'Terminus', '6G');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (128, 20, '127', 5, 'Enlightenment', '6H');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (129, 20, '128', 6, 'The King''s Demons', '6J');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (130, 20, '129', 0, 'The Five Doctors', '6K');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (131, 21, '130', 1, 'Warriors of the Deep', '6L');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (132, 21, '131', 2, 'The Awakening', '6M');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (133, 21, '132', 3, 'Frontios', '6N');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (134, 21, '133', 4, 'Resurrection of the Daleks', '6P');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (135, 21, '134', 5, 'Planet of Fire', '6Q');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (136, 21, '135', 6, 'The Caves of Androzani', '6R');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (137, 21, '136', 7, 'The Twin Dilemma', '6S');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (138, 22, '137', 1, 'Attack of the Cybermen', '6T');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (139, 22, '138', 2, 'Vengeance on Varos', '6V');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (140, 22, '139', 3, 'The Mark of the Rani', '6X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (141, 22, '140', 4, 'The Two Doctors', '6W');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (142, 22, '141', 5, 'Timelash', '6Y');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (143, 22, '142', 6, 'Revelation of the Daleks', '6Z');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (144, 23, '143a', 1, 'The Mysterious Planet', '7A');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (145, 23, '143b', 2, 'Mindwarp', '7B');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (146, 23, '143c', 3, 'Terror of the Vervoids', '7C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (147, 23, '143d', 4, 'The Ultimate Foe', '7C');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (148, 24, '144', 1, 'Time and the Rani', '7D');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (149, 24, '145', 2, 'Paradise Towers', '7E');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (150, 24, '146', 3, 'Delta and the Bannermen', '7F');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (151, 24, '147', 4, 'Dragonfire', '7G');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (152, 25, '148', 1, 'Remembrance of the Daleks', '7H');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (153, 25, '149', 2, 'The Happiness Patrol', '7L');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (154, 25, '150', 3, 'Silver Nemesis', '7K');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (155, 25, '151', 4, 'The Greatest Show in the Galaxy', '7J');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (156, 26, '152', 1, 'Battlefield', '7N');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (157, 26, '153', 2, 'Ghost Light', '7Q');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (158, 26, '154', 3, 'The Curse of Fenric', '7M');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (159, 26, '155', 4, 'Survival', '7P');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (160, 27, '156', 0, 'Doctor Who', 'TVM');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (161, 28, '157', 1, 'Rose', '1.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (162, 28, '158', 2, 'The End of the World', '1.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (163, 28, '159', 3, 'The Unquiet Dead', '1.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (164, 28, '160 (I)', 4, 'Aliens of London', '1.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (165, 28, '160 (II)', 5, 'World War Three', '1.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (166, 28, '161', 6, 'Dalek', '1.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (167, 28, '162', 7, 'The Long Game', '1.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (168, 28, '163', 8, 'Father''s Day', '1.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (169, 28, '164 (I)', 9, 'The Empty Child', '1.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (170, 28, '164 (II)', 10, 'The Doctor Dances', '1.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (171, 28, '165', 11, 'Boom Town', '1.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (172, 28, '166 (I)', 12, 'Bad Wolf', '1.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (173, 28, '166 (II)', 13, 'The Parting of the Ways', '1.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (174, 29, '167', 0, 'The Christmas Invasion', '2X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (175, 29, '168', 1, 'New Earth', '2.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (176, 29, '169', 2, 'Tooth and Claw', '2.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (177, 29, '170', 3, 'School Reunion', '2.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (178, 29, '171', 4, 'The Girl in the Fireplace', '2.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (179, 29, '172a', 5, 'Rise of the Cybermen', '2.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (180, 29, '172b', 6, 'The Age of Steel', '2.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (181, 29, '173', 7, 'The Idiot''s Lantern', '2.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (182, 29, '174a', 8, 'The Impossible Planet', '2.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (183, 29, '174b', 9, 'The Satan Pit', '2.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (184, 29, '175', 10, 'Love & Monsters', '2.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (185, 29, '176', 11, 'Fear Her', '2.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (186, 29, '177a', 12, 'Army of Ghosts', '2.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (187, 29, '177b', 13, 'Doomsday', '2.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (188, 30, '178', 0, 'The Runaway Bride', '3X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (189, 30, '179', 1, 'Smith and Jones', '3.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (190, 30, '180', 2, 'The Shakespeare Code', '3.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (191, 30, '181', 3, 'Gridlock', '3.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (192, 30, '182a', 4, 'Daleks in Manhattan', '3.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (193, 30, '182b', 5, 'Evolution of the Daleks', '3.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (194, 30, '183', 6, 'The Lazarus Experiment', '3.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (195, 30, '184', 7, '42', '3.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (196, 30, '185a', 8, 'Human Nature', '3.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (197, 30, '185b', 9, 'The Family of Blood', '3.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (198, 30, '186', 10, 'Blink', '3.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (199, 30, '187a', 11, 'Utopia', '3.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (200, 30, '187b', 12, 'The Sound of Drums', '3.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (201, 30, '187c', 13, 'Last of the Time Lords', '3.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (202, 31, '188', 0, 'Voyage of the Damned', '4X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (203, 31, '189', 1, 'Partners in Crime', '4.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (204, 31, '190', 2, 'The Fires of Pompeii', '4.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (205, 31, '191', 3, 'Planet of the Ood', '4.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (206, 31, '192a', 4, 'The Sontaran Stratagem', '4.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (207, 31, '192b', 5, 'The Poison Sky', '4.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (208, 31, '193', 6, 'The Doctor''s Daughter', '4.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (209, 31, '194', 7, 'The Unicorn and the Wasp', '4.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (210, 31, '195a', 8, 'Silence in the Library', '4.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (211, 31, '195b', 9, 'Forest of the Dead', '4.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (212, 31, '196', 10, 'Midnight', '4.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (213, 31, '197', 11, 'Turn Left', '4.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (214, 31, '198a', 12, 'The Stolen Earth', '4.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (215, 31, '198b', 13, 'Journey''s End', '4.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (216, 32, '199', 1, 'The Next Doctor', '4.14');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (217, 32, '200', 2, 'Planet of the Dead', '4.15');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (218, 32, '201', 3, 'The Waters of Mars', '4.16');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (219, 32, '202', 4, 'The End of Time part 1', '4.17');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (220, 32, '202', 5, 'The End of Time part 2', '4.18');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (221, 33, '203', 1, 'The Eleventh Hour', '1.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (222, 33, '204', 2, 'The Beast Below', '1.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (223, 33, '205', 3, 'Victory of the Daleks', '1.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (224, 33, '206a', 4, 'The Time of Angels', '1.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (225, 33, '206b', 5, 'Flesh and Stone', '1.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (226, 33, '207', 6, 'The Vampires of Venice', '1.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (227, 33, '208', 7, 'Amy''s Choice', '1.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (228, 33, '209a', 8, 'The Hungry Earth', '1.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (229, 33, '209b', 9, 'Cold Blood', '1.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (230, 33, '210', 10, 'Vincent and the Doctor', '1.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (231, 33, '211', 11, 'The Lodger', '1.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (232, 33, '212a', 12, 'The Pandoria Opens', '1.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (233, 33, '212b', 13, 'The Big Bang', '1.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (234, 34, '213', 0, 'A Christmas Carol', '2.X');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (235, 34, '214a', 1, 'The Impossible Astronaut', '2.1');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (236, 34, '214b', 2, 'Day of the Moon', '2.2');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (237, 34, '215', 3, 'The Curse of the Black Spot', '2.9');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (238, 34, '216', 4, 'The Doctor''s Wife', '2.3');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (239, 34, '217a', 5, 'The Rebel Flesh', '2.5');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (240, 34, '217b', 6, 'The Almost People', '2.6');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (241, 34, '218', 7, 'A Good Man Goes to War', '2.7');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (242, 34, '219', 8, 'Let''s Kill Hitler', '2.8');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (243, 34, '220', 9, 'Night Terrors', '2.4');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (244, 34, '221', 10, 'The Girl Who Waited', '2.10');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (245, 34, '222', 11, 'The God Complex', '2.11');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (246, 34, '223', 12, 'Closing Time', '2.12');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (247, 34, '224', 13, 'The Wedding of River Song', '2.13');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (248, 35, '225', 0, 'The Doctor, the Widow and the Wardrobe', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (249, 35, '226', 1, 'Asylum of the Daleks', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (250, 35, '227', 2, 'Dinosaurs on a Spaceship', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (251, 35, '228', 3, 'A Town Called Mercy', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (252, 35, '229', 4, 'The Power of Three', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (253, 35, '230', 5, 'The Angels Take Manhattan', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (254, 35, '231', 0, 'The Snowmen', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (255, 35, '232', 6, 'The Bells of Saint John', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (256, 35, '233', 7, 'The Rings of Akhaten', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (257, 35, '234', 8, 'Cold War', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (258, 35, '235', 9, 'Hide', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (259, 35, '236', 10, 'Journey to the Centre of the TARDIS', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (260, 35, '237', 11, 'The Crimson Horror', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (261, 35, '238', 12, 'Nightmare in Silver', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (262, 35, '239', 13, 'The Name of the Doctor', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (263, 36, '240', 1, 'The Day of the Doctor', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (264, 36, '241', 2, 'The Time of the Doctor', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (265, 37, '242', 1, 'Deep Breath', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (266, 37, '243', 2, 'Into the Dalek', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (267, 37, '244', 3, 'Robot of Sherwood', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (268, 37, '245', 4, 'Listen', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (269, 37, '246', 5, 'Time Heist', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (270, 37, '247', 6, 'The Caretaker', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (271, 37, '248', 7, 'Kill the Moon', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (272, 37, '249', 8, 'Mummy on the Orient Express', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (273, 37, '250', 9, 'Flatline', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (274, 37, '251', 10, 'In the Forest of the Night', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (275, 37, '252a', 11, 'Dark Water', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (276, 37, '252b', 12, 'Death in Heaven', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (277, 38, '253', 0, 'Last Christmas', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (278, 38, '254a', 1, 'The Magician''s Apprentice', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (279, 38, '254b', 2, 'The Witch''s Familiar', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (280, 38, '255a', 3, 'Under the Lake', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (281, 38, '255b', 4, 'Before the Flood', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (282, 38, '256', 5, 'The Girl Who Died', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (283, 38, '257', 6, 'The Woman Who Lived', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (284, 38, '258a', 7, 'The Zygon Invasion', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (285, 38, '258b', 8, 'The Zygon Inversion', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (286, 38, '259', 9, 'Sleep No More', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (287, 38, '260', 10, 'Face the Raven', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (288, 38, '261', 11, 'Heaven Sent', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (289, 38, '262', 12, 'Hell Bent', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (290, 38, '263', 0, 'The Husbands of River Song', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (291, 39, '264', 0, 'The Return of Doctor Mysterio', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (292, 40, '', 0, 'Dr. Who and the Daleks', '');
+INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `production_code`) VALUES (293, 40, '', 0, 'Daleks -- Invasion Earth: 2150 A.D.', '');
 
 -- --------------------------------------------------------
 
@@ -533,317 +529,317 @@ INSERT INTO `serials` (`id`, `season_id`, `story`, `serial`, `title`, `productio
 
 CREATE TABLE `serials_directors` (
   `serial_id` int(11) NOT NULL,
-  `director_id` int(11) NOT NULL
+  `director_id` int(11) NOT NULL,
+  PRIMARY KEY (`serial_id`, `director_id`)
 );
 
 --
 -- Dumping data for table `serials_directors`
 --
 
-INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES
-(1, 103),
-(2, 89),
-(2, 16),
-(3, 89),
-(3, 32),
-(4, 103),
-(4, 48),
-(5, 50),
-(6, 48),
-(7, 64),
-(7, 32),
-(8, 39),
-(8, 50),
-(9, 64),
-(9, 26),
-(10, 89),
-(11, 16),
-(12, 16),
-(13, 89),
-(14, 26),
-(15, 64),
-(16, 89),
-(16, 26),
-(17, 26),
-(18, 24),
-(18, 64),
-(19, 24),
-(20, 71),
-(21, 26),
-(22, 77),
-(23, 69),
-(24, 11),
-(25, 87),
-(26, 16),
-(27, 66),
-(28, 52),
-(29, 24),
-(30, 16),
-(31, 41),
-(32, 52),
-(33, 73),
-(34, 49),
-(35, 36),
-(36, 24),
-(37, 73),
-(38, 35),
-(39, 24),
-(40, 9),
-(41, 26),
-(42, 41),
-(43, 102),
-(44, 73),
-(45, 23),
-(46, 26),
-(47, 23),
-(48, 66),
-(49, 67),
-(50, 23),
-(51, 24),
-(52, 99),
-(53, 66),
-(54, 26),
-(54, 9),
-(55, 9),
-(56, 99),
-(57, 66),
-(58, 65),
-(59, 16),
-(60, 78),
-(61, 58),
-(62, 65),
-(63, 16),
-(64, 78),
-(65, 58),
-(66, 9),
-(67, 78),
-(68, 23),
-(69, 65),
-(70, 2),
-(71, 77),
-(72, 65),
-(73, 58),
-(74, 9),
-(75, 16),
-(76, 91),
-(77, 91),
-(78, 23),
-(79, 65),
-(80, 26),
-(81, 23),
-(82, 77),
-(83, 9),
-(84, 16),
-(85, 26),
-(86, 91),
-(87, 58),
-(88, 23),
-(89, 82),
-(90, 65),
-(91, 23),
-(92, 77),
-(93, 25),
-(94, 34),
-(95, 82),
-(96, 76),
-(97, 35),
-(98, 34),
-(99, 82),
-(100, 22),
-(101, 68),
-(102, 76),
-(103, 68),
-(104, 56),
-(105, 68),
-(106, 16),
-(107, 2),
-(108, 57),
-(109, 82),
-(110, 59),
-(111, 98),
-(112, 83),
-(113, 85),
-(114, 79),
-(114, 38),
-(115, 47),
-(116, 83),
-(117, 31),
-(118, 47),
-(119, 83),
-(120, 85),
-(121, 92),
-(122, 83),
-(123, 92),
-(124, 92),
-(125, 31),
-(126, 85),
-(127, 61),
-(128, 31),
-(129, 101),
-(130, 85),
-(131, 82),
-(132, 72),
-(133, 92),
-(134, 63),
-(135, 31),
-(136, 38),
-(137, 85),
-(138, 63),
-(139, 92),
-(140, 93),
-(141, 85),
-(142, 82),
-(143, 38),
-(144, 74),
-(145, 92),
-(146, 15),
-(147, 15),
-(148, 6),
-(149, 74),
-(150, 15),
-(151, 15),
-(152, 6),
-(153, 15),
-(154, 15),
-(155, 3),
-(156, 70),
-(157, 3),
-(158, 74),
-(159, 3),
-(160, 33),
-(161, 55),
-(162, 29),
-(163, 29),
-(164, 55),
-(165, 55),
-(166, 46),
-(167, 12),
-(168, 46),
-(169, 42),
-(170, 42),
-(171, 46),
-(172, 46),
-(173, 46),
-(174, 42),
-(175, 42),
-(176, 29),
-(177, 42),
-(178, 29),
-(179, 38),
-(180, 38),
-(181, 29),
-(182, 43),
-(183, 43),
-(184, 19),
-(185, 29),
-(186, 38),
-(187, 38),
-(188, 29),
-(189, 14),
-(190, 14),
-(191, 88),
-(192, 43),
-(193, 43),
-(194, 88),
-(195, 38),
-(196, 14),
-(197, 14),
-(198, 40),
-(199, 38),
-(200, 17),
-(201, 17),
-(202, 43),
-(203, 43),
-(204, 17),
-(205, 38),
-(206, 27),
-(207, 27),
-(208, 4),
-(209, 38),
-(210, 29),
-(211, 29),
-(212, 4),
-(213, 38),
-(214, 38),
-(215, 38),
-(216, 7),
-(217, 43),
-(218, 38),
-(219, 29),
-(220, 29),
-(221, 1),
-(222, 5),
-(223, 5),
-(224, 1),
-(225, 1),
-(226, 51),
-(227, 13),
-(228, 8),
-(229, 8),
-(230, 51),
-(231, 13),
-(232, 100),
-(233, 100),
-(234, 100),
-(235, 100),
-(236, 100),
-(237, 45),
-(238, 88),
-(239, 53),
-(240, 53),
-(241, 84),
-(242, 90),
-(243, 88),
-(244, 75),
-(245, 75),
-(246, 97),
-(247, 45),
-(248, 30),
-(249, 75),
-(250, 94),
-(251, 94),
-(252, 27),
-(253, 75),
-(254, 94),
-(255, 18),
-(256, 30),
-(257, 27),
-(258, 44),
-(259, 62),
-(260, 94),
-(261, 96),
-(262, 94),
-(263, 75),
-(264, 44),
-(265, 10),
-(266, 10),
-(267, 80),
-(268, 27),
-(269, 27),
-(270, 80),
-(271, 81),
-(272, 81),
-(273, 27),
-(274, 95),
-(275, 86),
-(276, 86),
-(277, 81),
-(278, 40),
-(279, 40),
-(280, 21),
-(281, 21),
-(282, 28),
-(283, 28),
-(284, 20),
-(285, 20),
-(286, 54),
-(287, 54),
-(288, 86),
-(289, 86),
-(290, 27),
-(291, 28),
-(292, 37),
-(293, 37);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (1, 103);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (2, 89);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (2, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (3, 89);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (3, 32);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (4, 103);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (4, 48);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (5, 50);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (6, 48);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (7, 64);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (7, 32);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (8, 39);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (8, 50);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (9, 64);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (9, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (10, 89);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (11, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (12, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (13, 89);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (14, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (15, 64);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (16, 89);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (16, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (17, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (18, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (18, 64);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (19, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (20, 71);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (21, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (22, 77);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (23, 69);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (24, 11);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (25, 87);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (26, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (27, 66);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (28, 52);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (29, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (30, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (31, 41);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (32, 52);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (33, 73);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (34, 49);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (35, 36);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (36, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (37, 73);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (38, 35);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (39, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (40, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (41, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (42, 41);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (43, 102);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (44, 73);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (45, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (46, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (47, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (48, 66);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (49, 67);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (50, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (51, 24);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (52, 99);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (53, 66);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (54, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (54, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (55, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (56, 99);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (57, 66);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (58, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (59, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (60, 78);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (61, 58);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (62, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (63, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (64, 78);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (65, 58);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (66, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (67, 78);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (68, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (69, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (70, 2);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (71, 77);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (72, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (73, 58);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (74, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (75, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (76, 91);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (77, 91);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (78, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (79, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (80, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (81, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (82, 77);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (83, 9);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (84, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (85, 26);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (86, 91);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (87, 58);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (88, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (89, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (90, 65);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (91, 23);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (92, 77);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (93, 25);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (94, 34);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (95, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (96, 76);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (97, 35);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (98, 34);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (99, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (100, 22);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (101, 68);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (102, 76);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (103, 68);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (104, 56);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (105, 68);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (106, 16);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (107, 2);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (108, 57);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (109, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (110, 59);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (111, 98);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (112, 83);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (113, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (114, 79);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (114, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (115, 47);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (116, 83);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (117, 31);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (118, 47);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (119, 83);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (120, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (121, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (122, 83);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (123, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (124, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (125, 31);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (126, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (127, 61);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (128, 31);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (129, 101);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (130, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (131, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (132, 72);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (133, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (134, 63);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (135, 31);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (136, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (137, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (138, 63);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (139, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (140, 93);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (141, 85);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (142, 82);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (143, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (144, 74);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (145, 92);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (146, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (147, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (148, 6);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (149, 74);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (150, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (151, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (152, 6);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (153, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (154, 15);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (155, 3);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (156, 70);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (157, 3);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (158, 74);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (159, 3);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (160, 33);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (161, 55);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (162, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (163, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (164, 55);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (165, 55);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (166, 46);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (167, 12);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (168, 46);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (169, 42);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (170, 42);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (171, 46);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (172, 46);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (173, 46);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (174, 42);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (175, 42);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (176, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (177, 42);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (178, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (179, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (180, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (181, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (182, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (183, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (184, 19);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (185, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (186, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (187, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (188, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (189, 14);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (190, 14);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (191, 88);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (192, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (193, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (194, 88);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (195, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (196, 14);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (197, 14);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (198, 40);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (199, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (200, 17);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (201, 17);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (202, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (203, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (204, 17);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (205, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (206, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (207, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (208, 4);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (209, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (210, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (211, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (212, 4);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (213, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (214, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (215, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (216, 7);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (217, 43);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (218, 38);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (219, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (220, 29);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (221, 1);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (222, 5);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (223, 5);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (224, 1);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (225, 1);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (226, 51);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (227, 13);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (228, 8);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (229, 8);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (230, 51);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (231, 13);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (232, 100);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (233, 100);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (234, 100);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (235, 100);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (236, 100);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (237, 45);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (238, 88);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (239, 53);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (240, 53);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (241, 84);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (242, 90);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (243, 88);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (244, 75);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (245, 75);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (246, 97);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (247, 45);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (248, 30);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (249, 75);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (250, 94);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (251, 94);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (252, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (253, 75);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (254, 94);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (255, 18);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (256, 30);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (257, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (258, 44);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (259, 62);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (260, 94);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (261, 96);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (262, 94);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (263, 75);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (264, 44);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (265, 10);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (266, 10);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (267, 80);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (268, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (269, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (270, 80);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (271, 81);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (272, 81);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (273, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (274, 95);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (275, 86);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (276, 86);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (277, 81);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (278, 40);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (279, 40);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (280, 21);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (281, 21);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (282, 28);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (283, 28);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (284, 20);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (285, 20);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (286, 54);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (287, 54);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (288, 86);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (289, 86);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (290, 27);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (291, 28);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (292, 37);
+INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES (293, 37);
 
 -- --------------------------------------------------------
 
@@ -853,316 +849,316 @@ INSERT INTO `serials_directors` (`serial_id`, `director_id`) VALUES
 
 CREATE TABLE `serials_doctors` (
   `serial_id` int(11) NOT NULL,
-  `doctor_id` int(11) NOT NULL
+  `doctor_id` int(11) NOT NULL,
+  PRIMARY KEY (`serial_id`, `doctor_id`)
 );
 
 --
 -- Dumping data for table `serials_doctors`
 --
 
-INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(4, 1),
-(5, 1),
-(6, 1),
-(7, 1),
-(8, 1),
-(9, 1),
-(10, 1),
-(11, 1),
-(12, 1),
-(13, 1),
-(14, 1),
-(15, 1),
-(16, 1),
-(17, 1),
-(18, 1),
-(19, 1),
-(20, 1),
-(21, 1),
-(22, 1),
-(23, 1),
-(24, 1),
-(25, 1),
-(26, 1),
-(27, 1),
-(28, 1),
-(29, 1),
-(30, 2),
-(31, 2),
-(32, 2),
-(33, 2),
-(34, 2),
-(35, 2),
-(36, 2),
-(37, 2),
-(38, 2),
-(39, 2),
-(40, 2),
-(41, 2),
-(42, 2),
-(43, 2),
-(44, 2),
-(45, 2),
-(46, 2),
-(47, 2),
-(48, 2),
-(49, 2),
-(50, 2),
-(51, 3),
-(52, 3),
-(53, 3),
-(54, 3),
-(55, 3),
-(56, 3),
-(57, 3),
-(58, 3),
-(59, 3),
-(60, 3),
-(61, 3),
-(62, 3),
-(63, 3),
-(64, 3),
-(65, 1),
-(65, 2),
-(65, 3),
-(66, 3),
-(67, 3),
-(68, 3),
-(69, 3),
-(70, 3),
-(71, 3),
-(72, 3),
-(73, 3),
-(74, 3),
-(75, 4),
-(76, 4),
-(77, 4),
-(78, 4),
-(79, 4),
-(80, 4),
-(81, 4),
-(82, 4),
-(83, 4),
-(84, 4),
-(85, 4),
-(86, 4),
-(87, 4),
-(88, 4),
-(89, 4),
-(90, 4),
-(91, 4),
-(92, 4),
-(93, 4),
-(94, 4),
-(95, 4),
-(96, 4),
-(97, 4),
-(98, 4),
-(99, 4),
-(100, 4),
-(101, 4),
-(102, 4),
-(103, 4),
-(104, 4),
-(105, 4),
-(106, 4),
-(107, 4),
-(108, 4),
-(109, 4),
-(110, 4),
-(111, 4),
-(112, 4),
-(113, 4),
-(114, 4),
-(115, 4),
-(116, 4),
-(117, 5),
-(118, 5),
-(119, 5),
-(120, 5),
-(121, 5),
-(122, 5),
-(123, 5),
-(124, 5),
-(125, 5),
-(126, 5),
-(127, 5),
-(128, 5),
-(129, 5),
-(130, 1),
-(130, 2),
-(130, 3),
-(130, 4),
-(130, 5),
-(131, 5),
-(132, 5),
-(133, 5),
-(134, 5),
-(135, 5),
-(136, 5),
-(137, 6),
-(138, 6),
-(139, 6),
-(140, 6),
-(141, 2),
-(141, 6),
-(142, 6),
-(143, 6),
-(144, 6),
-(145, 6),
-(146, 6),
-(147, 6),
-(148, 7),
-(149, 7),
-(150, 7),
-(151, 7),
-(152, 7),
-(153, 7),
-(154, 7),
-(155, 7),
-(156, 7),
-(157, 7),
-(158, 7),
-(159, 7),
-(160, 8),
-(161, 10),
-(162, 10),
-(163, 10),
-(164, 10),
-(165, 10),
-(166, 10),
-(167, 10),
-(168, 10),
-(169, 10),
-(170, 10),
-(171, 10),
-(172, 10),
-(173, 10),
-(174, 11),
-(175, 11),
-(176, 11),
-(177, 11),
-(178, 11),
-(179, 11),
-(180, 11),
-(181, 11),
-(182, 11),
-(183, 11),
-(184, 11),
-(185, 11),
-(186, 11),
-(187, 11),
-(188, 11),
-(189, 11),
-(190, 11),
-(191, 11),
-(192, 11),
-(193, 11),
-(194, 11),
-(195, 11),
-(196, 11),
-(197, 11),
-(198, 11),
-(199, 11),
-(200, 11),
-(201, 11),
-(202, 11),
-(203, 11),
-(204, 11),
-(205, 11),
-(206, 11),
-(207, 11),
-(208, 11),
-(209, 11),
-(210, 11),
-(211, 11),
-(212, 11),
-(213, 11),
-(214, 11),
-(215, 11),
-(216, 11),
-(217, 11),
-(218, 11),
-(219, 11),
-(220, 11),
-(221, 12),
-(222, 12),
-(223, 12),
-(224, 12),
-(225, 12),
-(226, 12),
-(227, 12),
-(228, 12),
-(229, 12),
-(230, 12),
-(231, 12),
-(232, 12),
-(233, 12),
-(234, 12),
-(235, 12),
-(236, 12),
-(237, 12),
-(238, 12),
-(239, 12),
-(240, 12),
-(241, 12),
-(242, 12),
-(243, 12),
-(244, 12),
-(245, 12),
-(246, 12),
-(247, 12),
-(248, 12),
-(249, 12),
-(250, 12),
-(251, 12),
-(252, 12),
-(253, 12),
-(254, 12),
-(255, 12),
-(256, 12),
-(257, 12),
-(258, 12),
-(259, 12),
-(260, 12),
-(261, 12),
-(262, 12),
-(263, 9),
-(263, 11),
-(263, 12),
-(264, 12),
-(265, 13),
-(266, 13),
-(267, 13),
-(268, 13),
-(269, 13),
-(270, 13),
-(271, 13),
-(272, 13),
-(273, 13),
-(274, 13),
-(275, 13),
-(276, 13),
-(277, 13),
-(278, 13),
-(279, 13),
-(280, 13),
-(281, 13),
-(282, 13),
-(283, 13),
-(284, 13),
-(285, 13),
-(286, 13),
-(287, 13),
-(288, 13),
-(289, 13),
-(290, 13),
-(291, 13),
-(292, 14),
-(293, 14);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (1, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (2, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (3, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (4, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (5, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (6, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (7, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (8, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (9, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (10, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (11, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (12, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (13, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (14, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (15, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (16, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (17, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (18, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (19, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (20, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (21, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (22, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (23, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (24, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (25, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (26, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (27, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (28, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (29, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (30, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (31, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (32, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (33, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (34, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (35, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (36, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (37, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (38, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (39, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (40, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (41, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (42, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (43, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (44, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (45, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (46, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (47, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (48, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (49, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (50, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (51, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (52, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (53, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (54, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (55, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (56, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (57, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (58, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (59, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (60, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (61, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (62, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (63, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (64, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (65, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (65, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (65, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (66, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (67, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (68, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (69, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (70, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (71, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (72, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (73, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (74, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (75, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (76, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (77, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (78, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (79, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (80, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (81, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (82, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (83, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (84, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (85, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (86, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (87, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (88, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (89, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (90, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (91, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (92, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (93, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (94, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (95, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (96, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (97, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (98, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (99, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (100, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (101, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (102, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (103, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (104, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (105, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (106, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (107, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (108, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (109, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (110, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (111, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (112, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (113, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (114, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (115, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (116, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (117, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (118, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (119, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (120, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (121, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (122, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (123, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (124, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (125, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (126, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (127, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (128, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (129, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (130, 1);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (130, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (130, 3);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (130, 4);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (130, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (131, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (132, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (133, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (134, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (135, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (136, 5);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (137, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (138, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (139, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (140, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (141, 2);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (141, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (142, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (143, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (144, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (145, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (146, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (147, 6);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (148, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (149, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (150, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (151, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (152, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (153, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (154, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (155, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (156, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (157, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (158, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (159, 7);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (160, 8);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (161, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (162, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (163, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (164, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (165, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (166, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (167, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (168, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (169, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (170, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (171, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (172, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (173, 10);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (174, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (175, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (176, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (177, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (178, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (179, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (180, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (181, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (182, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (183, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (184, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (185, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (186, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (187, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (188, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (189, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (190, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (191, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (192, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (193, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (194, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (195, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (196, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (197, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (198, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (199, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (200, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (201, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (202, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (203, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (204, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (205, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (206, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (207, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (208, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (209, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (210, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (211, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (212, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (213, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (214, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (215, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (216, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (217, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (218, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (219, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (220, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (221, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (222, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (223, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (224, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (225, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (226, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (227, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (228, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (229, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (230, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (231, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (232, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (233, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (234, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (235, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (236, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (237, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (238, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (239, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (240, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (241, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (242, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (243, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (244, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (245, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (246, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (247, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (248, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (249, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (250, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (251, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (252, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (253, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (254, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (255, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (256, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (257, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (258, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (259, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (260, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (261, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (262, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (263, 9);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (263, 11);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (263, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (264, 12);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (265, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (266, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (267, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (268, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (269, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (270, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (271, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (272, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (273, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (274, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (275, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (276, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (277, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (278, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (279, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (280, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (281, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (282, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (283, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (284, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (285, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (286, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (287, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (288, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (289, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (290, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (291, 13);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (292, 14);
+INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES (293, 14);
 
 -- --------------------------------------------------------
 
@@ -1172,363 +1168,363 @@ INSERT INTO `serials_doctors` (`serial_id`, `doctor_id`) VALUES
 
 CREATE TABLE `serials_writers` (
   `serial_id` int(11) NOT NULL,
-  `writer_id` int(11) NOT NULL
+  `writer_id` int(11) NOT NULL,
+  PRIMARY KEY (`serial_id`, `writer_id`)
 );
 
 --
 -- Dumping data for table `serials_writers`
 --
 
-INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES
-(1, 3),
-(2, 98),
-(3, 21),
-(4, 49),
-(5, 98),
-(6, 49),
-(7, 76),
-(8, 22),
-(9, 57),
-(10, 98),
-(11, 21),
-(12, 22),
-(13, 9),
-(14, 21),
-(15, 37),
-(16, 98),
-(17, 22),
-(18, 103),
-(19, 98),
-(20, 25),
-(21, 98),
-(21, 22),
-(22, 49),
-(22, 26),
-(23, 71),
-(23, 55),
-(24, 11),
-(24, 26),
-(25, 25),
-(26, 44),
-(27, 44),
-(27, 54),
-(28, 11),
-(29, 54),
-(29, 35),
-(30, 21),
-(30, 22),
-(31, 28),
-(31, 35),
-(32, 34),
-(33, 54),
-(34, 44),
-(35, 19),
-(35, 58),
-(36, 21),
-(37, 54),
-(37, 35),
-(38, 65),
-(38, 42),
-(39, 11),
-(40, 21),
-(41, 65),
-(41, 42),
-(42, 102),
-(43, 21),
-(43, 54),
-(44, 69),
-(44, 65),
-(44, 42),
-(45, 75),
-(45, 23),
-(46, 23),
-(46, 54),
-(47, 82),
-(48, 11),
-(48, 97),
-(49, 82),
-(50, 97),
-(50, 58),
-(51, 82),
-(52, 58),
-(53, 21),
-(53, 101),
-(53, 58),
-(54, 24),
-(55, 82),
-(56, 24),
-(57, 10),
-(57, 17),
-(58, 58),
-(59, 40),
-(59, 84),
-(59, 7),
-(60, 57),
-(61, 11),
-(62, 58),
-(63, 10),
-(63, 17),
-(64, 84),
-(64, 7),
-(65, 10),
-(65, 17),
-(66, 82),
-(67, 58),
-(68, 98),
-(69, 84),
-(69, 7),
-(70, 82),
-(71, 58),
-(72, 98),
-(73, 11),
-(74, 84),
-(74, 7),
-(75, 97),
-(76, 82),
-(77, 10),
-(77, 17),
-(78, 98),
-(79, 35),
-(80, 81),
-(81, 57),
-(82, 92),
-(82, 56),
-(82, 82),
-(83, 98),
-(84, 85),
-(84, 97),
-(84, 82),
-(85, 81),
-(86, 57),
-(87, 10),
-(87, 17),
-(88, 82),
-(89, 13),
-(90, 13),
-(91, 82),
-(92, 97),
-(93, 10),
-(93, 17),
-(94, 13),
-(95, 82),
-(96, 10),
-(96, 17),
-(97, 18),
-(97, 39),
-(97, 4),
-(98, 82),
-(99, 27),
-(100, 20),
-(101, 20),
-(102, 82),
-(103, 10),
-(103, 17),
-(104, 98),
-(105, 18),
-(105, 27),
-(105, 39),
-(105, 20),
-(106, 20),
-(107, 10),
-(108, 4),
-(109, 27),
-(110, 20),
-(111, 48),
-(111, 1),
-(112, 2),
-(113, 97),
-(114, 90),
-(115, 50),
-(116, 16),
-(117, 16),
-(118, 96),
-(119, 15),
-(120, 30),
-(121, 96),
-(122, 30),
-(123, 73),
-(124, 50),
-(125, 15),
-(126, 73),
-(127, 90),
-(128, 6),
-(129, 96),
-(130, 97),
-(131, 50),
-(132, 29),
-(133, 16),
-(134, 30),
-(135, 73),
-(136, 82),
-(137, 5),
-(138, 72),
-(139, 79),
-(140, 78),
-(140, 47),
-(141, 82),
-(142, 36),
-(143, 30),
-(144, 82),
-(145, 79),
-(146, 78),
-(146, 47),
-(147, 82),
-(147, 78),
-(147, 47),
-(148, 78),
-(148, 47),
-(149, 94),
-(150, 59),
-(151, 43),
-(152, 8),
-(153, 38),
-(154, 52),
-(155, 94),
-(156, 8),
-(157, 60),
-(158, 43),
-(159, 86),
-(160, 64),
-(161, 87),
-(162, 87),
-(163, 61),
-(164, 87),
-(165, 87),
-(166, 83),
-(167, 87),
-(168, 70),
-(169, 95),
-(170, 95),
-(171, 87),
-(172, 87),
-(173, 87),
-(174, 87),
-(175, 87),
-(176, 87),
-(177, 99),
-(178, 95),
-(179, 100),
-(180, 100),
-(181, 61),
-(182, 62),
-(183, 62),
-(184, 87),
-(185, 63),
-(186, 87),
-(187, 87),
-(188, 87),
-(189, 87),
-(190, 33),
-(191, 87),
-(192, 41),
-(193, 41),
-(194, 91),
-(195, 14),
-(196, 70),
-(197, 70),
-(198, 95),
-(199, 87),
-(200, 87),
-(201, 87),
-(202, 87),
-(203, 87),
-(204, 45),
-(205, 51),
-(206, 41),
-(207, 41),
-(208, 91),
-(209, 33),
-(210, 95),
-(211, 95),
-(212, 87),
-(213, 87),
-(214, 87),
-(215, 87),
-(216, 87),
-(217, 87),
-(217, 33),
-(218, 87),
-(218, 77),
-(219, 87),
-(220, 87),
-(221, 95),
-(222, 95),
-(223, 61),
-(224, 95),
-(225, 95),
-(226, 99),
-(227, 89),
-(228, 14),
-(229, 14),
-(230, 80),
-(231, 33),
-(232, 95),
-(233, 95),
-(234, 95),
-(235, 95),
-(236, 95),
-(237, 93),
-(238, 68),
-(239, 63),
-(240, 63),
-(241, 95),
-(242, 95),
-(243, 61),
-(244, 100),
-(245, 99),
-(246, 33),
-(247, 95),
-(248, 95),
-(249, 95),
-(250, 14),
-(251, 99),
-(252, 14),
-(253, 95),
-(254, 95),
-(255, 95),
-(256, 67),
-(257, 61),
-(258, 67),
-(259, 93),
-(260, 61),
-(261, 68),
-(262, 95),
-(263, 95),
-(264, 95),
-(265, 95),
-(266, 77),
-(266, 95),
-(267, 61),
-(268, 95),
-(269, 93),
-(269, 95),
-(270, 33),
-(270, 95),
-(271, 74),
-(272, 46),
-(273, 46),
-(274, 31),
-(275, 95),
-(276, 95),
-(277, 95),
-(278, 95),
-(279, 95),
-(280, 99),
-(281, 99),
-(282, 46),
-(282, 95),
-(283, 12),
-(284, 74),
-(285, 74),
-(285, 95),
-(286, 61),
-(287, 88),
-(288, 95),
-(289, 95),
-(290, 95),
-(291, 95),
-(292, 66),
-(293, 66);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (1, 3);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (2, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (3, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (4, 49);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (5, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (6, 49);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (7, 76);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (8, 22);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (9, 57);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (10, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (11, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (12, 22);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (13, 9);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (14, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (15, 37);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (16, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (17, 22);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (18, 103);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (19, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (20, 25);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (21, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (21, 22);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (22, 49);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (22, 26);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (23, 71);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (23, 55);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (24, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (24, 26);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (25, 25);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (26, 44);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (27, 44);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (27, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (28, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (29, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (29, 35);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (30, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (30, 22);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (31, 28);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (31, 35);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (32, 34);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (33, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (34, 44);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (35, 19);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (35, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (36, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (37, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (37, 35);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (38, 65);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (38, 42);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (39, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (40, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (41, 65);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (41, 42);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (42, 102);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (43, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (43, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (44, 69);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (44, 65);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (44, 42);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (45, 75);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (45, 23);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (46, 23);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (46, 54);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (47, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (48, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (48, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (49, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (50, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (50, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (51, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (52, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (53, 21);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (53, 101);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (53, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (54, 24);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (55, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (56, 24);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (57, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (57, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (58, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (59, 40);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (59, 84);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (59, 7);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (60, 57);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (61, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (62, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (63, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (63, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (64, 84);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (64, 7);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (65, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (65, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (66, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (67, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (68, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (69, 84);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (69, 7);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (70, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (71, 58);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (72, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (73, 11);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (74, 84);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (74, 7);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (75, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (76, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (77, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (77, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (78, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (79, 35);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (80, 81);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (81, 57);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (82, 92);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (82, 56);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (82, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (83, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (84, 85);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (84, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (84, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (85, 81);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (86, 57);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (87, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (87, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (88, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (89, 13);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (90, 13);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (91, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (92, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (93, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (93, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (94, 13);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (95, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (96, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (96, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (97, 18);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (97, 39);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (97, 4);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (98, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (99, 27);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (100, 20);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (101, 20);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (102, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (103, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (103, 17);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (104, 98);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (105, 18);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (105, 27);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (105, 39);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (105, 20);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (106, 20);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (107, 10);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (108, 4);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (109, 27);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (110, 20);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (111, 48);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (111, 1);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (112, 2);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (113, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (114, 90);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (115, 50);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (116, 16);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (117, 16);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (118, 96);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (119, 15);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (120, 30);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (121, 96);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (122, 30);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (123, 73);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (124, 50);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (125, 15);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (126, 73);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (127, 90);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (128, 6);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (129, 96);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (130, 97);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (131, 50);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (132, 29);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (133, 16);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (134, 30);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (135, 73);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (136, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (137, 5);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (138, 72);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (139, 79);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (140, 78);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (140, 47);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (141, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (142, 36);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (143, 30);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (144, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (145, 79);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (146, 78);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (146, 47);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (147, 82);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (147, 78);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (147, 47);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (148, 78);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (148, 47);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (149, 94);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (150, 59);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (151, 43);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (152, 8);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (153, 38);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (154, 52);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (155, 94);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (156, 8);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (157, 60);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (158, 43);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (159, 86);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (160, 64);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (161, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (162, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (163, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (164, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (165, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (166, 83);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (167, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (168, 70);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (169, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (170, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (171, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (172, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (173, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (174, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (175, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (176, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (177, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (178, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (179, 100);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (180, 100);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (181, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (182, 62);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (183, 62);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (184, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (185, 63);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (186, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (187, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (188, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (189, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (190, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (191, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (192, 41);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (193, 41);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (194, 91);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (195, 14);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (196, 70);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (197, 70);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (198, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (199, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (200, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (201, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (202, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (203, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (204, 45);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (205, 51);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (206, 41);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (207, 41);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (208, 91);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (209, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (210, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (211, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (212, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (213, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (214, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (215, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (216, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (217, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (217, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (218, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (218, 77);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (219, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (220, 87);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (221, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (222, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (223, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (224, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (225, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (226, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (227, 89);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (228, 14);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (229, 14);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (230, 80);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (231, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (232, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (233, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (234, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (235, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (236, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (237, 93);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (238, 68);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (239, 63);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (240, 63);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (241, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (242, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (243, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (244, 100);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (245, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (246, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (247, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (248, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (249, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (250, 14);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (251, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (252, 14);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (253, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (254, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (255, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (256, 67);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (257, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (258, 67);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (259, 93);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (260, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (261, 68);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (262, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (263, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (264, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (265, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (266, 77);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (266, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (267, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (268, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (269, 93);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (269, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (270, 33);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (270, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (271, 74);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (272, 46);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (273, 46);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (274, 31);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (275, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (276, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (277, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (278, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (279, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (280, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (281, 99);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (282, 46);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (282, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (283, 12);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (284, 74);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (285, 74);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (285, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (286, 61);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (287, 88);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (288, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (289, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (290, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (291, 95);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (292, 66);
+INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES (293, 66);
 
 -- --------------------------------------------------------
 
@@ -1537,7 +1533,7 @@ INSERT INTO `serials_writers` (`serial_id`, `writer_id`) VALUES
 --
 
 CREATE TABLE `writers` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
 );
 
@@ -1545,189 +1541,104 @@ CREATE TABLE `writers` (
 -- Dumping data for table `writers`
 --
 
-INSERT INTO `writers` (`id`, `name`) VALUES
-(1, 'Andrew McCulloch'),
-(2, 'Andrew Smith'),
-(3, 'Anthony Coburn'),
-(4, 'Anthony Read'),
-(5, 'Anthony Steven'),
-(6, 'Barbara Clegg'),
-(7, 'Barry Letts'),
-(8, 'Ben Aaronovitch'),
-(9, 'Bill Strutton'),
-(10, 'Bob Baker'),
-(11, 'Brian Hayles'),
-(12, 'Catherine Tregenna'),
-(13, 'Chris Boucher'),
-(14, 'Chris Chibnall'),
-(15, 'Christopher Bailey'),
-(16, 'Christopher H. Bidmead'),
-(17, 'Dave Martin'),
-(18, 'David Agnew'),
-(19, 'David Ellis'),
-(20, 'David Fisher'),
-(21, 'David Whitaker'),
-(22, 'Dennis Spooner'),
-(23, 'Derrick Sherwin'),
-(24, 'Don Houghton'),
-(25, 'Donald Cotton'),
-(26, 'Donald Tosh'),
-(27, 'Douglas Adams'),
-(28, 'Elwyn Jones'),
-(29, 'Eric Pringle'),
-(30, 'Eric Saward'),
-(31, 'Frank Cottrell-Boyce'),
-(33, 'Gareth Roberts'),
-(34, 'Geoffrey Orme'),
-(35, 'Gerry Davis'),
-(36, 'Glen McCoy'),
-(37, 'Glyn Jones'),
-(38, 'Graeme Curry'),
-(39, 'Graham Williams'),
-(40, 'Guy Leopold'),
-(41, 'Helen Raynor'),
-(42, 'Henry Lincoln'),
-(43, 'Ian Briggs'),
-(44, 'Ian Stuart Black'),
-(45, 'James Moran'),
-(46, 'Jamie Mathieson'),
-(47, 'Jane Baker'),
-(48, 'John Flanagan'),
-(49, 'John Lucarotti'),
-(50, 'Johnny Byrne'),
-(51, 'Keith Temple'),
-(52, 'Kevin Clarke'),
-(54, 'Kit Pedler'),
-(55, 'Lesley Scott'),
-(56, 'Lewis Greifer'),
-(57, 'Louis Marks'),
-(58, 'Malcolm Hulke'),
-(59, 'Malcolm Kohll'),
-(60, 'Marc Platt'),
-(61, 'Mark Gatiss'),
-(62, 'Matt Jones'),
-(63, 'Matthew Graham'),
-(64, 'Matthew Jacobs'),
-(65, 'Mervyn Haisman'),
-(66, 'Milton Subotsky'),
-(67, 'Neil Cross'),
-(68, 'Neil Gaiman'),
-(69, 'Norman Ashby'),
-(70, 'Paul Cornell'),
-(71, 'Paul Erickson'),
-(72, 'Paula Moore'),
-(73, 'Peter Grimwade'),
-(74, 'Peter Harness'),
-(75, 'Peter Ling'),
-(76, 'Peter R. Newman'),
-(77, 'Phil Ford'),
-(78, 'Philip Pip Baker\"hilip Pip\"ili'),
-(79, 'Philip Martin'),
-(80, 'Richard Curtis'),
-(81, 'Robert Banks Stewart'),
-(82, 'Robert Holmes'),
-(83, 'Robert Shearman'),
-(84, 'Robert Sloman'),
-(85, 'Robin Bland'),
-(86, 'Rona Munro'),
-(87, 'Russell T. Davies'),
-(88, 'Sarah Dollard'),
-(89, 'Simon Nye'),
-(90, 'Stephen Gallagher'),
-(91, 'Stephen Greenhorn'),
-(92, 'Stephen Harris'),
-(93, 'Stephen Thompson'),
-(94, 'Stephen Wyatt'),
-(95, 'Steven Moffat'),
-(96, 'Terence Dudley'),
-(97, 'Terrance Dicks'),
-(98, 'Terry Nation'),
-(99, 'Toby Whithouse'),
-(100, 'Tom MacRae'),
-(101, 'Trevor Ray'),
-(102, 'Victor Pemberton'),
-(103, 'William Emms');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `directors`
---
-ALTER TABLE `directors`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `doctors`
---
-ALTER TABLE `doctors`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `seasons`
---
-ALTER TABLE `seasons`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `serials`
---
-ALTER TABLE `serials`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `season_id` (`season_id`);
-
---
--- Indexes for table `serials_directors`
---
-ALTER TABLE `serials_directors`
-  ADD KEY `director_id` (`director_id`),
-  ADD KEY `serial_id` (`serial_id`);
-
---
--- Indexes for table `serials_doctors`
---
-ALTER TABLE `serials_doctors`
-  ADD KEY `serial_id` (`serial_id`),
-  ADD KEY `doctor_id` (`doctor_id`);
-
---
--- Indexes for table `serials_writers`
---
-ALTER TABLE `serials_writers`
-  ADD KEY `serial_id` (`serial_id`),
-  ADD KEY `writer_id` (`writer_id`);
-
---
--- Indexes for table `writers`
---
-ALTER TABLE `writers`
-  ADD PRIMARY KEY (`id`);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `doctors`
---
-ALTER TABLE `doctors`
-  ADD CONSTRAINT `doctors_ibfk_1` FOREIGN KEY (`id`) REFERENCES `serials_doctors` (`doctor_id`);
-
---
--- Constraints for table `seasons`
---
-ALTER TABLE `seasons`
-  ADD CONSTRAINT `seasons_ibfk_1` FOREIGN KEY (`id`) REFERENCES `serials` (`season_id`);
-
---
--- Constraints for table `serials`
---
-ALTER TABLE `serials`
-  ADD CONSTRAINT `serials_ibfk_1` FOREIGN KEY (`id`) REFERENCES `serials_writers` (`serial_id`);
-
---
--- Constraints for table `writers`
---
-ALTER TABLE `writers`
-  ADD CONSTRAINT `writers_ibfk_1` FOREIGN KEY (`id`) REFERENCES `serials_writers` (`writer_id`);
+INSERT INTO `writers` (`id`, `name`) VALUES (1, 'Andrew McCulloch');
+INSERT INTO `writers` (`id`, `name`) VALUES (2, 'Andrew Smith');
+INSERT INTO `writers` (`id`, `name`) VALUES (3, 'Anthony Coburn');
+INSERT INTO `writers` (`id`, `name`) VALUES (4, 'Anthony Read');
+INSERT INTO `writers` (`id`, `name`) VALUES (5, 'Anthony Steven');
+INSERT INTO `writers` (`id`, `name`) VALUES (6, 'Barbara Clegg');
+INSERT INTO `writers` (`id`, `name`) VALUES (7, 'Barry Letts');
+INSERT INTO `writers` (`id`, `name`) VALUES (8, 'Ben Aaronovitch');
+INSERT INTO `writers` (`id`, `name`) VALUES (9, 'Bill Strutton');
+INSERT INTO `writers` (`id`, `name`) VALUES (10, 'Bob Baker');
+INSERT INTO `writers` (`id`, `name`) VALUES (11, 'Brian Hayles');
+INSERT INTO `writers` (`id`, `name`) VALUES (12, 'Catherine Tregenna');
+INSERT INTO `writers` (`id`, `name`) VALUES (13, 'Chris Boucher');
+INSERT INTO `writers` (`id`, `name`) VALUES (14, 'Chris Chibnall');
+INSERT INTO `writers` (`id`, `name`) VALUES (15, 'Christopher Bailey');
+INSERT INTO `writers` (`id`, `name`) VALUES (16, 'Christopher H. Bidmead');
+INSERT INTO `writers` (`id`, `name`) VALUES (17, 'Dave Martin');
+INSERT INTO `writers` (`id`, `name`) VALUES (18, 'David Agnew');
+INSERT INTO `writers` (`id`, `name`) VALUES (19, 'David Ellis');
+INSERT INTO `writers` (`id`, `name`) VALUES (20, 'David Fisher');
+INSERT INTO `writers` (`id`, `name`) VALUES (21, 'David Whitaker');
+INSERT INTO `writers` (`id`, `name`) VALUES (22, 'Dennis Spooner');
+INSERT INTO `writers` (`id`, `name`) VALUES (23, 'Derrick Sherwin');
+INSERT INTO `writers` (`id`, `name`) VALUES (24, 'Don Houghton');
+INSERT INTO `writers` (`id`, `name`) VALUES (25, 'Donald Cotton');
+INSERT INTO `writers` (`id`, `name`) VALUES (26, 'Donald Tosh');
+INSERT INTO `writers` (`id`, `name`) VALUES (27, 'Douglas Adams');
+INSERT INTO `writers` (`id`, `name`) VALUES (28, 'Elwyn Jones');
+INSERT INTO `writers` (`id`, `name`) VALUES (29, 'Eric Pringle');
+INSERT INTO `writers` (`id`, `name`) VALUES (30, 'Eric Saward');
+INSERT INTO `writers` (`id`, `name`) VALUES (31, 'Frank Cottrell-Boyce');
+INSERT INTO `writers` (`id`, `name`) VALUES (33, 'Gareth Roberts');
+INSERT INTO `writers` (`id`, `name`) VALUES (34, 'Geoffrey Orme');
+INSERT INTO `writers` (`id`, `name`) VALUES (35, 'Gerry Davis');
+INSERT INTO `writers` (`id`, `name`) VALUES (36, 'Glen McCoy');
+INSERT INTO `writers` (`id`, `name`) VALUES (37, 'Glyn Jones');
+INSERT INTO `writers` (`id`, `name`) VALUES (38, 'Graeme Curry');
+INSERT INTO `writers` (`id`, `name`) VALUES (39, 'Graham Williams');
+INSERT INTO `writers` (`id`, `name`) VALUES (40, 'Guy Leopold');
+INSERT INTO `writers` (`id`, `name`) VALUES (41, 'Helen Raynor');
+INSERT INTO `writers` (`id`, `name`) VALUES (42, 'Henry Lincoln');
+INSERT INTO `writers` (`id`, `name`) VALUES (43, 'Ian Briggs');
+INSERT INTO `writers` (`id`, `name`) VALUES (44, 'Ian Stuart Black');
+INSERT INTO `writers` (`id`, `name`) VALUES (45, 'James Moran');
+INSERT INTO `writers` (`id`, `name`) VALUES (46, 'Jamie Mathieson');
+INSERT INTO `writers` (`id`, `name`) VALUES (47, 'Jane Baker');
+INSERT INTO `writers` (`id`, `name`) VALUES (48, 'John Flanagan');
+INSERT INTO `writers` (`id`, `name`) VALUES (49, 'John Lucarotti');
+INSERT INTO `writers` (`id`, `name`) VALUES (50, 'Johnny Byrne');
+INSERT INTO `writers` (`id`, `name`) VALUES (51, 'Keith Temple');
+INSERT INTO `writers` (`id`, `name`) VALUES (52, 'Kevin Clarke');
+INSERT INTO `writers` (`id`, `name`) VALUES (54, 'Kit Pedler');
+INSERT INTO `writers` (`id`, `name`) VALUES (55, 'Lesley Scott');
+INSERT INTO `writers` (`id`, `name`) VALUES (56, 'Lewis Greifer');
+INSERT INTO `writers` (`id`, `name`) VALUES (57, 'Louis Marks');
+INSERT INTO `writers` (`id`, `name`) VALUES (58, 'Malcolm Hulke');
+INSERT INTO `writers` (`id`, `name`) VALUES (59, 'Malcolm Kohll');
+INSERT INTO `writers` (`id`, `name`) VALUES (60, 'Marc Platt');
+INSERT INTO `writers` (`id`, `name`) VALUES (61, 'Mark Gatiss');
+INSERT INTO `writers` (`id`, `name`) VALUES (62, 'Matt Jones');
+INSERT INTO `writers` (`id`, `name`) VALUES (63, 'Matthew Graham');
+INSERT INTO `writers` (`id`, `name`) VALUES (64, 'Matthew Jacobs');
+INSERT INTO `writers` (`id`, `name`) VALUES (65, 'Mervyn Haisman');
+INSERT INTO `writers` (`id`, `name`) VALUES (66, 'Milton Subotsky');
+INSERT INTO `writers` (`id`, `name`) VALUES (67, 'Neil Cross');
+INSERT INTO `writers` (`id`, `name`) VALUES (68, 'Neil Gaiman');
+INSERT INTO `writers` (`id`, `name`) VALUES (69, 'Norman Ashby');
+INSERT INTO `writers` (`id`, `name`) VALUES (70, 'Paul Cornell');
+INSERT INTO `writers` (`id`, `name`) VALUES (71, 'Paul Erickson');
+INSERT INTO `writers` (`id`, `name`) VALUES (72, 'Paula Moore');
+INSERT INTO `writers` (`id`, `name`) VALUES (73, 'Peter Grimwade');
+INSERT INTO `writers` (`id`, `name`) VALUES (74, 'Peter Harness');
+INSERT INTO `writers` (`id`, `name`) VALUES (75, 'Peter Ling');
+INSERT INTO `writers` (`id`, `name`) VALUES (76, 'Peter R. Newman');
+INSERT INTO `writers` (`id`, `name`) VALUES (77, 'Phil Ford');
+INSERT INTO `writers` (`id`, `name`) VALUES (78, 'Philip Pip Baker\"hilip Pip\"ili');
+INSERT INTO `writers` (`id`, `name`) VALUES (79, 'Philip Martin');
+INSERT INTO `writers` (`id`, `name`) VALUES (80, 'Richard Curtis');
+INSERT INTO `writers` (`id`, `name`) VALUES (81, 'Robert Banks Stewart');
+INSERT INTO `writers` (`id`, `name`) VALUES (82, 'Robert Holmes');
+INSERT INTO `writers` (`id`, `name`) VALUES (83, 'Robert Shearman');
+INSERT INTO `writers` (`id`, `name`) VALUES (84, 'Robert Sloman');
+INSERT INTO `writers` (`id`, `name`) VALUES (85, 'Robin Bland');
+INSERT INTO `writers` (`id`, `name`) VALUES (86, 'Rona Munro');
+INSERT INTO `writers` (`id`, `name`) VALUES (87, 'Russell T. Davies');
+INSERT INTO `writers` (`id`, `name`) VALUES (88, 'Sarah Dollard');
+INSERT INTO `writers` (`id`, `name`) VALUES (89, 'Simon Nye');
+INSERT INTO `writers` (`id`, `name`) VALUES (90, 'Stephen Gallagher');
+INSERT INTO `writers` (`id`, `name`) VALUES (91, 'Stephen Greenhorn');
+INSERT INTO `writers` (`id`, `name`) VALUES (92, 'Stephen Harris');
+INSERT INTO `writers` (`id`, `name`) VALUES (93, 'Stephen Thompson');
+INSERT INTO `writers` (`id`, `name`) VALUES (94, 'Stephen Wyatt');
+INSERT INTO `writers` (`id`, `name`) VALUES (95, 'Steven Moffat');
+INSERT INTO `writers` (`id`, `name`) VALUES (96, 'Terence Dudley');
+INSERT INTO `writers` (`id`, `name`) VALUES (97, 'Terrance Dicks');
+INSERT INTO `writers` (`id`, `name`) VALUES (98, 'Terry Nation');
+INSERT INTO `writers` (`id`, `name`) VALUES (99, 'Toby Whithouse');
+INSERT INTO `writers` (`id`, `name`) VALUES (100, 'Tom MacRae');
+INSERT INTO `writers` (`id`, `name`) VALUES (101, 'Trevor Ray');
+INSERT INTO `writers` (`id`, `name`) VALUES (102, 'Victor Pemberton');
+INSERT INTO `writers` (`id`, `name`) VALUES (103, 'William Emms');
