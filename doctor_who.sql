@@ -5,6 +5,36 @@
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `actors`
+--
+
+CREATE TABLE `actors` (
+  `id` int(11) PRIMARY KEY NOT NULL,
+  `name` text NOT NULL
+);
+
+--
+-- Dumping data for table `actors`
+--
+
+INSERT INTO `actors` (`id`, `name`) VALUES (1, 'William Hartnell');
+INSERT INTO `actors` (`id`, `name`) VALUES (2, 'Patrick Troughton');
+INSERT INTO `actors` (`id`, `name`) VALUES (3, 'Jon Pertwee');
+INSERT INTO `actors` (`id`, `name`) VALUES (4, 'Tom Baker');
+INSERT INTO `actors` (`id`, `name`) VALUES (5, 'Peter Davison');
+INSERT INTO `actors` (`id`, `name`) VALUES (6, 'Colin Baker');
+INSERT INTO `actors` (`id`, `name`) VALUES (7, 'Sylvester McCoy');
+INSERT INTO `actors` (`id`, `name`) VALUES (8, 'Paul McGann');
+INSERT INTO `actors` (`id`, `name`) VALUES (9, 'John Hurt');
+INSERT INTO `actors` (`id`, `name`) VALUES (10, 'Chris Eccleston');
+INSERT INTO `actors` (`id`, `name`) VALUES (11, 'David Tennant');
+INSERT INTO `actors` (`id`, `name`) VALUES (12, 'Matt Smith');
+INSERT INTO `actors` (`id`, `name`) VALUES (13, 'Peter Capaldi');
+INSERT INTO `actors` (`id`, `name`) VALUES (14, 'Peter Cushing');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `directors`
 --
 
@@ -130,27 +160,27 @@ INSERT INTO `directors` (`id`, `name`) VALUES (103, 'Warris Hussein');
 CREATE TABLE `doctors` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `incarnation` text NOT NULL,
-  `actor` text NOT NULL
+  `primary_actor` int(11) NOT NULL
 );
 
 --
 -- Dumping data for table `doctors`
 --
 
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (1, 'First Doctor', 'William Hartnell');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (2, 'Second Doctor', 'Patrick Troughton');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (3, 'Third Doctor', 'Jon Pertwee');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (4, 'Fourth Doctor', 'Tom Baker');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (5, 'Fifth Doctor', 'Peter Davison');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (6, 'Sixth Doctor', 'Colin Baker');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (7, 'Seventh Doctor', 'Sylvester McCoy');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (8, 'Eighth Doctor', 'Paul McGann');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (9, 'War Doctor', 'John Hurt');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (10, 'Ninth Doctor', 'Chris Eccleston');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (11, 'Tenth Doctor', 'David Tennant');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (12, 'Eleventh Doctor', 'Matt Smith');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (13, 'Twelfth Doctor', 'Peter Capaldi');
-INSERT INTO `doctors` (`id`, `incarnation`, `actor`) VALUES (14, 'Dr. Who', 'Peter Cushing');
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (1, 'First Doctor', 1);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (2, 'Second Doctor', 2);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (3, 'Third Doctor', 3);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (4, 'Fourth Doctor', 4);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (5, 'Fifth Doctor', 5);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (6, 'Sixth Doctor', 6);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (7, 'Seventh Doctor', 7);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (8, 'Eighth Doctor', 8);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (9, 'War Doctor', 9);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (10, 'Ninth Doctor', 10);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (11, 'Tenth Doctor', 11);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (12, 'Eleventh Doctor', 12);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (13, 'Twelfth Doctor', 13);
+INSERT INTO `doctors` (`id`, `incarnation`, `primary_actor`) VALUES (14, 'Dr. Who', 14);
 
 -- --------------------------------------------------------
 
