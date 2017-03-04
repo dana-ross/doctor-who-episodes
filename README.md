@@ -1,5 +1,5 @@
 # Doctor Who Episode Database
-MySQL database of Doctor Who episodes and related data
+SQL database of Doctor Who episodes and related data. Currently used by the [Catalogopolis API](https://github.com/daveross/catalogopolis-api).
 
 ## License
 Public domain. *Collections of facts* can't be copywritten.
