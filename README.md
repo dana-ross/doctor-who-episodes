@@ -2,7 +2,25 @@
 SQL database of Doctor Who episodes and related data. Currently used by the [Catalogopolis API](https://github.com/daveross/catalogopolis-api).
 
 ## License
-Public domain. *Collections of facts* can't be copywritten.
+Public domain. *Collections of facts* can't be copywritten. But since licensing may be an issue for some people attempting to use this data, I've made it available under CC0.
+
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/daveross/doctor-who-episodes">
+    <span property="dct:title">David Ross</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">Doctor Who Episode Database</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="https://github.com/daveross/doctor-who-episodes">
+  United States</span>.
+</p>
 
 ## Tables
 
