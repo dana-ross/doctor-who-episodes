@@ -37,6 +37,19 @@ This work is published from:
 * **title**
 * **production_code**
 
+### episodes
+* **id**
+* **title**
+* **serial_id**
+* **story**
+* **episode_order**
+* **original_air_date**
+* **runtime**
+* **uk_viewers_mm**
+* **appreciation_index**
+* **missing**
+* **recreated**
+
 ### seasons
 * **id**
 * **name**
