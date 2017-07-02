@@ -464,6 +464,14 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (295,31);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (296,88);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (297,104);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (298,46);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (299,95);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (300,95);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (300,74);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (301,99);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (302,61);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (303,86);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (304,95);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (305,95);
 CREATE TABLE `serials_doctors` (
   `serial_id` int(11) NOT NULL,
   `doctor_id` int(11) NOT NULL,
@@ -771,6 +779,19 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (290,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (291,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (292,14);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (293,14);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (294,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (295,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (296,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (297,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (298,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (299,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (300,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (301,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (302,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (303,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (304,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,1);
 CREATE TABLE `serials_directors` (
   `serial_id` int(11) NOT NULL,
   `director_id` int(11) NOT NULL,
@@ -1084,6 +1105,13 @@ INSERT INTO `serials_directors` (serial_id,director_id) VALUES (295,104);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (296,105);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (297,105);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (298,106);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (299,20);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (300,20);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (301,107);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (302,107);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (303,106);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (304,86);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (305,86);
 CREATE TABLE `serials` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `season_id` int(11) NOT NULL,
@@ -1390,6 +1418,13 @@ INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (296,39,'267',3,'Thin Ice',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (297,39,'268',4,'Knock Knock',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (298,39,'269',5,'Oxygen',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (299,39,'270',6,'Extremis',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (300,39,'271',7,'The Pyramid at the End of the World',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (301,39,'272',8,'The Lie of the Land',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (302,39,'273',9,'Empress of Mars',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (303,39,'274',10,'The Eaters of Light',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (304,39,'275a',11,'World Enough and Time',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (305,39,'275b',12,'The Doctor Falls',NULL);
 CREATE TABLE `seasons` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
@@ -2285,9 +2320,16 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (836,'Daleks -- Invasion Earth: 2150 A.D.',293,NULL,'1','1966-08-05','84:00',NULL,NULL,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (837,'The Pilot',294,'265','1','2017-04-15','50:00',6.68,83,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (838,'Smile',295,'266','1','2017-04-22','45:00',5.97,83,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (839,'Thin Ice',296,'267','1','2017-04-29','45:00',NULL,84,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (840,'Knock Knock',297,'268','1','2017-05-06',NULL,NULL,NULL,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (841,'Oxygen',298,'269','1','2017-05-13',NULL,NULL,NULL,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (839,'Thin Ice',296,'267','1','2017-04-29','45:00',5.61,84,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (840,'Knock Knock',297,'268','1','2017-05-06','44:00',5.73,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (841,'Oxygen',298,'269','1','2017-05-13','45:00',5.27,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (842,'Extremis',299,'270','1','2017-05-20','49:00',5.53,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (843,'The Pyramid at the End of the World',300,'271','1','2017-05-27','46:00',5.79,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (844,'The Lie of the Land',301,'272','1','2017-06-03','45:00',4.82,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (845,'Empress of Mars',302,'273','1','2017-06-10','44:00',5.02,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (846,'The Eaters of Light',303,'274','1','2017-06-17','42:00',4.73,81,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (847,'World Enough and Time',304,'275a','1','2017-06-24','45:00',NULL,85,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (848,'The Doctor Falls',305,'275b','2','2017-07-01','60:00',NULL,NULL,0,0);
 CREATE TABLE `doctors` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `incarnation` text NOT NULL,
@@ -2417,6 +2459,7 @@ INSERT INTO `directors` (id,name) VALUES (103,'Warris Hussein');
 INSERT INTO `directors` (id,name) VALUES (104,'Lawrence Gough');
 INSERT INTO `directors` (id,name) VALUES (105,'Bill Anderson');
 INSERT INTO `directors` (id,name) VALUES (106,'Charles Palmer');
+INSERT INTO `directors` (id,name) VALUES (107,'Wayne Yip');
 CREATE TABLE `actors` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
