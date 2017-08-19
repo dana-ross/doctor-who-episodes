@@ -2349,6 +2349,7 @@ INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (11,'Tenth Doctor',1
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (12,'Eleventh Doctor',12);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (13,'Twelfth Doctor',13);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (14,'Dr. Who',14);
+INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (15,'Thirteenth Doctor',15);
 CREATE TABLE `directors` (
   `id` int(11) PRIMARY KEY NOT NULL,
   `name` text NOT NULL
@@ -2460,22 +2461,25 @@ INSERT INTO `directors` (id,name) VALUES (104,'Lawrence Gough');
 INSERT INTO `directors` (id,name) VALUES (105,'Bill Anderson');
 INSERT INTO `directors` (id,name) VALUES (106,'Charles Palmer');
 INSERT INTO `directors` (id,name) VALUES (107,'Wayne Yip');
-CREATE TABLE `actors` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `name` text NOT NULL
+CREATE TABLE "actors" (
+	`id`	int(11) NOT NULL,
+	`name`	text NOT NULL,
+	`gender`	TEXT,
+	PRIMARY KEY(`id`)
 );
-INSERT INTO `actors` (id,name) VALUES (1,'William Hartnell');
-INSERT INTO `actors` (id,name) VALUES (2,'Patrick Troughton');
-INSERT INTO `actors` (id,name) VALUES (3,'Jon Pertwee');
-INSERT INTO `actors` (id,name) VALUES (4,'Tom Baker');
-INSERT INTO `actors` (id,name) VALUES (5,'Peter Davison');
-INSERT INTO `actors` (id,name) VALUES (6,'Colin Baker');
-INSERT INTO `actors` (id,name) VALUES (7,'Sylvester McCoy');
-INSERT INTO `actors` (id,name) VALUES (8,'Paul McGann');
-INSERT INTO `actors` (id,name) VALUES (9,'John Hurt');
-INSERT INTO `actors` (id,name) VALUES (10,'Chris Eccleston');
-INSERT INTO `actors` (id,name) VALUES (11,'David Tennant');
-INSERT INTO `actors` (id,name) VALUES (12,'Matt Smith');
-INSERT INTO `actors` (id,name) VALUES (13,'Peter Capaldi');
-INSERT INTO `actors` (id,name) VALUES (14,'Peter Cushing');
+INSERT INTO `actors` (id,name,gender) VALUES (1,'William Hartnell','male');
+INSERT INTO `actors` (id,name,gender) VALUES (2,'Patrick Troughton','male');
+INSERT INTO `actors` (id,name,gender) VALUES (3,'Jon Pertwee','male');
+INSERT INTO `actors` (id,name,gender) VALUES (4,'Tom Baker','male');
+INSERT INTO `actors` (id,name,gender) VALUES (5,'Peter Davison','male');
+INSERT INTO `actors` (id,name,gender) VALUES (6,'Colin Baker','male');
+INSERT INTO `actors` (id,name,gender) VALUES (7,'Sylvester McCoy','male');
+INSERT INTO `actors` (id,name,gender) VALUES (8,'Paul McGann','male');
+INSERT INTO `actors` (id,name,gender) VALUES (9,'John Hurt','male');
+INSERT INTO `actors` (id,name,gender) VALUES (10,'Chris Eccleston','male');
+INSERT INTO `actors` (id,name,gender) VALUES (11,'David Tennant','male');
+INSERT INTO `actors` (id,name,gender) VALUES (12,'Matt Smith','male');
+INSERT INTO `actors` (id,name,gender) VALUES (13,'Peter Capaldi','male');
+INSERT INTO `actors` (id,name,gender) VALUES (14,'Peter Cushing','male');
+INSERT INTO `actors` (id,name,gender) VALUES (15,'Jodie Whittaker','female');
 COMMIT;
