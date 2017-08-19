@@ -24,10 +24,15 @@ This work is published from:
 
 ## Tables
 
+### actors
+* **id**
+* **name**
+* **gender**
+
 ### doctors
 * **id**
 * **incarnation**
-* **actor**
+* **primary_actor**
 
 ### serials
 * **id**
