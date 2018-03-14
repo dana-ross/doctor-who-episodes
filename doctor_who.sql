@@ -110,8 +110,8 @@ CREATE TABLE IF NOT EXISTS `serials_writers` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`writer_id`	int ( 11 ) NOT NULL,
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	PRIMARY KEY(`serial_id`,`writer_id`),
-	FOREIGN KEY(`writer_id`) REFERENCES `writers`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+	FOREIGN KEY(`writer_id`) REFERENCES `writers`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	PRIMARY KEY(`serial_id`,`writer_id`)
 );
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (1,3);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (2,98);
@@ -479,9 +479,9 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (306,95);
 CREATE TABLE IF NOT EXISTS `serials_doctors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`doctor_id`	int ( 11 ) NOT NULL,
-	PRIMARY KEY(`serial_id`,`doctor_id`),
 	FOREIGN KEY(`doctor_id`) REFERENCES `doctors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+	PRIMARY KEY(`serial_id`,`doctor_id`)
 );
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (1,1);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (2,1);
@@ -803,8 +803,8 @@ CREATE TABLE IF NOT EXISTS `serials_directors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`director_id`	int ( 11 ) NOT NULL,
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	FOREIGN KEY(`director_id`) REFERENCES `directors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	PRIMARY KEY(`serial_id`,`director_id`)
+	PRIMARY KEY(`serial_id`,`director_id`),
+	FOREIGN KEY(`director_id`) REFERENCES `directors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (1,103);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (2,89);
@@ -2348,8 +2348,8 @@ CREATE TABLE IF NOT EXISTS `doctors` (
 	`id`	int ( 11 ) NOT NULL,
 	`incarnation`	text NOT NULL,
 	`primary_actor`	int ( 11 ) NOT NULL,
-	FOREIGN KEY(`primary_actor`) REFERENCES `actors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	PRIMARY KEY(`id`)
+	PRIMARY KEY(`id`),
+	FOREIGN KEY(`primary_actor`) REFERENCES `actors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (1,'First Doctor',1);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (2,'Second Doctor',2);
