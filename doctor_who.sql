@@ -1,7 +1,8 @@
 BEGIN TRANSACTION;
-CREATE TABLE `writers` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `name` text NOT NULL
+CREATE TABLE IF NOT EXISTS `writers` (
+	`id`	int ( 11 ) NOT NULL,
+	`name`	text NOT NULL,
+	PRIMARY KEY(`id`)
 );
 INSERT INTO `writers` (id,name) VALUES (1,'Andrew McCulloch');
 INSERT INTO `writers` (id,name) VALUES (2,'Andrew Smith');
@@ -105,10 +106,10 @@ INSERT INTO `writers` (id,name) VALUES (101,'Trevor Ray');
 INSERT INTO `writers` (id,name) VALUES (102,'Victor Pemberton');
 INSERT INTO `writers` (id,name) VALUES (103,'William Emms');
 INSERT INTO `writers` (id,name) VALUES (104,'Mike Bartlett');
-CREATE TABLE `serials_writers` (
-  `serial_id` int(11) NOT NULL,
-  `writer_id` int(11) NOT NULL,
-  PRIMARY KEY (`serial_id`, `writer_id`)
+CREATE TABLE IF NOT EXISTS `serials_writers` (
+	`serial_id`	int ( 11 ) NOT NULL,
+	`writer_id`	int ( 11 ) NOT NULL,
+	PRIMARY KEY(`serial_id`,`writer_id`)
 );
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (1,3);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (2,98);
@@ -472,10 +473,11 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (302,61);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (303,86);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (304,95);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (305,95);
-CREATE TABLE `serials_doctors` (
-  `serial_id` int(11) NOT NULL,
-  `doctor_id` int(11) NOT NULL,
-  PRIMARY KEY (`serial_id`, `doctor_id`)
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (306,95);
+CREATE TABLE IF NOT EXISTS `serials_doctors` (
+	`serial_id`	int ( 11 ) NOT NULL,
+	`doctor_id`	int ( 11 ) NOT NULL,
+	PRIMARY KEY(`serial_id`,`doctor_id`)
 );
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (1,1);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (2,1);
@@ -792,10 +794,11 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (303,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (304,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,1);
-CREATE TABLE `serials_directors` (
-  `serial_id` int(11) NOT NULL,
-  `director_id` int(11) NOT NULL,
-  PRIMARY KEY (`serial_id`, `director_id`)
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (306,15);
+CREATE TABLE IF NOT EXISTS `serials_directors` (
+	`serial_id`	int ( 11 ) NOT NULL,
+	`director_id`	int ( 11 ) NOT NULL,
+	PRIMARY KEY(`serial_id`,`director_id`)
 );
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (1,103);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (2,89);
@@ -1112,13 +1115,15 @@ INSERT INTO `serials_directors` (serial_id,director_id) VALUES (302,107);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (303,106);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (304,86);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (305,86);
-CREATE TABLE `serials` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `season_id` int(11) NOT NULL,
-  `story` text,
-  `serial` int(11) DEFAULT NULL,
-  `title` text NOT NULL,
-  `production_code` text
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (306,104);
+CREATE TABLE IF NOT EXISTS `serials` (
+	`id`	int ( 11 ) NOT NULL,
+	`season_id`	int ( 11 ) NOT NULL,
+	`story`	text,
+	`serial`	int ( 11 ) DEFAULT NULL,
+	`title`	text NOT NULL,
+	`production_code`	text,
+	PRIMARY KEY(`id`)
 );
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (1,1,'1',1,'An Unearthly Child','A');
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (2,1,'2',2,'The Daleks','B');
@@ -1425,9 +1430,11 @@ INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (303,39,'274',10,'The Eaters of Light',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (304,39,'275a',11,'World Enough and Time',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (305,39,'275b',12,'The Doctor Falls',NULL);
-CREATE TABLE `seasons` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `name` text NOT NULL
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (306,39,'276',0,'Twice Upon a Time',NULL);
+CREATE TABLE IF NOT EXISTS `seasons` (
+	`id`	int ( 11 ) NOT NULL,
+	`name`	text NOT NULL,
+	PRIMARY KEY(`id`)
 );
 INSERT INTO `seasons` (id,name) VALUES (1,'Season 1');
 INSERT INTO `seasons` (id,name) VALUES (2,'Season 2');
@@ -1469,7 +1476,7 @@ INSERT INTO `seasons` (id,name) VALUES (37,'Series 8');
 INSERT INTO `seasons` (id,name) VALUES (38,'Series 9');
 INSERT INTO `seasons` (id,name) VALUES (39,'Series 10');
 INSERT INTO `seasons` (id,name) VALUES (40,'Films');
-CREATE TABLE "episodes" (
+CREATE TABLE IF NOT EXISTS `episodes` (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	`title`	TEXT NOT NULL,
 	`serial_id`	INTEGER NOT NULL,
@@ -2330,10 +2337,12 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (846,'The Eaters of Light',303,'274','1','2017-06-17','42:00',4.73,81,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (847,'World Enough and Time',304,'275a','1','2017-06-24','45:00',NULL,85,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (848,'The Doctor Falls',305,'275b','2','2017-07-01','60:00',NULL,NULL,0,0);
-CREATE TABLE `doctors` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `incarnation` text NOT NULL,
-  `primary_actor` int(11) NOT NULL
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (849,'Twice Upon a Time',306,'276','1','2017-12-25','60:00',NULL,NULL,0,0);
+CREATE TABLE IF NOT EXISTS `doctors` (
+	`id`	int ( 11 ) NOT NULL,
+	`incarnation`	text NOT NULL,
+	`primary_actor`	int ( 11 ) NOT NULL,
+	PRIMARY KEY(`id`)
 );
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (1,'First Doctor',1);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (2,'Second Doctor',2);
@@ -2350,9 +2359,10 @@ INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (12,'Eleventh Doctor
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (13,'Twelfth Doctor',13);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (14,'Dr. Who',14);
 INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (15,'Thirteenth Doctor',15);
-CREATE TABLE `directors` (
-  `id` int(11) PRIMARY KEY NOT NULL,
-  `name` text NOT NULL
+CREATE TABLE IF NOT EXISTS `directors` (
+	`id`	int ( 11 ) NOT NULL,
+	`name`	text NOT NULL,
+	PRIMARY KEY(`id`)
 );
 INSERT INTO `directors` (id,name) VALUES (1,'Adam Smith');
 INSERT INTO `directors` (id,name) VALUES (2,'Alan Bromly');
@@ -2461,8 +2471,8 @@ INSERT INTO `directors` (id,name) VALUES (104,'Lawrence Gough');
 INSERT INTO `directors` (id,name) VALUES (105,'Bill Anderson');
 INSERT INTO `directors` (id,name) VALUES (106,'Charles Palmer');
 INSERT INTO `directors` (id,name) VALUES (107,'Wayne Yip');
-CREATE TABLE "actors" (
-	`id`	int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `actors` (
+	`id`	int ( 11 ) NOT NULL,
 	`name`	text NOT NULL,
 	`gender`	TEXT,
 	PRIMARY KEY(`id`)
