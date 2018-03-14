@@ -1,5 +1,5 @@
 const { JSDOM } = require('jsdom')
-const Database = require("sqlite3").Database
+
 const fetch = require('node-fetch')
 const flatten = require('array-flatten')
 const fs = require('fs')
