@@ -400,7 +400,6 @@ The Girl Who Waited,244,Amy Pond,38
 The Girl Who Waited,244,Rory Williams,49
 The God Complex,245,Amy Pond,38
 The God Complex,245,Rory Williams,49
-Closing Time,246,Craig,
 The Wedding of River Song,247,Amy Pond,38
 The Wedding of River Song,247,Rory Williams,49
 The Wedding of River Song,247,River Song,40
