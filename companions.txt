@@ -203,7 +203,7 @@ Full Circle,Adric
 Full Circle,K9
 State of Decay,Romana II
 State of Decay,Adric
-State of Decay,K-9
+State of Decay,K9
 Warriors' Gate,Romana II
 Warriors' Gate,Adric
 Warriors' Gate,K9

@@ -1,0 +1,472 @@
+An Unearthly Child,1,Susan Foreman,1
+An Unearthly Child,1,Ian Chesterton,3
+An Unearthly Child,1,Barbara Wright,2
+The Daleks,2,Susan Foreman,1
+The Daleks,2,Ian Chesterton,3
+The Daleks,2,Barbara Wright,2
+The Edge of Destruction,3,Susan Foreman,1
+The Edge of Destruction,3,Ian Chesterton,3
+The Edge of Destruction,3,Barbara Wright,2
+Marco Polo,4,Susan Foreman,1
+Marco Polo,4,Ian Chesterton,3
+Marco Polo,4,Barbara Wright,2
+The Keys of Marinus,5,Susan Foreman,1
+The Keys of Marinus,5,Ian Chesterton,3
+The Keys of Marinus,5,Barbara Wright,2
+The Aztecs,6,Susan Foreman,1
+The Aztecs,6,Ian Chesterton,3
+The Aztecs,6,Barbara Wright,2
+The Sensorites,7,Susan Foreman,1
+The Sensorites,7,Ian Chesterton,3
+The Sensorites,7,Barbara Wright,2
+The Reign of Terror,8,Susan Foreman,1
+The Reign of Terror,8,Ian Chesterton,3
+The Reign of Terror,8,Barbara Wright,2
+Planet of Giants,9,Susan Foreman,1
+Planet of Giants,9,Ian Chesterton,3
+Planet of Giants,9,Barbara Wright,2
+The Dalek Invasion of Earth,10,Susan Foreman,1
+The Dalek Invasion of Earth,10,Ian Chesterton,3
+The Dalek Invasion of Earth,10,Barbara Wright,2
+The Rescue,11,Barbara Wright,2
+The Rescue,11,Ian Chesterton,3
+The Rescue,11,Vicki Pallister,4
+The Romans,12,Barbara Wright,2
+The Romans,12,Ian Chesterton,3
+The Romans,12,Vicki Pallister,4
+The Web Planet,13,Barbara Wright,2
+The Web Planet,13,Ian Chesterton,3
+The Web Planet,13,Vicki Pallister,4
+The Crusade,14,Barbara Wright,2
+The Crusade,14,Ian Chesterton,3
+The Crusade,14,Vicki Pallister,4
+The Space Museum,15,Barbara Wright,2
+The Space Museum,15,Ian Chesterton,3
+The Space Museum,15,Vicki Pallister,4
+The Chase,16,Barbara Wright,2
+The Chase,16,Ian Chesterton,3
+The Chase,16,Vicki Pallister,4
+The Time Meddler,17,Vicki Pallister,4
+The Time Meddler,17,Steven Taylor,5
+Galaxy 4,18,Vicki Pallister,4
+Galaxy 4,18,Steven Taylor,5
+The Myth Makers,20,Vicki Pallister,4
+The Myth Makers,20,Steven Taylor,5
+The Daleks' Master Plan,21,Steven Taylor,5
+The Daleks' Master Plan,21,Sara Kingdom,7
+The Daleks' Master Plan,21,Katarina,6
+The Massacre of St. Bartholomew's Eve,22,Steven Taylor,5
+The Ark,23,Steven Taylor,5
+The Ark,23,Dodo Chaplet,8
+The Celestial Toymaker,24,Steven Taylor,5
+The Celestial Toymaker,24,Dodo Chaplet,8
+The Gunfighters,25,Steven Taylor,5
+The Gunfighters,25,Dodo Chaplet,8
+The Savages,26,Steven Taylor,5
+The Savages,26,Dodo Chaplet,8
+The War Machines,27,Dodo Chaplet,8
+The Smugglers,28,Ben Jackson,10
+The Smugglers,28,Polly Wright,9
+The Tenth Planet,29,Ben Jackson,10
+The Tenth Planet,29,Polly Wright,9
+The Power of the Daleks,30,Ben Jackson,10
+The Power of the Daleks,30,Polly Wright,9
+The Highlanders,31,Ben Jackson,10
+The Highlanders,31,Polly Wright,9
+The Highlanders,31,Jamie McCrimmon,11
+The Underwater Menace,32,Ben Jackson,10
+The Underwater Menace,32,Polly Wright,9
+The Underwater Menace,32,Jamie McCrimmon,11
+The Moonbase,33,Ben Jackson,10
+The Moonbase,33,Polly Wright,9
+The Moonbase,33,Jamie McCrimmon,11
+The Macra Terror,34,Ben Jackson,10
+The Macra Terror,34,Polly Wright,9
+The Macra Terror,34,Jamie McCrimmon,11
+The Faceless Ones,35,Ben Jackson,10
+The Faceless Ones,35,Polly Wright,9
+The Faceless Ones,35,Jamie McCrimmon,11
+The Evil of the Daleks,36,Jamie McCrimmon,11
+The Evil of the Daleks,36,Victoria Waterfield,12
+The Tomb of the Cybermen,37,Jamie McCrimmon,11
+The Tomb of the Cybermen,37,Victoria Waterfield,12
+The Abominable Snowmen,38,Jamie McCrimmon,11
+The Abominable Snowmen,38,Victoria Waterfield,12
+The Ice Warriors,39,Jamie McCrimmon,11
+The Ice Warriors,39,Victoria Waterfield,12
+The Enemy of the World,40,Jamie McCrimmon,11
+The Enemy of the World,40,Victoria Waterfield,12
+The Web of Fear,41,Jamie McCrimmon,11
+The Web of Fear,41,Victoria Waterfield,12
+Fury from the Deep,42,Jamie McCrimmon,11
+Fury from the Deep,42,Victoria Waterfield,12
+The Wheel in Space,43,Jamie McCrimmon,11
+The Dominators,44,Jamie McCrimmon,11
+The Dominators,44,Zoe Heriot,13
+The Mind Robber,45,Jamie McCrimmon,11
+The Mind Robber,45,Zoe Heriot,13
+The Invasion,46,Jamie McCrimmon,11
+The Invasion,46,Zoe Heriot,13
+The Krotons,47,Jamie McCrimmon,11
+The Krotons,47,Zoe Heriot,13
+The Seeds of Death,48,Jamie McCrimmon,11
+The Seeds of Death,48,Zoe Heriot,13
+The Space Pirates,49,Jamie McCrimmon,11
+The Space Pirates,49,Zoe Heriot,13
+The War Games,50,Jamie McCrimmon,11
+The War Games,50,Zoe Heriot,13
+Spearhead from Space,51,Liz Shaw,14
+Doctor Who and the Silurians,52,Liz Shaw,14
+The Ambassadors of Death,53,Liz Shaw,14
+Inferno,54,Liz Shaw,14
+Terror of the Autons,55,Jo Grant,15
+The Mind of Evil,56,Jo Grant,15
+The Claws of Axos,57,Jo Grant,15
+Colony in Space,58,Jo Grant,15
+The Daemons,59,Jo Grant,15
+Day of the Daleks,60,Jo Grant,15
+The Curse of Peladon,61,Jo Grant,15
+The Sea Devils,62,Jo Grant,15
+The Mutants,63,Jo Grant,15
+The Time Monster,64,Jo Grant,15
+The Three Doctors,65,Jo Grant,15
+Carnival of Monsters,66,Jo Grant,15
+Frontier in Space,67,Jo Grant,15
+Planet of the Daleks,68,Jo Grant,15
+The Green Death,69,Jo Grant,15
+The Time Warrior,70,Sarah Jane Smith,16
+Invasion of the Dinosaurs,71,Sarah Jane Smith,16
+Death to the Daleks,72,Sarah Jane Smith,16
+The Monster of Peladon,73,Sarah Jane Smith,16
+Planet of the Spiders,74,Sarah Jane Smith,16
+Robot,75,Sarah Jane Smith,16
+Robot,75,Harry Sullivan,17
+The Ark in Space,76,Sarah Jane Smith,16
+The Ark in Space,76,Harry Sullivan,17
+The Sontaran Experiment,77,Sarah Jane Smith,16
+The Sontaran Experiment,77,Harry Sullivan,17
+Genesis of the Daleks,78,Sarah Jane Smith,16
+Genesis of the Daleks,78,Harry Sullivan,17
+Revenge of the Cybermen,79,Sarah Jane Smith,16
+Revenge of the Cybermen,79,Harry Sullivan,17
+Terror of the Zygons,80,Sarah Jane Smith,16
+Terror of the Zygons,80,Harry Sullivan,17
+Planet of Evil,81,Sarah Jane Smith,16
+Pyramids of Mars,82,Sarah Jane Smith,16
+The Android Invasion,83,Sarah Jane Smith,16
+The Brain of Morbius,84,Sarah Jane Smith,16
+The Seeds of Doom,85,Sarah Jane Smith,16
+The Masque of Mandragora,86,Sarah Jane Smith,16
+The Hand of Fear,87,Sarah Jane Smith,16
+The Face of Evil,89,Leela,18
+The Robots of Death,90,Leela,18
+The Talons of Weng-Chiang,91,Leela,18
+Horror of Fang Rock,92,Leela,18
+The Invisible Enemy,93,Leela,18
+The Invisible Enemy,93,K9,19
+Image of the Fendahl,94,Leela,18
+The Sun Makers,95,Leela,18
+The Sun Makers,95,K9,19
+Underworld,96,Leela,18
+Underworld,96,K9,19
+The Invasion of Time,97,Leela,18
+The Invasion of Time,97,K9,19
+The Ribos Operation,98,Romana I,20
+The Ribos Operation,98,K9,19
+The Pirate Planet,99,Romana,
+The Pirate Planet,99,K9,19
+The Stones of Blood,100,Romana I,20
+The Stones of Blood,100,K9,19
+The Androids of Tara,101,Romana I,20
+The Androids of Tara,101,K9,19
+The Power of Kroll,102,Romana I,20
+The Armageddon Factor,103,Romana I,20
+The Armageddon Factor,103,K9,19
+Destiny of the Daleks,104,Romana II,21
+City of Death,105,Romana II,21
+The Creature from the Pit,106,Romana II,21
+The Creature from the Pit,106,K9,19
+Nightmare of Eden,107,Romana II,21
+Nightmare of Eden,107,K9,19
+The Horns of Nimon,108,Romana II,21
+The Horns of Nimon,108,K9,19
+Shada,109,Romana,
+Shada,109,K9,19
+The Leisure Hive,110,Romana II,21
+The Leisure Hive,110,K9,19
+Meglos,111,Romana II,21
+Meglos,111,K9,19
+Full Circle,112,Romana II,21
+Full Circle,112,Adric,22
+Full Circle,112,K9,19
+State of Decay,113,Romana II,21
+State of Decay,113,Adric,22
+State of Decay,113,K9,19
+Warriors' Gate,114,Romana II,21
+Warriors' Gate,114,Adric,22
+Warriors' Gate,114,K9,19
+The Keeper of Traken,115,Adric,22
+Logopolis,116,Adric,22
+Logopolis,116,Nyssa of Traken,24
+Logopolis,116,Tegan Jovanka,23
+Castrovalva,117,Adric,22
+Castrovalva,117,Nyssa of Traken,24
+Castrovalva,117,Tegan Jovanka,23
+Four to Doomsday,118,Adric,22
+Four to Doomsday,118,Nyssa of Traken,24
+Four to Doomsday,118,Tegan Jovanka,23
+Kinda,119,Adric,22
+Kinda,119,Tegan Jovanka,23
+The Visitation,120,Adric,22
+The Visitation,120,Nyssa of Traken,24
+The Visitation,120,Tegan Jovanka,23
+Black Orchid,121,Adric,22
+Black Orchid,121,Nyssa of Traken,24
+Black Orchid,121,Tegan Jovanka,23
+Earthshock,122,Adric,22
+Earthshock,122,Nyssa of Traken,24
+Earthshock,122,Tegan Jovanka,23
+Time-Flight,123,Nyssa of Traken,24
+Time-Flight,123,Tegan Jovanka,23
+Arc of Infinity,124,Nyssa of Traken,24
+Snakedance,125,Nyssa of Traken,24
+Snakedance,125,Tegan Jovanka,23
+Mawdryn Undead,126,Nyssa of Traken,24
+Mawdryn Undead,126,Tegan Jovanka,23
+Mawdryn Undead,126,Vislor Turlough,25
+Terminus,127,Nyssa of Traken,24
+Terminus,127,Tegan Jovanka,23
+Terminus,127,Vislor Turlough,25
+Enlightenment,128,Tegan Jovanka,23
+Enlightenment,128,Vislor Turlough,25
+The King's Demons,129,Tegan Jovanka,23
+The King's Demons,129,Vislor Turlough,25
+The Five Doctors,130,Tegan Jovanka,23
+The Five Doctors,130,Vislor Turlough,25
+Warriors of the Deep,131,Tegan Jovanka,23
+Warriors of the Deep,131,Vislor Turlough,25
+The Awakening,132,Tegan Jovanka,23
+The Awakening,132,Vislor Turlough,25
+Frontios,133,Tegan Jovanka,23
+Frontios,133,Vislor Turlough,25
+Resurrection of the Daleks,134,Tegan Jovanka,23
+Resurrection of the Daleks,134,Vislor Turlough,25
+Planet of Fire,135,Vislor Turlough,25
+Planet of Fire,135,Perpugilliam "Peri" Brown,27
+Planet of Fire,135,Kamelion,26
+The Caves of Androzani,136,Perpugilliam "Peri" Brown,27
+The Twin Dilemma,137,Perpugilliam "Peri" Brown,27
+Attack of the Cybermen,138,Perpugilliam "Peri" Brown,27
+Vengeance on Varos,139,Perpugilliam "Peri" Brown,27
+The Mark of the Rani,140,Perpugilliam "Peri" Brown,27
+The Two Doctors,141,Perpugilliam "Peri" Brown,27
+Timelash,142,Perpugilliam "Peri" Brown,27
+Revelation of the Daleks,143,Perpugilliam "Peri" Brown,27
+Time and the Rani,148,Melanie Bush,28
+Paradise Towers,149,Melanie Bush,28
+Delta and the Bannermen,150,Melanie Bush,28
+Dragonfire,151,Melanie Bush,28
+Remembrance of the Daleks,152,Dorothy Gale "Ace" McShane,29
+The Happiness Patrol,153,Dorothy Gale "Ace" McShane,29
+Silver Nemesis,154,Dorothy Gale "Ace" McShane,29
+The Greatest Show in the Galaxy,155,Dorothy Gale "Ace" McShane,29
+Battlefield,156,Dorothy Gale "Ace" McShane,29
+Battlefield,156,The Brig,
+Ghost Light,157,Dorothy Gale "Ace" McShane,29
+The Curse of Fenric,158,Dorothy Gale "Ace" McShane,29
+Survival,159,Dorothy Gale "Ace" McShane,29
+Doctor Who,160,Grace Holloway,30
+Rose,161,Rose Tyler,31
+The End of the World,162,Rose Tyler,31
+The Unquiet Dead,163,Rose Tyler,31
+Aliens of London,164,Rose Tyler,31
+World War Three,165,Rose Tyler,31
+Dalek,166,Rose Tyler,31
+The Long Game,167,Rose Tyler,31
+The Long Game,167,Adam,
+Father's Day,168,Rose Tyler,31
+The Empty Child,169,Rose Tyler,31
+The Doctor Dances,170,Rose Tyler,31
+The Doctor Dances,170,Jack Harkness,33
+Boom Town,171,Rose Tyler,31
+Boom Town,171,Jack Harkness,33
+Bad Wolf,172,Rose Tyler,31
+Bad Wolf,172,Jack Harkness,33
+The Parting of the Ways,173,Rose Tyler,31
+The Parting of the Ways,173,Jack Harkness,33
+The Christmas Invasion,174,Rose Tyler,31
+New Earth,175,Rose Tyler,31
+Tooth and Claw,176,Rose Tyler,31
+School Reunion,177,Rose Tyler,31
+School Reunion,177,Mickey Smith,34
+The Girl in the Fireplace,178,Rose Tyler,31
+The Girl in the Fireplace,178,Mickey Smith,34
+Rise of the Cybermen,179,Rose Tyler,31
+Rise of the Cybermen,179,Mickey Smith,34
+The Age of Steel,180,Rose Tyler,31
+The Age of Steel,180,Mickey Smith,34
+The Idiot's Lantern,181,Rose Tyler,31
+The Impossible Planet,182,Rose Tyler,31
+The Satan Pit,183,Rose Tyler,31
+Love & Monsters,184,Rose Tyler,31
+Fear Her,185,Rose Tyler,31
+Army of Ghosts,186,Rose Tyler,31
+Doomsday,187,Rose Tyler,31
+The Runaway Bride,188,Donna Noble,35
+Smith and Jones,189,Martha Jones,36
+The Shakespeare Code,190,Martha Jones,36
+Gridlock,191,Martha Jones,36
+Daleks in Manhattan,192,Martha Jones,36
+Evolution of the Daleks,193,Martha Jones,36
+The Lazarus Experiment,194,Martha Jones,36
+42,195,Martha Jones,36
+Human Nature,196,Martha Jones,36
+The Family of Blood,197,Martha Jones,36
+Blink,198,Martha Jones,36
+Utopia,199,Martha Jones,36
+Utopia,199,Jack Harkness,33
+The Sound of Drums,200,Martha Jones,36
+The Sound of Drums,200,Jack Harkness,33
+Last of the Time Lords,201,Martha Jones,36
+Last of the Time Lords,201,Jack Harkness,33
+Partners in Crime,203,Donna Noble,35
+The Fires of Pompeii,204,Donna Noble,35
+Planet of the Ood,205,Donna Noble,35
+The Sontaran Stratagem,206,Donna Noble,35
+The Poison Sky,207,Donna Noble,35
+The Poison Sky,207,Martha Jones,36
+The Doctor's Daughter,208,Donna Noble,35
+The Doctor's Daughter,208,Martha Jones,36
+The Unicorn and the Wasp,209,Donna Noble,35
+Silence in the Library,210,Donna Noble,35
+Forest of the Dead,211,Donna Noble,35
+The Stolen Earth,214,Donna Noble,35
+The Stolen Earth,214,Rose Tyler,31
+The Stolen Earth,214,Jack Harkness,33
+The Stolen Earth,214,Sarah Jane Smith,16
+The Stolen Earth,214,Martha Jones,36
+Journey's End,215,Donna Noble,35
+Journey's End,215,Martha Jones,36
+Journey's End,215,Rose Tyler,31
+Journey's End,215,Jack Harkness,33
+Journey's End,215,Sarah Jane Smith,16
+Journey's End,215,Mickey Smith,34
+The End of Time part 1,219,Wilfred Mott,37
+The End of Time part 2,220,Wilfred Mott,37
+The Eleventh Hour,221,Amy Pond,38
+The Beast Below,222,Amy Pond,38
+Victory of the Daleks,223,Amy Pond,38
+The Time of Angels,224,Amy Pond,38
+Flesh and Stone,225,Amy Pond,38
+Flesh and Stone,225,River Song,40
+The Vampires of Venice,226,Amy Pond,38
+The Vampires of Venice,226,Rory Williams,49
+Amy's Choice,227,Amy Pond,38
+Amy's Choice,227,Rory Williams,49
+The Hungry Earth,228,Amy Pond,38
+The Hungry Earth,228,Rory Williams,49
+Cold Blood,229,Amy Pond,38
+Cold Blood,229,Rory Williams,49
+Vincent and the Doctor,230,Amy Pond,38
+The Lodger,231,Amy Pond,38
+The Pandorica Opens,232,Amy Pond,38
+The Pandorica Opens,232,River Song,40
+The Big Bang,233,Amy Pond,38
+The Big Bang,233,Rory Williams,49
+The Big Bang,233,River Song,40
+A Christmas Carol,234,Amy Pond,38
+A Christmas Carol,234,Rory Williams,49
+The Impossible Astronaut,235,Amy Pond,38
+The Impossible Astronaut,235,Rory Williams,49
+The Impossible Astronaut,235,River Song,40
+Day of the Moon,236,Amy Pond,38
+Day of the Moon,236,Rory Williams,49
+Day of the Moon,236,River Song,40
+The Curse of the Black Spot,237,Amy Pond,38
+The Curse of the Black Spot,237,Rory Williams,49
+The Doctor's Wife,238,Amy Pond,38
+The Doctor's Wife,238,Rory Williams,49
+The Rebel Flesh,239,Amy Pond,38
+The Rebel Flesh,239,Rory Williams,49
+The Almost People,240,Amy Pond,38
+The Almost People,240,Rory Williams,49
+A Good Man Goes to War,241,Amy Pond,38
+A Good Man Goes to War,241,Rory Williams,49
+Let's Kill Hitler,242,Amy Pond,38
+Let's Kill Hitler,242,Rory Williams,49
+Night Terrors,243,Amy Pond,38
+Night Terrors,243,Rory Williams,49
+The Girl Who Waited,244,Amy Pond,38
+The Girl Who Waited,244,Rory Williams,49
+The God Complex,245,Amy Pond,38
+The God Complex,245,Rory Williams,49
+Closing Time,246,Craig,
+The Wedding of River Song,247,Amy Pond,38
+The Wedding of River Song,247,Rory Williams,49
+The Wedding of River Song,247,River Song,40
+Asylum of the Daleks,249,Amy Pond,38
+Asylum of the Daleks,249,Rory Williams,49
+Dinosaurs on a Spaceship,250,Amy Pond,38
+Dinosaurs on a Spaceship,250,Rory Williams,49
+A Town Called Mercy,251,Amy Pond,38
+A Town Called Mercy,251,Rory Williams,49
+The Power of Three,252,Amy Pond,38
+The Power of Three,252,Rory Williams,49
+The Angels Take Manhattan,253,Amy Pond,38
+The Angels Take Manhattan,253,Rory Williams,49
+The Angels Take Manhattan,253,River Song,40
+The Snowmen,254,Clara Oswald,41
+The Bells of Saint John,255,Clara Oswald,41
+The Rings of Akhaten,256,Clara Oswald,41
+Cold War,257,Clara Oswald,41
+Hide,258,Clara Oswald,41
+Journey to the Centre of the TARDIS,259,Clara Oswald,41
+The Crimson Horror,260,Clara Oswald,41
+Nightmare in Silver,261,Clara Oswald,41
+The Name of the Doctor,262,Clara Oswald,41
+The Day of the Doctor,263,Clara Oswald,41
+The Time of the Doctor,264,Clara Oswald,41
+Deep Breath,265,Clara Oswald,41
+Into the Dalek,266,Clara Oswald,41
+Robot of Sherwood,267,Clara Oswald,41
+Listen,268,Clara Oswald,41
+Time Heist,269,Clara Oswald,41
+The Caretaker,270,Clara Oswald,41
+Kill the Moon,271,Clara Oswald,41
+Mummy on the Orient Express,272,Clara Oswald,41
+Flatline,273,Clara Oswald,41
+In the Forest of the Night,274,Clara Oswald,41
+Dark Water,275,Clara Oswald,41
+Death in Heaven,276,Clara Oswald,41
+Last Christmas,277,Clara Oswald,41
+The Magician's Apprentice,278,Clara Oswald,41
+The Witch's Familiar,279,Clara Oswald,41
+Under the Lake,280,Clara Oswald,41
+Before the Flood,281,Clara Oswald,41
+The Girl Who Died,282,Clara Oswald,41
+The Zygon Inversion,285,Clara Oswald,41
+Sleep No More,286,Clara Oswald,41
+Face the Raven,287,Clara Oswald,41
+Hell Bent,289,Clara Oswald,41
+The Husbands of River Song,290,River Song,40
+The Return of Doctor Mysterio,291,Nardole,43
+The Pilot,294,Bill Potts,42
+The Pilot,294,Nardole,43
+Smile,295,Bill Potts,42
+Thin Ice,296,Bill Potts,42
+Knock Knock,297,Bill Potts,42
+Oxygen,298,Bill Potts,42
+Oxygen,298,Nardole,43
+Extremis,299,Bill Potts,42
+Extremis,299,Nardole,43
+The Pyramid at the End of the World,300,Bill Potts,42
+The Pyramid at the End of the World,300,Nardole,43
+The Lie of the Land,301,Bill Potts,42
+The Lie of the Land,301,Nardole,43
+Empress of Mars,302,Bill Potts,42
+The Eaters of Light,303,Bill Potts,42
+The Eaters of Light,303,Nardole,43
+World Enough and Time,304,Bill Potts,42
+World Enough and Time,304,Nardole,43
+The Doctor Falls,305,Bill Potts,42
+The Doctor Falls,305,Nardole,43
