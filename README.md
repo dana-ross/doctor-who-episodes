@@ -59,6 +59,11 @@ This work is published from:
 * **id**
 * **name**
 
+### companions
+* **id**
+* **name**
+* **actor**
+
 ### directors
 * **id**
 * **name**
@@ -70,6 +75,10 @@ This work is published from:
 ### serials_doctors
 * **serial_id**
 * **doctor_id**
+
+### serials_companions
+* **serial_id**
+* **companion_id**
 
 ### serials_directors
 * **serial_id**
