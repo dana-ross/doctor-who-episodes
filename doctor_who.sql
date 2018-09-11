@@ -109,9 +109,9 @@ INSERT INTO `writers` (id,name) VALUES (104,'Mike Bartlett');
 CREATE TABLE IF NOT EXISTS `serials_writers` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`writer_id`	int ( 11 ) NOT NULL,
-	PRIMARY KEY(`serial_id`,`writer_id`),
+	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	FOREIGN KEY(`writer_id`) REFERENCES `writers`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+	PRIMARY KEY(`serial_id`,`writer_id`)
 );
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (1,3);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (2,98);
@@ -479,9 +479,9 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (306,95);
 CREATE TABLE IF NOT EXISTS `serials_doctors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`doctor_id`	int ( 11 ) NOT NULL,
+	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY(`serial_id`,`doctor_id`),
-	FOREIGN KEY(`doctor_id`) REFERENCES `doctors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+	FOREIGN KEY(`doctor_id`) REFERENCES `doctors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (1,1);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (2,1);
@@ -802,8 +802,8 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (306,15);
 CREATE TABLE IF NOT EXISTS `serials_directors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`director_id`	int ( 11 ) NOT NULL,
-	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY(`serial_id`,`director_id`),
+	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	FOREIGN KEY(`director_id`) REFERENCES `directors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (1,103);
@@ -1915,6 +1915,17 @@ INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (304,39,'275a',11,'World Enough and Time',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (305,39,'275b',12,'The Doctor Falls',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (306,39,'276',0,'Twice Upon a Time',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (307,41,'277',1,'The Woman Who Fell to Earth',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (308,41,'278',2,'The Ghost Monument',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (309,41,'279',3,'Rosa',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (310,41,'280',4,'Arachnids in the UK',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (311,41,'281',5,'The Tsuranga Conundrum',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (312,41,'282',6,'Demons of the Punjab',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (313,41,'283',7,'Kerblam!',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (314,41,'284',8,'The Witchfinders',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (315,41,'285',9,'It Takes You Away',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (316,41,'286',10,'The Battle of Ranskoor Av Kolos',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (317,41,'287',0,'Resolution',NULL);
 CREATE TABLE IF NOT EXISTS `seasons` (
 	`id`	int ( 11 ) NOT NULL,
 	`name`	text NOT NULL,
@@ -1960,6 +1971,7 @@ INSERT INTO `seasons` (id,name) VALUES (37,'Series 8');
 INSERT INTO `seasons` (id,name) VALUES (38,'Series 9');
 INSERT INTO `seasons` (id,name) VALUES (39,'Series 10');
 INSERT INTO `seasons` (id,name) VALUES (40,'Films');
+INSERT INTO `seasons` (id,name) VALUES (41,'Series 11');
 CREATE TABLE IF NOT EXISTS `episodes` (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	`title`	TEXT NOT NULL,
@@ -2822,6 +2834,7 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (847,'World Enough and Time',304,'275a','1','2017-06-24','45:00',NULL,85,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (848,'The Doctor Falls',305,'275b','2','2017-07-01','60:00',NULL,NULL,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (849,'Twice Upon a Time',306,'276','1','2017-12-25','60:00',NULL,NULL,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (850,'The Woman Who Fell to Earth',307,'277','1','2018-10-07',NULL,NULL,NULL,0,0);
 CREATE TABLE IF NOT EXISTS `doctors` (
 	`id`	int ( 11 ) NOT NULL,
 	`incarnation`	text NOT NULL,
@@ -2960,8 +2973,8 @@ CREATE TABLE IF NOT EXISTS `companions` (
 	`id`	INTEGER NOT NULL,
 	`name`	TEXT,
 	`actor`	INTEGER,
-	FOREIGN KEY(`actor`) REFERENCES `actors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-	PRIMARY KEY(`id`)
+	PRIMARY KEY(`id`),
+	FOREIGN KEY(`actor`) REFERENCES `actors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 INSERT INTO `companions` (id,name,actor) VALUES (1,'Susan Foreman',16);
 INSERT INTO `companions` (id,name,actor) VALUES (2,'Barbara Wright',17);
