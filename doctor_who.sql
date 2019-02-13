@@ -1639,6 +1639,40 @@ INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (304,42);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (282,41);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (281,41);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (285,41);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (306,42);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (307,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (307,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (307,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (308,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (308,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (308,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (309,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (309,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (309,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (310,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (310,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (310,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (311,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (311,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (311,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (312,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (312,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (312,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (313,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (313,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (313,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (314,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (314,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (314,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (315,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (315,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (315,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (316,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (316,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (316,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,52);
 CREATE TABLE IF NOT EXISTS `serials` (
 	`id`	int ( 11 ) NOT NULL,
 	`season_id`	int ( 11 ) NOT NULL,
@@ -3072,6 +3106,9 @@ INSERT INTO `companions` (id,name,actor) VALUES (41,'Clara Oswald',58);
 INSERT INTO `companions` (id,name,actor) VALUES (42,'Bill Potts',62);
 INSERT INTO `companions` (id,name,actor) VALUES (43,'Nardole',63);
 INSERT INTO `companions` (id,name,actor) VALUES (49,'Rory Williams',55);
+INSERT INTO `companions` (id,name,actor) VALUES (50,'Graham O''Brien',64);
+INSERT INTO `companions` (id,name,actor) VALUES (51,'Ryan Sinclair',65);
+INSERT INTO `companions` (id,name,actor) VALUES (52,'Yasmin Khan',66);
 CREATE TABLE IF NOT EXISTS `actors` (
 	`id`	int ( 11 ) NOT NULL,
 	`name`	text NOT NULL,
@@ -3141,4 +3178,7 @@ INSERT INTO `actors` (id,name,gender) VALUES (60,'Catrin Stewart','female');
 INSERT INTO `actors` (id,name,gender) VALUES (61,'Dan Starkey','male');
 INSERT INTO `actors` (id,name,gender) VALUES (62,'Pearl Mackie','female');
 INSERT INTO `actors` (id,name,gender) VALUES (63,'Matt Lucas','male');
+INSERT INTO `actors` (id,name,gender) VALUES (64,'Bradley Walsh','male');
+INSERT INTO `actors` (id,name,gender) VALUES (65,'Tosin Cole','male');
+INSERT INTO `actors` (id,name,gender) VALUES (66,'Mandip Gill','female');
 COMMIT;
