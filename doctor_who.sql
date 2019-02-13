@@ -797,8 +797,19 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (302,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (303,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (304,13);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,13);
-INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (305,1);
-INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (306,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (306,1);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (306,13);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (307,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (308,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (309,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (310,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (311,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (312,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (313,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (314,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (315,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (316,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (317,15);
 CREATE TABLE IF NOT EXISTS `serials_directors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`director_id`	int ( 11 ) NOT NULL,
