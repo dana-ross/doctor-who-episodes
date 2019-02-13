@@ -106,6 +106,11 @@ INSERT INTO `writers` (id,name) VALUES (101,'Trevor Ray');
 INSERT INTO `writers` (id,name) VALUES (102,'Victor Pemberton');
 INSERT INTO `writers` (id,name) VALUES (103,'William Emms');
 INSERT INTO `writers` (id,name) VALUES (104,'Mike Bartlett');
+INSERT INTO `writers` (id,name) VALUES (105,'Malorie Blackman');
+INSERT INTO `writers` (id,name) VALUES (106,'Vinay Patel');
+INSERT INTO `writers` (id,name) VALUES (107,'Pete McTighe');
+INSERT INTO `writers` (id,name) VALUES (108,'Joy Wilkinson');
+INSERT INTO `writers` (id,name) VALUES (109,'Ed Hime');
 CREATE TABLE IF NOT EXISTS `serials_writers` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`writer_id`	int ( 11 ) NOT NULL,
@@ -476,6 +481,18 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (303,86);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (304,95);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (305,95);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (306,95);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (307,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (308,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (309,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (309,105);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (310,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (311,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (312,106);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (313,107);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (314,108);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (315,109);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (316,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (317,14);
 CREATE TABLE IF NOT EXISTS `serials_doctors` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`doctor_id`	int ( 11 ) NOT NULL,
