@@ -2842,10 +2842,20 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (844,'The Lie of the Land',301,'272','1','2017-06-03','45:00',4.82,82,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (845,'Empress of Mars',302,'273','1','2017-06-10','44:00',5.02,83,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (846,'The Eaters of Light',303,'274','1','2017-06-17','42:00',4.73,81,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (847,'World Enough and Time',304,'275a','1','2017-06-24','45:00',NULL,85,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (848,'The Doctor Falls',305,'275b','2','2017-07-01','60:00',NULL,NULL,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (849,'Twice Upon a Time',306,'276','1','2017-12-25','60:00',NULL,NULL,0,0);
-INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (850,'The Woman Who Fell to Earth',307,'277','1','2018-10-07',NULL,NULL,NULL,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (847,'World Enough and Time',304,'275a','1','2017-06-24','45:00',5,85,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (848,'The Doctor Falls',305,'275b','2','2017-07-01','60:00',5.3,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (849,'Twice Upon a Time',306,'276','1','2017-12-25','60:00',7.92,81,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (850,'The Woman Who Fell to Earth',307,'277','1','2018-10-07','64:00',10.96,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (851,'The Ghost Monument',308,'278','1','2018-10-14','49:00',9,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (852,'Rosa',309,'279','1','2018-10-21','50:00',8.41,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (853,'Arachnids in the UK',310,'280','1','2018-10-28','49:00',8.22,83,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (854,'The Tsuranga Conundrum',311,'281','1','2018-11-04','51:00',7.76,79,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (855,'Demons of the Punjab',312,'282','1','2018-11-11','50:00',7.48,80,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (856,'Kerblam!',313,'283','1','2018-11-18','49:00',7.46,81,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (857,'The Witchfinders',314,'284','1','2018-11-25','47:00',7.21,81,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (858,'It Takes You Away',315,'285','1','2018-12-02','49:00',6.42,80,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (859,'The Battle of Ranskoor Av Kolos',316,'286','1','2018-12-09','50:00',6.65,79,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (860,'Resolution',317,'287','1','2019-01-01','60:00',7.13,80,0,0);
 CREATE TABLE IF NOT EXISTS `doctors` (
 	`id`	int ( 11 ) NOT NULL,
 	`incarnation`	text NOT NULL,
