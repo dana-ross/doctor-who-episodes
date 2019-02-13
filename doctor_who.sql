@@ -1133,6 +1133,17 @@ INSERT INTO `serials_directors` (serial_id,director_id) VALUES (303,106);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (304,86);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (305,86);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (306,104);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (307,108);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (308,109);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (309,109);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (310,110);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (311,111);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (312,108);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (313,111);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (314,110);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (315,108);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (316,108);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (317,107);
 CREATE TABLE IF NOT EXISTS `serials_companions` (
 	`serial_id`	int ( 11 ) NOT NULL,
 	`companion_id`	int ( 11 ) NOT NULL,
@@ -2990,6 +3001,10 @@ INSERT INTO `directors` (id,name) VALUES (104,'Lawrence Gough');
 INSERT INTO `directors` (id,name) VALUES (105,'Bill Anderson');
 INSERT INTO `directors` (id,name) VALUES (106,'Charles Palmer');
 INSERT INTO `directors` (id,name) VALUES (107,'Wayne Yip');
+INSERT INTO `directors` (id,name) VALUES (108,'Jamie Childs');
+INSERT INTO `directors` (id,name) VALUES (109,'Mark Tonderai');
+INSERT INTO `directors` (id,name) VALUES (110,'Sallie Aprahamian');
+INSERT INTO `directors` (id,name) VALUES (111,'Jennifer Perrott');
 CREATE TABLE IF NOT EXISTS `companions` (
 	`id`	INTEGER NOT NULL,
 	`name`	TEXT,
