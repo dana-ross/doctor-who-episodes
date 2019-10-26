@@ -25,7 +25,8 @@ This work is published from:
 ## Tables
 
 ### actors
-* **id**
+* **id** : a sequentially assigned database ID
+* **uuid** : a unique ID to identify records outside the database
 * **name**
 * **gender**
 
@@ -88,3 +89,5 @@ This work is published from:
 * **serial_id**
 * **writer_id**
 
+## UUIDs
+Use this tool to generate decimal UUIDs when creating or updating records: https://onlinerandomtools.com/generate-random-uuid?chain=remove-string-punctuation%2Cconvert-hex-to-decimal&count=100
