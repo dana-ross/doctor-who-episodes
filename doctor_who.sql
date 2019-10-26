@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `directors` (
 );
 
 CREATE TABLE IF NOT EXISTS `doctors` (
+	`uuid`  INTEGER NOT NULL,	
 	`id`	int ( 11 ) NOT NULL,
 	`incarnation`	text NOT NULL,
 	`primary_actor`	int ( 11 ) NOT NULL,
@@ -322,21 +323,21 @@ INSERT INTO `directors` (id,name) VALUES (109,'Mark Tonderai');
 INSERT INTO `directors` (id,name) VALUES (110,'Sallie Aprahamian');
 INSERT INTO `directors` (id,name) VALUES (111,'Jennifer Perrott');
 
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (1,'First Doctor',1);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (2,'Second Doctor',2);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (3,'Third Doctor',3);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (4,'Fourth Doctor',4);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (5,'Fifth Doctor',5);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (6,'Sixth Doctor',6);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (7,'Seventh Doctor',7);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (8,'Eighth Doctor',8);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (9,'War Doctor',9);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (10,'Ninth Doctor',10);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (11,'Tenth Doctor',11);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (12,'Eleventh Doctor',12);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (13,'Twelfth Doctor',13);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (14,'Dr. Who',14);
-INSERT INTO `doctors` (id,incarnation,primary_actor) VALUES (15,'Thirteenth Doctor',15);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (1, 166349881447990451152126865278107604916, 'First Doctor',1);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (2, 171514280257185380858110216927593155984, 'Second Doctor',2);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (3, 139668324120319000708242320726299721530, 'Third Doctor',3);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (4, 82027367939850709863351485385183045043, 'Fourth Doctor',4);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (5, 254777162815152463466190714388247228139, 'Fifth Doctor',5);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (6, 295743093814899731097894514423951887415, 'Sixth Doctor',6);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (7, 336336237695266544710490729778263353611, 'Seventh Doctor',7);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (8, 291869600944891690329506699495193290038, 'Eighth Doctor',8);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (9, 257840626815946513659489993027117550341, 'War Doctor',9);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (10, 218955592618374561293850615817952985037, 'Ninth Doctor',10);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (11, 248009370893069499374817963819329561605, 'Tenth Doctor',11);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (12, 34842461783957318859897889990181342283, 'Eleventh Doctor',12);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (13, 245368010513342390875175499945807265077, 'Twelfth Doctor',13);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (14, 107735402418937058593353933642756817827, 'Dr. Who',14);
+INSERT INTO `doctors` (id, uuid, incarnation,primary_actor) VALUES (15, 176793621530507409696536686436841943327, 'Thirteenth Doctor',15);
 
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (1,'An Unearthly Child',1,'1','1.0','1963-11-23','23:24',4.4,63,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (2,'The Cave of Skulls',1,'1','2.0','1963-11-30','24:26',5.9,59,0,0);
