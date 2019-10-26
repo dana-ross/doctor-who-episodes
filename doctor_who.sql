@@ -1,12 +1,13 @@
 CREATE TABLE IF NOT EXISTS `actors` (
 	`uuid`  INTEGER NOT NULL,
-	`id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
 	`name`	text NOT NULL,
 	`gender`	TEXT,
 	PRIMARY KEY(`id`)
 );
 
 CREATE TABLE IF NOT EXISTS `companions` (
+	`uuid`  INTEGER NOT NULL,
 	`id`	INTEGER NOT NULL,
 	`name`	TEXT,
 	`actor`	INTEGER,
@@ -15,14 +16,14 @@ CREATE TABLE IF NOT EXISTS `companions` (
 );
 
 CREATE TABLE IF NOT EXISTS `directors` (
-	`id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
 	`name`	text NOT NULL,
 	PRIMARY KEY(`id`)
 );
 
 CREATE TABLE IF NOT EXISTS `doctors` (
 	`uuid`  INTEGER NOT NULL,	
-	`id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
 	`incarnation`	text NOT NULL,
 	`primary_actor`	int ( 11 ) NOT NULL,
 	PRIMARY KEY(`id`),
@@ -45,54 +46,54 @@ CREATE TABLE IF NOT EXISTS `episodes` (
 
 CREATE TABLE IF NOT EXISTS `seasons` (
 	`uuid`  INTEGER NOT NULL,
-	`id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
 	`name`	text NOT NULL,
 	PRIMARY KEY(`id`)
 );
 
 CREATE TABLE IF NOT EXISTS `serials` (
-	`id`	int ( 11 ) NOT NULL,
-	`season_id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
+	`season_id`	INTEGER NOT NULL,
 	`story`	text,
-	`serial`	int ( 11 ) DEFAULT NULL,
+	`serial`	INTEGER DEFAULT NULL,
 	`title`	text NOT NULL,
 	`production_code`	text,
 	PRIMARY KEY(`id`)
 );
 
 CREATE TABLE IF NOT EXISTS `writers` (
-	`id`	int ( 11 ) NOT NULL,
+	`id`	INTEGER NOT NULL,
 	`name`	text NOT NULL,
 	PRIMARY KEY(`id`)
 );
 
 CREATE TABLE IF NOT EXISTS `serials_companions` (
-	`serial_id`	int ( 11 ) NOT NULL,
-	`companion_id`	int ( 11 ) NOT NULL,
+	`serial_id`	INTEGER NOT NULL,
+	`companion_id` INTEGER NOT NULL,
 	FOREIGN KEY(`companion_id`) REFERENCES `companions`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY(`serial_id`,`companion_id`),
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 
 CREATE TABLE IF NOT EXISTS `serials_directors` (
-	`serial_id`	int ( 11 ) NOT NULL,
-	`director_id`	int ( 11 ) NOT NULL,
+	`serial_id`	INTEGER NOT NULL,
+	`director_id` INTEGER NOT NULL,
 	PRIMARY KEY(`serial_id`,`director_id`),
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	FOREIGN KEY(`director_id`) REFERENCES `directors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 
 CREATE TABLE IF NOT EXISTS `serials_doctors` (
-	`serial_id`	int ( 11 ) NOT NULL,
-	`doctor_id`	int ( 11 ) NOT NULL,
+	`serial_id`	INTEGER NOT NULL,
+	`doctor_id`	INTEGER NOT NULL,
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY(`serial_id`,`doctor_id`),
 	FOREIGN KEY(`doctor_id`) REFERENCES `doctors`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 
 CREATE TABLE IF NOT EXISTS `serials_writers` (
-	`serial_id`	int ( 11 ) NOT NULL,
-	`writer_id`	int ( 11 ) NOT NULL,
+	`serial_id`	INTEGER NOT NULL,
+	`writer_id`	INTEGER NOT NULL,
 	FOREIGN KEY(`serial_id`) REFERENCES `serials`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	FOREIGN KEY(`writer_id`) REFERENCES `writers`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
 	PRIMARY KEY(`serial_id`,`writer_id`)
@@ -165,52 +166,52 @@ INSERT INTO `actors` (id, uuid, name,gender) VALUES (64, 41626147829603478297665
 INSERT INTO `actors` (id, uuid, name,gender) VALUES (65, 160815270373731832656088106263682940945, 'Tosin Cole','male');
 INSERT INTO `actors` (id, uuid, name,gender) VALUES (66, 297922888027034276394515718694872818955, 'Mandip Gill','female');
 
-INSERT INTO `companions` (id,name,actor) VALUES (1,'Susan Foreman',16);
-INSERT INTO `companions` (id,name,actor) VALUES (2,'Barbara Wright',17);
-INSERT INTO `companions` (id,name,actor) VALUES (3,'Ian Chesterton',18);
-INSERT INTO `companions` (id,name,actor) VALUES (4,'Vicki Pallister',19);
-INSERT INTO `companions` (id,name,actor) VALUES (5,'Steven Taylor',20);
-INSERT INTO `companions` (id,name,actor) VALUES (6,'Katarina',21);
-INSERT INTO `companions` (id,name,actor) VALUES (7,'Sara Kingdom',22);
-INSERT INTO `companions` (id,name,actor) VALUES (8,'Dodo Chaplet',23);
-INSERT INTO `companions` (id,name,actor) VALUES (9,'Polly Wright',24);
-INSERT INTO `companions` (id,name,actor) VALUES (10,'Ben Jackson',25);
-INSERT INTO `companions` (id,name,actor) VALUES (11,'Jamie McCrimmon',26);
-INSERT INTO `companions` (id,name,actor) VALUES (12,'Victoria Waterfield',27);
-INSERT INTO `companions` (id,name,actor) VALUES (13,'Zoe Heriot',28);
-INSERT INTO `companions` (id,name,actor) VALUES (14,'Liz Shaw',29);
-INSERT INTO `companions` (id,name,actor) VALUES (15,'Jo Grant',30);
-INSERT INTO `companions` (id,name,actor) VALUES (16,'Sarah Jane Smith',31);
-INSERT INTO `companions` (id,name,actor) VALUES (17,'Harry Sullivan',32);
-INSERT INTO `companions` (id,name,actor) VALUES (18,'Leela',33);
-INSERT INTO `companions` (id,name,actor) VALUES (19,'K9',34);
-INSERT INTO `companions` (id,name,actor) VALUES (20,'Romana I',35);
-INSERT INTO `companions` (id,name,actor) VALUES (21,'Romana II',36);
-INSERT INTO `companions` (id,name,actor) VALUES (22,'Adric',37);
-INSERT INTO `companions` (id,name,actor) VALUES (23,'Tegan Jovanka',38);
-INSERT INTO `companions` (id,name,actor) VALUES (24,'Nyssa of Traken',39);
-INSERT INTO `companions` (id,name,actor) VALUES (25,'Vislor Turlough',40);
-INSERT INTO `companions` (id,name,actor) VALUES (26,'Kamelion',41);
-INSERT INTO `companions` (id,name,actor) VALUES (27,'Perpugilliam "Peri" Brown',42);
-INSERT INTO `companions` (id,name,actor) VALUES (28,'Melanie Bush',43);
-INSERT INTO `companions` (id,name,actor) VALUES (29,'Dorothy Gale "Ace" McShane',44);
-INSERT INTO `companions` (id,name,actor) VALUES (30,'Grace Holloway',45);
-INSERT INTO `companions` (id,name,actor) VALUES (31,'Rose Tyler',46);
-INSERT INTO `companions` (id,name,actor) VALUES (32,'Adam Mitchell',47);
-INSERT INTO `companions` (id,name,actor) VALUES (33,'Jack Harkness',48);
-INSERT INTO `companions` (id,name,actor) VALUES (34,'Mickey Smith',49);
-INSERT INTO `companions` (id,name,actor) VALUES (35,'Donna Noble',50);
-INSERT INTO `companions` (id,name,actor) VALUES (36,'Martha Jones',51);
-INSERT INTO `companions` (id,name,actor) VALUES (37,'Wilfred Mott',53);
-INSERT INTO `companions` (id,name,actor) VALUES (38,'Amy Pond',54);
-INSERT INTO `companions` (id,name,actor) VALUES (40,'River Song',56);
-INSERT INTO `companions` (id,name,actor) VALUES (41,'Clara Oswald',58);
-INSERT INTO `companions` (id,name,actor) VALUES (42,'Bill Potts',62);
-INSERT INTO `companions` (id,name,actor) VALUES (43,'Nardole',63);
-INSERT INTO `companions` (id,name,actor) VALUES (49,'Rory Williams',55);
-INSERT INTO `companions` (id,name,actor) VALUES (50,'Graham O''Brien',64);
-INSERT INTO `companions` (id,name,actor) VALUES (51,'Ryan Sinclair',65);
-INSERT INTO `companions` (id,name,actor) VALUES (52,'Yasmin Khan',66);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (1, 18200731223356820229034468812262114654, 'Susan Foreman',16);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (2, 90261162246096470765312206717954603914, 'Barbara Wright',17);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (3, 244572991210717161541930501102685772533, 'Ian Chesterton',18);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (4, 170593033509395887238781849822393062557, 'Vicki Pallister',19);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (5, 272649461126494118761550024892522456238, 'Steven Taylor',20);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (6, 169151463360834704553759286469739432711, 'Katarina',21);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (7, 169876136707289094814280701421930587796, 'Sara Kingdom',22);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (8, 137376642656837522748341208374915285865, 'Dodo Chaplet',23);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (9, 145920663947572174809341529715374016465, 'Polly Wright',24);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (10, 281360451354494720921798976177118946382, 'Ben Jackson',25);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (11, 169011402401027637757393899380645016939, 'Jamie McCrimmon',26);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (12, 56702843589737107654172800534662454956, 'Victoria Waterfield',27);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (13, 288571378722961790042140251980337930909, 'Zoe Heriot',28);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (14, 103592815081200929415296916026190868440, 'Liz Shaw',29);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (15, 66404752476145576424541546277150545311, 'Jo Grant',30);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (16, 134678187348476613389713796570518921916, 'Sarah Jane Smith',31);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (17, 250339741060842814711788998942697733335, 'Harry Sullivan',32);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (18, 2591237494666076929165643744857950294, 'Leela',33);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (19, 123530958072072462689197438916109105198, 'K9',34);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (20, 143704350825637789169446164406726894130, 'Romana I',35);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (21, 254169850628918395970757325311187615428, 'Romana II',36);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (22, 286720481759995539262567115515490064777, 'Adric',37);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (23, 249927485516137138742415752190276124645, 'Tegan Jovanka',38);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (24, 122017628189654821460085303095261388250, 'Nyssa of Traken',39);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (25, 155841157834639668422141669908492133214, 'Vislor Turlough',40);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (26, 37177902532781864253120292947766022366, 'Kamelion',41);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (27, 158739522452273049023785073544789504060, 'Perpugilliam "Peri" Brown',42);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (28, 295593939280453856446225131692652162342, 'Melanie Bush',43);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (29, 263103657551044816712473472087170783821, 'Dorothy Gale "Ace" McShane',44);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (30, 317483524388110445694513985889537080748, 'Grace Holloway',45);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (31, 294101818622183632353638815937770443132, 'Rose Tyler',46);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (32, 47554134357168110735628211723410285931, 'Adam Mitchell',47);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (33, 21963092777401875822753150347901464295, 'Jack Harkness',48);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (34, 50596563576019812853863326172778790651, 'Mickey Smith',49);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (35, 274898762354991777611312918393951200829, 'Donna Noble',50);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (36, 136954541518615324583650716055436923727, 'Martha Jones',51);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (37, 263920107353088131636987208596792951301, 'Wilfred Mott',53);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (38, 282864931856127876741661406800622630271, 'Amy Pond',54);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (40, 19974702589241467705347398410128125801, 'River Song',56);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (41, 41245793773700300880744450508447736592, 'Clara Oswald',58);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (42, 288836721751375609327018313338691050937, 'Bill Potts',62);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (43, 154331056153343400019997391141845442436, 'Nardole',63);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (49, 182147364221454649843077750810048572842, 'Rory Williams',55);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (50, 305239126208678122798296933382297437817, 'Graham O''Brien',64);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (51, 26655122199345364541062656684568357493, 'Ryan Sinclair',65);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (52, 22153851308440236651998549900286430290, 'Yasmin Khan',66);
 
 INSERT INTO `directors` (id,name) VALUES (1,'Adam Smith');
 INSERT INTO `directors` (id,name) VALUES (2,'Alan Bromly');
