@@ -44,6 +44,7 @@ CREATE TABLE IF NOT EXISTS `episodes` (
 );
 
 CREATE TABLE IF NOT EXISTS `seasons` (
+	`uuid`  INTEGER NOT NULL,
 	`id`	int ( 11 ) NOT NULL,
 	`name`	text NOT NULL,
 	PRIMARY KEY(`id`)
@@ -1200,47 +1201,47 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (859,'The Battle of Ranskoor Av Kolos',316,'286','1','2018-12-09','50:00',6.65,79,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (860,'Resolution',317,'287','1','2019-01-01','60:00',7.13,80,0,0);
 
-INSERT INTO `seasons` (id,name) VALUES (1,'Season 1');
-INSERT INTO `seasons` (id,name) VALUES (2,'Season 2');
-INSERT INTO `seasons` (id,name) VALUES (3,'Season 3');
-INSERT INTO `seasons` (id,name) VALUES (4,'Season 4');
-INSERT INTO `seasons` (id,name) VALUES (5,'Season 5');
-INSERT INTO `seasons` (id,name) VALUES (6,'Season 6');
-INSERT INTO `seasons` (id,name) VALUES (7,'Season 7');
-INSERT INTO `seasons` (id,name) VALUES (8,'Season 8');
-INSERT INTO `seasons` (id,name) VALUES (9,'Season 9');
-INSERT INTO `seasons` (id,name) VALUES (10,'Season 10');
-INSERT INTO `seasons` (id,name) VALUES (11,'Season 11');
-INSERT INTO `seasons` (id,name) VALUES (12,'Season 12');
-INSERT INTO `seasons` (id,name) VALUES (13,'Season 13');
-INSERT INTO `seasons` (id,name) VALUES (14,'Season 14');
-INSERT INTO `seasons` (id,name) VALUES (15,'Season 15');
-INSERT INTO `seasons` (id,name) VALUES (16,'Season 16');
-INSERT INTO `seasons` (id,name) VALUES (17,'Season 17');
-INSERT INTO `seasons` (id,name) VALUES (18,'Season 18');
-INSERT INTO `seasons` (id,name) VALUES (19,'Season 19');
-INSERT INTO `seasons` (id,name) VALUES (20,'Season 20');
-INSERT INTO `seasons` (id,name) VALUES (21,'Season 21');
-INSERT INTO `seasons` (id,name) VALUES (22,'Season 22');
-INSERT INTO `seasons` (id,name) VALUES (23,'Season 23');
-INSERT INTO `seasons` (id,name) VALUES (24,'Season 24');
-INSERT INTO `seasons` (id,name) VALUES (25,'Season 25');
-INSERT INTO `seasons` (id,name) VALUES (26,'Season 26');
-INSERT INTO `seasons` (id,name) VALUES (27,'TV movie');
-INSERT INTO `seasons` (id,name) VALUES (28,'Series 1');
-INSERT INTO `seasons` (id,name) VALUES (29,'Series 2');
-INSERT INTO `seasons` (id,name) VALUES (30,'Series 3');
-INSERT INTO `seasons` (id,name) VALUES (31,'Series 4');
-INSERT INTO `seasons` (id,name) VALUES (32,'Specials (2008–2010)');
-INSERT INTO `seasons` (id,name) VALUES (33,'Series 5');
-INSERT INTO `seasons` (id,name) VALUES (34,'Series 6');
-INSERT INTO `seasons` (id,name) VALUES (35,'Series 7');
-INSERT INTO `seasons` (id,name) VALUES (36,'Specials (2013)');
-INSERT INTO `seasons` (id,name) VALUES (37,'Series 8');
-INSERT INTO `seasons` (id,name) VALUES (38,'Series 9');
-INSERT INTO `seasons` (id,name) VALUES (39,'Series 10');
-INSERT INTO `seasons` (id,name) VALUES (40,'Films');
-INSERT INTO `seasons` (id,name) VALUES (41,'Series 11');
+INSERT INTO `seasons` (id, uuid, name) VALUES (1, 185683269147609434155072070819073043329, 'Season 1');
+INSERT INTO `seasons` (id, uuid, name) VALUES (2, 237190227233767115886404512832359086276, 'Season 2');
+INSERT INTO `seasons` (id, uuid, name) VALUES (3, 312383128075925919271167085628111249566, 'Season 3');
+INSERT INTO `seasons` (id, uuid, name) VALUES (4, 143581970162877159753191676033099662483, 'Season 4');
+INSERT INTO `seasons` (id, uuid, name) VALUES (5, 120651902657984944121050920911786111856, 'Season 5');
+INSERT INTO `seasons` (id, uuid, name) VALUES (6, 332930582738039846073972063115429056211, 'Season 6');
+INSERT INTO `seasons` (id, uuid, name) VALUES (7, 206183152325657105640324427765492228074, 'Season 7');
+INSERT INTO `seasons` (id, uuid, name) VALUES (8, 133901911956903802360364635557986134898, 'Season 8');
+INSERT INTO `seasons` (id, uuid, name) VALUES (9, 274204009167162211809124595410309889649, 'Season 9');
+INSERT INTO `seasons` (id, uuid, name) VALUES (10, 176858486186566550722154595467179316908, 'Season 10');
+INSERT INTO `seasons` (id, uuid, name) VALUES (11, 197994294088622766332776252253806863473, 'Season 11');
+INSERT INTO `seasons` (id, uuid, name) VALUES (12, 62107768831043386009792535830004190058, 'Season 12');
+INSERT INTO `seasons` (id, uuid, name) VALUES (13, 206259259301169680048167220605386719323, 'Season 13');
+INSERT INTO `seasons` (id, uuid, name) VALUES (14, 2081059476720892852481683393486342637, 'Season 14');
+INSERT INTO `seasons` (id, uuid, name) VALUES (15, 203721466393976211492523429319385654278, 'Season 15');
+INSERT INTO `seasons` (id, uuid, name) VALUES (16, 253958669362054788690364198325339140200, 'Season 16');
+INSERT INTO `seasons` (id, uuid, name) VALUES (17, 323585698342437017516563514330673645622, 'Season 17');
+INSERT INTO `seasons` (id, uuid, name) VALUES (18, 275001563707884382981463973339392144073, 'Season 18');
+INSERT INTO `seasons` (id, uuid, name) VALUES (19, 304789546243984268435914231292650846498, 'Season 19');
+INSERT INTO `seasons` (id, uuid, name) VALUES (20, 226910706275254659913472252906321194005, 'Season 20');
+INSERT INTO `seasons` (id, uuid, name) VALUES (21, 152763629596545437418598267620202339338, 'Season 21');
+INSERT INTO `seasons` (id, uuid, name) VALUES (22, 298328757657774081139486405322032647120, 'Season 22');
+INSERT INTO `seasons` (id, uuid, name) VALUES (23, 46718374973179071450919250359202133702, 'Season 23');
+INSERT INTO `seasons` (id, uuid, name) VALUES (24, 184479527848297777250370509052995039454, 'Season 24');
+INSERT INTO `seasons` (id, uuid, name) VALUES (25, 330671048538306479087461815804095633983, 'Season 25');
+INSERT INTO `seasons` (id, uuid, name) VALUES (26, 110970567477701597907564855472427965449, 'Season 26');
+INSERT INTO `seasons` (id, uuid, name) VALUES (27, 98408640630033974718934797757098210947, 'TV movie');
+INSERT INTO `seasons` (id, uuid, name) VALUES (28, 316236264709323114878565035850992765147, 'Series 1');
+INSERT INTO `seasons` (id, uuid, name) VALUES (29, 3715419744925740670320922460352345839, 'Series 2');
+INSERT INTO `seasons` (id, uuid, name) VALUES (30, 200538525095466008520199691220781347648, 'Series 3');
+INSERT INTO `seasons` (id, uuid, name) VALUES (31, 296381987560570223495675568765802244621, 'Series 4');
+INSERT INTO `seasons` (id, uuid, name) VALUES (32, 232689239013784722656627033690613317812, 'Specials (2008–2010)');
+INSERT INTO `seasons` (id, uuid, name) VALUES (33, 320608139121304905937567110972045656246, 'Series 5');
+INSERT INTO `seasons` (id, uuid, name) VALUES (34, 189403515065373515568724166783257200418, 'Series 6');
+INSERT INTO `seasons` (id, uuid, name) VALUES (35, 203952332903187065155848519936394793144, 'Series 7');
+INSERT INTO `seasons` (id, uuid, name) VALUES (36, 74191955032357677656959181330386796351, 'Specials (2013)');
+INSERT INTO `seasons` (id, uuid, name) VALUES (37, 237401024171302715486154870248816386161, 'Series 8');
+INSERT INTO `seasons` (id, uuid, name) VALUES (38, 295406363617602979015100928409129795184, 'Series 9');
+INSERT INTO `seasons` (id, uuid, name) VALUES (39, 107618367780621260603771246482592073139, 'Series 10');
+INSERT INTO `seasons` (id, uuid, name) VALUES (40, 207436053455952369194033391441326734787, 'Films');
+INSERT INTO `seasons` (id, uuid, name) VALUES (41, 200412951674328381645204381896527837859, 'Series 11');
 
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (1,1,'1',1,'An Unearthly Child','A');
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (2,1,'2',2,'The Daleks','B');
