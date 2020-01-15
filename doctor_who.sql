@@ -1676,6 +1676,9 @@ INSERT INTO `writers` (id, uuid, name) VALUES (106, 5531051309205377744026393529
 INSERT INTO `writers` (id, uuid, name) VALUES (107, 84570328207046470908547403348525298725, 'Pete McTighe');
 INSERT INTO `writers` (id, uuid, name) VALUES (108, 114319950382599378950410398241921306189, 'Joy Wilkinson');
 INSERT INTO `writers` (id, uuid, name) VALUES (109, 95888170249259236761993628126735205059, 'Ed Hime');
+INSERT INTO `writers` (id, uuid, name) VALUES (110, 18673670489260996803974961335879721665, 'Nina Metivier');
+INSERT INTO `writers` (id, uuid, name) VALUES (110, 85848299737253508581832347050294961482, 'Maxine Alderton');
+INSERT INTO `writers` (id, uuid, name) VALUES (110, 236681383772915312276259379814118499636, 'Charlene James');
 
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (1,3);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (2,98);
