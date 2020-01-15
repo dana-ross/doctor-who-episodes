@@ -1208,6 +1208,9 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (858,'It Takes You Away',315,'285','1','2018-12-02','49:00',6.42,80,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (859,'The Battle of Ranskoor Av Kolos',316,'286','1','2018-12-09','50:00',6.65,79,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (860,'Resolution',317,'287','1','2019-01-01','60:00',7.13,80,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (861,'Spyfall, Part 1',318,'288a','1','2020-01-01','59:00',6.89,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (862,'Spyfall, Part 2',319,'288b','1','2020-01-05','60:00',6.07,82,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (863,'Orphan 55',320,'289','1','2020-01-12','46:00',7.13,77,0,0);
 
 INSERT INTO `seasons` (id, uuid, name) VALUES (1, 185683269147609434155072070819073043329, 'Season 1');
 INSERT INTO `seasons` (id, uuid, name) VALUES (2, 237190227233767115886404512832359086276, 'Season 2');
@@ -1250,6 +1253,7 @@ INSERT INTO `seasons` (id, uuid, name) VALUES (38, 29540636361760297901510092840
 INSERT INTO `seasons` (id, uuid, name) VALUES (39, 107618367780621260603771246482592073139, 'Series 10');
 INSERT INTO `seasons` (id, uuid, name) VALUES (40, 207436053455952369194033391441326734787, 'Films');
 INSERT INTO `seasons` (id, uuid, name) VALUES (41, 200412951674328381645204381896527837859, 'Series 11');
+INSERT INTO `seasons` (id, uuid, name) VALUES (42, 174561752919142186926894503530790938990, 'Series 12');
 
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (1,1,'1',1,'An Unearthly Child','A');
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (2,1,'2',2,'The Daleks','B');
@@ -1568,6 +1572,9 @@ INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (315,41,'285',9,'It Takes You Away',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (316,41,'286',10,'The Battle of Ranskoor Av Kolos',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (317,41,'287',0,'Resolution',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (318,42,'288a',0,'Spyfall, Part 1',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (319,42,'288b',0,'Spyfall, Part 2',NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (320,42,'289',0,'Orphan 55',NULL);
 
 INSERT INTO `writers` (id, uuid, name) VALUES (1, 187269461571258491948536978590148302126, 'Andrew McCulloch');
 INSERT INTO `writers` (id, uuid, name) VALUES (2, 109817036685474700350516404262354504887, 'Andrew Smith');
@@ -2055,6 +2062,9 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (314,108);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (315,109);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (316,14);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (317,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (318,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (319,14);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (320,109);
 
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (1,1);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (2,1);
@@ -2383,6 +2393,9 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (314,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (315,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (316,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (317,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (318,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (319,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (320,15);
 
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (1,103);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (2,89);
@@ -2711,6 +2724,9 @@ INSERT INTO `serials_directors` (serial_id,director_id) VALUES (314,110);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (315,108);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (316,108);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (317,107);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (318,114);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (319,115);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (320,115);
 
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (1,1);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (2,1);
@@ -3213,3 +3229,12 @@ INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (316,52);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,50);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,51);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (317,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (318,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (318,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (318,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (319,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (319,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (319,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (320,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (320,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (320,52);
