@@ -1212,6 +1212,7 @@ INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (862,'Spyfall, Part 2',319,'288b','1','2020-01-05','60:00',6.07,82,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (863,'Orphan 55',320,'289','1','2020-01-12','46:00',5.38,77,0,0);
 INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (864,"Nikola Tesla's Night of Terror",321,'290','1','2020-01-19','50:00',5.20,79,0,0);
+INSERT INTO `episodes` (id,title,serial_id,story,episode_order,original_air_date,runtime,uk_viewers_mm,appreciation_index,missing,recreated) VALUES (865,'Fugitive of the Judoon',322,'291','1','2020-01-26','50:00',5.57,83,0,0);
 
 
 INSERT INTO `seasons` (id, uuid, name) VALUES (1, 185683269147609434155072070819073043329, 'Season 1');
@@ -1578,6 +1579,7 @@ INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (319,42,'288b',0,'Spyfall, Part 2',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (320,42,'289',0,'Orphan 55',NULL);
 INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (321,42,'290',0,"Nikola Tesla's Night of Terror",NULL);
+INSERT INTO `serials` (id,season_id,story,serial,title,production_code) VALUES (322,42,'291',0,'Fugitive of the Judoon',NULL);
 
 INSERT INTO `writers` (id, uuid, name) VALUES (1, 187269461571258491948536978590148302126, 'Andrew McCulloch');
 INSERT INTO `writers` (id, uuid, name) VALUES (2, 109817036685474700350516404262354504887, 'Andrew Smith');
@@ -2069,6 +2071,8 @@ INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (318,14);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (319,14);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (320,109);
 INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (321,110);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (322,106);
+INSERT INTO `serials_writers` (serial_id,writer_id) VALUES (322,14);
 
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (1,1);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (2,1);
@@ -2401,6 +2405,7 @@ INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (318,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (319,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (320,15);
 INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (321,15);
+INSERT INTO `serials_doctors` (serial_id,doctor_id) VALUES (322,15);
 
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (1,103);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (2,89);
@@ -2733,6 +2738,7 @@ INSERT INTO `serials_directors` (serial_id,director_id) VALUES (318,114);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (319,115);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (320,115);
 INSERT INTO `serials_directors` (serial_id,director_id) VALUES (321,112);
+INSERT INTO `serials_directors` (serial_id,director_id) VALUES (322,112);
 
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (1,1);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (2,1);
@@ -3247,3 +3253,6 @@ INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (320,52);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (321,50);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (321,51);
 INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (321,52);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (322,50);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (322,51);
+INSERT INTO `serials_companions` (serial_id,companion_id) VALUES (322,52);
