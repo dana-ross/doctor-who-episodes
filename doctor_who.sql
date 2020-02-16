@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `actors` (
 );
 
 CREATE TABLE IF NOT EXISTS `companions` (
-	`uuid`  INTEGER NOT NULL,
+	`uuid`  varbinary(16) NOT NULL,
 	`id`	INTEGER NOT NULL,
 	`name`	TEXT,
 	`actor`	INTEGER,
@@ -168,52 +168,52 @@ INSERT INTO `actors` (id, uuid, name,gender) VALUES (64, UUID_TO_BIN('6b01375c-3
 INSERT INTO `actors` (id, uuid, name,gender) VALUES (65, UUID_TO_BIN('59790b05-d472-4ee5-9388-6d29d5ad7fe7'), 'Tosin Cole','male');
 INSERT INTO `actors` (id, uuid, name,gender) VALUES (66, UUID_TO_BIN('b54d50b8-035f-455a-85cc-3e08e5c1b7df'), 'Mandip Gill','female');
 
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (1, 18200731223356820229034468812262114654, 'Susan Foreman',16);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (2, 90261162246096470765312206717954603914, 'Barbara Wright',17);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (3, 244572991210717161541930501102685772533, 'Ian Chesterton',18);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (4, 170593033509395887238781849822393062557, 'Vicki Pallister',19);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (5, 272649461126494118761550024892522456238, 'Steven Taylor',20);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (6, 169151463360834704553759286469739432711, 'Katarina',21);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (7, 169876136707289094814280701421930587796, 'Sara Kingdom',22);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (8, 137376642656837522748341208374915285865, 'Dodo Chaplet',23);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (9, 145920663947572174809341529715374016465, 'Polly Wright',24);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (10, 281360451354494720921798976177118946382, 'Ben Jackson',25);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (11, 169011402401027637757393899380645016939, 'Jamie McCrimmon',26);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (12, 56702843589737107654172800534662454956, 'Victoria Waterfield',27);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (13, 288571378722961790042140251980337930909, 'Zoe Heriot',28);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (14, 103592815081200929415296916026190868440, 'Liz Shaw',29);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (15, 66404752476145576424541546277150545311, 'Jo Grant',30);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (16, 134678187348476613389713796570518921916, 'Sarah Jane Smith',31);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (17, 250339741060842814711788998942697733335, 'Harry Sullivan',32);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (18, 2591237494666076929165643744857950294, 'Leela',33);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (19, 123530958072072462689197438916109105198, 'K9',34);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (20, 143704350825637789169446164406726894130, 'Romana I',35);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (21, 254169850628918395970757325311187615428, 'Romana II',36);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (22, 286720481759995539262567115515490064777, 'Adric',37);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (23, 249927485516137138742415752190276124645, 'Tegan Jovanka',38);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (24, 122017628189654821460085303095261388250, 'Nyssa of Traken',39);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (25, 155841157834639668422141669908492133214, 'Vislor Turlough',40);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (26, 37177902532781864253120292947766022366, 'Kamelion',41);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (27, 158739522452273049023785073544789504060, 'Perpugilliam "Peri" Brown',42);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (28, 295593939280453856446225131692652162342, 'Melanie Bush',43);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (29, 263103657551044816712473472087170783821, 'Dorothy Gale "Ace" McShane',44);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (30, 317483524388110445694513985889537080748, 'Grace Holloway',45);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (31, 294101818622183632353638815937770443132, 'Rose Tyler',46);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (32, 47554134357168110735628211723410285931, 'Adam Mitchell',47);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (33, 21963092777401875822753150347901464295, 'Jack Harkness',48);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (34, 50596563576019812853863326172778790651, 'Mickey Smith',49);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (35, 274898762354991777611312918393951200829, 'Donna Noble',50);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (36, 136954541518615324583650716055436923727, 'Martha Jones',51);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (37, 263920107353088131636987208596792951301, 'Wilfred Mott',53);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (38, 282864931856127876741661406800622630271, 'Amy Pond',54);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (40, 19974702589241467705347398410128125801, 'River Song',56);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (41, 41245793773700300880744450508447736592, 'Clara Oswald',58);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (42, 288836721751375609327018313338691050937, 'Bill Potts',62);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (43, 154331056153343400019997391141845442436, 'Nardole',63);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (49, 182147364221454649843077750810048572842, 'Rory Williams',55);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (50, 305239126208678122798296933382297437817, 'Graham O''Brien',64);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (51, 26655122199345364541062656684568357493, 'Ryan Sinclair',65);
-INSERT INTO `companions` (id, uuid, name, actor) VALUES (52, 22153851308440236651998549900286430290, 'Yasmin Khan',66);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (1, UUID_TO_BIN('5c67b3ad-0535-468f-935b-d2c0759bf5ac'), 'Susan Foreman',16);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (2, UUID_TO_BIN('72eb3f4a-081e-41d9-9f3e-8eb99dcad438'), 'Barbara Wright',17);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (3, UUID_TO_BIN('93b86360-a554-449c-8ce6-246147d454bd'), 'Ian Chesterton',18);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (4, UUID_TO_BIN('9561ca52-7ab9-4ecb-b9f1-d504747d9794'), 'Vicki Pallister',19);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (5, UUID_TO_BIN('c3245974-3bda-47c6-b128-4dd30913a07c'), 'Steven Taylor',20);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (6, UUID_TO_BIN('149f04b8-b03e-45e7-8c46-936f7e1078aa'), 'Katarina',21);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (7, UUID_TO_BIN('cfd1ef46-108b-4af3-94a5-754d742f294e'), 'Sara Kingdom',22);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (8, UUID_TO_BIN('bcd39ee4-825f-489f-92b6-769f061cc17b'), 'Dodo Chaplet',23);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (9, UUID_TO_BIN('c2179a3c-4365-451e-a016-06bcb37edff2'), 'Polly Wright',24);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (10, UUID_TO_BIN('04e95a6d-9a91-44a1-96d0-0413b92ed8c7'), 'Ben Jackson',25);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (11, UUID_TO_BIN('b5047bb9-867d-4137-af01-0213bbd89f9e'), 'Jamie McCrimmon',26);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (12, UUID_TO_BIN('5811f37c-cff3-4009-ad6f-fc2751e999ad'), 'Victoria Waterfield',27);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (13, UUID_TO_BIN('b73f1442-fa70-4d71-9362-fb08d941c098'), 'Zoe Heriot',28);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (14, UUID_TO_BIN('7df07324-faef-4ed7-8a31-904312eac9be'), 'Liz Shaw',29);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (15, UUID_TO_BIN('8afab307-d9b3-4f75-9ef6-5f8bcec2cef6'), 'Jo Grant',30);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (16, UUID_TO_BIN('00f99800-8039-482d-bf4f-de522491b487'), 'Sarah Jane Smith',31);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (17, UUID_TO_BIN('58529934-b92c-4605-93c3-3cbccd92c015'), 'Harry Sullivan',32);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (18, UUID_TO_BIN('46f87a16-233f-4cd4-b4b4-787ff84acbe2'), 'Leela',33);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (19, UUID_TO_BIN('82d18502-3469-4e4f-bd56-abc3b10447c6'), 'K9',34);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (20, UUID_TO_BIN('8bf03ea6-cab7-4b2b-b32f-cf99d9b62359'), 'Romana I',35);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (21, UUID_TO_BIN('e1aca290-e4c3-4e5f-8c8c-83ca1e796749'), 'Romana II',36);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (22, UUID_TO_BIN('a3bd9951-6918-47b7-86cc-6f89cc51343e'), 'Adric',37);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (23, UUID_TO_BIN('3c8689da-da44-41dc-9cd3-6aa7da81107f'), 'Tegan Jovanka',38);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (24, UUID_TO_BIN('a2f75ad8-8c65-4509-a414-4c6fb7bd257e'), 'Nyssa of Traken',39);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (25, UUID_TO_BIN('64229f27-1405-4965-a1ab-9986d6461926'), 'Vislor Turlough',40);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (26, UUID_TO_BIN('ade8d79b-7b06-4f62-90c2-69e6bec2d602'), 'Kamelion',41);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (27, UUID_TO_BIN('a335a858-ccf8-4ddf-8e43-f8541eb83976'), 'Perpugilliam "Peri" Brown',42);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (28, UUID_TO_BIN('30e25cd9-6a8d-4d7c-8b93-5eff332940c5'), 'Melanie Bush',43);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (29, UUID_TO_BIN('37acffe5-8964-4033-b74c-5a14b66cc96b'), 'Dorothy Gale "Ace" McShane',44);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (30, UUID_TO_BIN('8bc5165d-4a80-42a0-b8e6-05111f9b7dae'), 'Grace Holloway',45);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (31, UUID_TO_BIN('255ed7cc-542b-4314-b6ef-c7aea797344d'), 'Rose Tyler',46);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (32, UUID_TO_BIN('6b775de1-22ad-4163-a367-ea086bab0686'), 'Adam Mitchell',47);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (33, UUID_TO_BIN('e963b175-b252-4f21-9b73-05b5ce94a925'), 'Jack Harkness',48);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (34, UUID_TO_BIN('bfce1bdd-b5be-4eae-8c59-1ced4f46727d'), 'Mickey Smith',49);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (35, UUID_TO_BIN('41c8988f-ad56-4ae5-8413-c7b4583fb899'), 'Donna Noble',50);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (36, UUID_TO_BIN('5cc67742-62a1-4767-b16c-927c895a646b'), 'Martha Jones',51);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (37, UUID_TO_BIN('7b6ba8da-c15c-40cd-b61a-b753f1d1724c'), 'Wilfred Mott',53);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (38, UUID_TO_BIN('9ebed5aa-d74c-4e31-b905-2842ac97da61'), 'Amy Pond',54);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (40, UUID_TO_BIN('431ebe2d-e6a6-43ef-ba89-04953fda1750'), 'River Song',56);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (41, UUID_TO_BIN('e8d009b8-4085-47df-9681-28b85b634a1d'), 'Clara Oswald',58);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (42, UUID_TO_BIN('664dc84b-3190-46c4-b09d-effd312b03bb'), 'Bill Potts',62);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (43, UUID_TO_BIN('c80475c6-2e00-4031-a20b-ac98d060199f'), 'Nardole',63);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (49, UUID_TO_BIN('0dbc7ea2-240d-4907-af14-ba71bf93b740'), 'Rory Williams',55);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (50, UUID_TO_BIN('c966583b-becf-41b6-aff5-6b6dc9e6083d'), 'Graham O''Brien',64);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (51, UUID_TO_BIN('fdfd1ddf-4579-4252-876d-d6a8d5c09d4b'), 'Ryan Sinclair',65);
+INSERT INTO `companions` (id, uuid, name, actor) VALUES (52, UUID_TO_BIN('b8a1bb34-0d7c-40ff-85d8-394cb9adc6e5'), 'Yasmin Khan',66);
 
 INSERT INTO `directors` (id, uuid, name) VALUES (1, 112617262725354893490355938147345982095, 'Adam Smith');
 INSERT INTO `directors` (id, uuid, name) VALUES (2, 113251272753127845434603402017867284069, 'Alan Bromly');
