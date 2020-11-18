@@ -12,13 +12,13 @@ Public domain. *Collections of facts* can't be copywritten. But since licensing 
   <br />
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="https://github.com/daveross/doctor-who-episodes">
+     href="https://github.com/dana-ross/doctor-who-episodes">
     <span property="dct:title">Dana Ross</span></a>
   has waived all copyright and related or neighboring rights to
   <span property="dct:title">Doctor Who Episode Database</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
-      content="US" about="https://github.com/daveross/doctor-who-episodes">
+      content="US" about="https://github.com/dana-ross/doctor-who-episodes">
   United States</span>.
 </p>
 
